@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Navigation {
 
+  activeLink: string = '';
+
+  setActive(link: string): void {
+    this.activeLink = link;
+  }
+
 }

@@ -1,1 +1,28 @@
-<p>navigation works!</p>
+<nav class="navigation">
+    <!-- <a>About me</a> -->
+    <a 
+        href="#about-me" 
+        (click)="setActive('about')" 
+        [class.active]="activeLink === 'about'">
+        About me
+    </a>
+
+    <a
+        href="#skills" 
+        (click)="setActive('skills')" 
+        [class.active]="activeLink === 'skills'">
+        Skills
+    </a>
+
+    <a
+        href="#portfolio" 
+        (click)="setActive('portfolio')" 
+        [class.active]="activeLink === 'portfolio'">
+        Portfolio
+    </a>
+
+    <div class="language">
+        <button>DE</button>
+        <button>EN</button>
+    </div>
+</nav>

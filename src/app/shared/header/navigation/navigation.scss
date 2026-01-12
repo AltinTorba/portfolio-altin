@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.language {
+  display: flex;
+  gap: 12px;
+}
+
+.navigation a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
