@@ -1,0 +1,46 @@
+#footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 32px;
+
+  .footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .legal-logo a,
+  .legal-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #ff9900;
+    }
+  }
+
+  .socials a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+  }
+
+  .copyright p {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
