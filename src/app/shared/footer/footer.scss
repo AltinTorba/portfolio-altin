@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "./../../../styles.scss" as *;
 
 footer#footer {
   width: 100%;

@@ -1,0 +1,112 @@
+{
+  "header": {
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "atf": {
+    "intro": "Ich bin",
+    "headline": "Entwickler",
+    "button": "Lass' plaudern!",
+    "vertical": "Scrolle runter"
+  },
+  "about": {
+    "headline": "Über mich",
+    "introductionText": "Aus eigenem Antrieb habe ich begonnen, mich intensiv mit Technik und Code auseinanderzusetzen – ein guter Freund hat diesen Weg unterstützt, indem er meine Begeisterung erkannte und weiter bestärkte. Probleme mit Code zu lösen fühlt sich für mich an wie ein endloses Puzzle – und genau das fasziniert mich daran. Der ständige Wandel in der Tech-Welt hält mich täglich neugierig und fordert mich immer wieder neu heraus.\n\nLass uns vernetzen und gemeinsam etwas Großartiges schaffen!",
+    "locationText": "Ich bin in Baden-Württemberg ansässig – offen für Remote-Arbeit, aber nicht umzugsbereit.",
+    "learningText": "Ich bin immer neugierig auf neue Technologien und liebe es, meine Fähigkeiten weiterzuentwickeln.",
+    "solvingText": "Bei der Problemlösung experimentiere ich zuerst und verfeinere dann meinen Ansatz. Auch wenn ich oft analytisch alleine arbeite, bin ich immer offen für Teamarbeit, wenn eine Herausforderung meine Fähigkeiten übersteigt. Ich glaube an eine Mischung aus Planung und praxisnahem Arbeiten."
+  },
+  "skills": {
+    "headline": "Fähigkeiten",
+    "description": "Ich habe wertvolle Erfahrungen in verschiedenen Projekten mit modernen Frontend-Technologien wie HTML, CSS und JavaScript gesammelt. Ich bin immer offen dafür, neue Tools und Frameworks zu lernen und anzuwenden. Kontinuierliches Lernen ist für mich der Schlüssel, um mit der schnelllebigen Welt der Webentwicklung Schritt zu halten.",
+    "subheadline": "Auf der Suche nach ",
+    "highlight": "weiteren Fähigkeiten",
+    "followup": "Ich bin immer neugierig auf neue Technologien und Frameworks, um meine Fähigkeiten weiter auszubauen.",
+    "button": "Kontaktiere mich"
+  },
+  "portfolio": {
+    "description": "Entdecke eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
+    "projects": {
+      "elpollo": {
+        "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+      },
+      "join": {
+        "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
+      }
+    }
+  },
+  "contact": {
+    "headline": "Kontakt",
+    "problemHeadline": "Es gibt ein Problem zu lösen?",
+    "introText": "Ich freue mich, durch meine Arbeit einen Mehrwert für deine Projekte zu schaffen – melde dich gerne, wenn du eine engagierte Teamkraft suchst, besonders im Frontend- oder kreativen Entwicklungsbereich.",
+    "needDev": "Suchst du einen Frontend-Entwickler?",
+    "contactMe": "Kontaktiere mich!",
+
+    "form": {
+      "namePlaceholder": "Dein Name",
+      "nameError": "Bitte gib deinen Vor- und Nachnamen ein",
+
+      "emailPlaceholder": "Deine E-Mail",
+      "emailError": "Bitte gib eine gültige E-Mail-Adresse ein",
+
+      "messagePlaceholder": "Deine Nachricht",
+      "messageError": "Bitte gib mindestens 4 Zeichen ein",
+
+      "privacyTextPart1": "Ich habe die",
+      "privacyLinkText": "Datenschutzerklärung",
+      "privacyTextPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
+      "privacyError": "Bitte stimme der Datenschutzerklärung zu",
+
+      "submitBtn": "Nachricht senden :)"
+    }
+  },
+
+  "imprint": {
+    "title": "Impressum",
+    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Auf Wunsch übermittle ich vollständige Kontaktinformationen direkt auf Anfrage.",
+    "lastUpdate": "Letzte Aktualisierung: Juli 2025",
+    "provider": {
+      "head": "Angaben gemäß § 5 TMG",
+      "name": "Adrian Kleinschmidt",
+      "location": "Freiburg im Breisgau, Deutschland"
+    },
+    "contact": { "head": "Kontakt" },
+    "broadcast": { "head": "Verantwortlich i. S. d. § 55 Abs. 2 RStV" },
+    "hosting": {
+      "head": "Hosting-Dienstleister",
+      "location": "Friedersdorf, Deutschland"
+    },
+    "os": {
+      "head": "EU-Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr."
+    }
+  },
+
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten innerhalb dieser Website.",
+    "controller": { "head": "Verantwortlicher" },
+    "contactForm": {
+      "head": "Kontaktformular",
+      "text": "Wenn Sie uns über das Formular kontaktieren, verarbeiten wir Name, E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage."
+    },
+    "rights": {
+      "head": "Ihre Rechte",
+      "access": "Auskunft nach Art. 15 DSGVO",
+      "delete": "Löschung nach Art. 17 DSGVO",
+      "correct": "Berichtigung nach Art. 16 DSGVO",
+      "restrict": "Einschränkung nach Art. 18 DSGVO",
+      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "Diese Website wird bei ALL‑INKL.COM (Hauptstraße 68, 02742 Friedersdorf) gehostet. Alle Daten werden ausschließlich auf Servern in Deutschland verarbeitet."
+    },
+    "github": {
+      "head": "Externes GitHub-Link-Icon",
+      "text": "Durch Klick auf das GitHub-Icon verlassen Sie diese Website und werden zu github.com weitergeleitet. Für dortige Datenverarbeitungen ist GitHub Inc. verantwortlich."
+    }
+  }
+}

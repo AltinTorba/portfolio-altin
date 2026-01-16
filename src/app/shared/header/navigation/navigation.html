@@ -1,24 +1,19 @@
-<nav class="navigation">
-    <!-- <a>About me</a> -->
-    <a href="#about-me" (click)="setActive('about-me')" [class.active]="activeLink === 'about-me'">
-        About me
-    </a>
+<div class="nav-links">
+  <a href="#about-me" (click)="handleClick('about-me')" [class.active]="isActive('about-me')">
+    {{ 'header.aboutMe' | translate }}
+  </a>
+  <a href="#skills" (click)="handleClick('skills')" [class.active]="isActive('skills')">
+    {{ 'header.skills' | translate }}
+  </a>
+  <a href="#portfolio" (click)="handleClick('portfolio')" [class.active]="isActive('portfolio')">
+    {{ 'header.portfolio' | translate }}
+  </a>
+  <a  href="#contact" (click)="handleClick('contact')" [class.active]="isActive('contact')">
+    {{ 'header.contact' | translate }}
+  </a>
+</div>
 
-    <a href="#skills" (click)="setActive('skills')" [class.active]="activeLink === 'skills'">
-        Skills
-    </a>
-
-    <a href="#portfolio" (click)="setActive('portfolio')" [class.active]="activeLink === 'portfolio'">
-        Portfolio
-    </a>
-
-    <a href="#contact" (click)="setActive('contact')" class="invisible-link">
-        Contact
-    </a>
-
-
-    <div class="language">
-        <button>DE</button>
-        <button>EN</button>
-    </div>
-</nav>
+<div class="language-btns">
+  <button class="language-btn" [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
+  <button class="language-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+</div>

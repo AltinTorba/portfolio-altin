@@ -3,7 +3,7 @@
     <a href="#above-the-fold" (click)="closeOverlay()">
       <img src="./assets/img/logo.png" />
     </a>
-    <app-navigation class="desktop-nav" isMobile="false"></app-navigation>
+    <app-navigation class="desktop-nav" [isMobile]="false"></app-navigation>
     <div class="burger" (click)="toggleOverlay()">
       {{ overlayOpen ? '✕' : '☰' }}
     </div>
@@ -12,6 +12,6 @@
 
 <div class="overlay" [class.open]="overlayOpen">
     <div class="overlay-content">
-        <app-navigation (linkClicked)="closeOverlay()" class="mobile-nav" isMobile="true"></app-navigation>
+        <app-navigation (linkClicked)="closeOverlay()" class="mobile-nav" [isMobile]="true"></app-navigation>
     </div>
 </div>

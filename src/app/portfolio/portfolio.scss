@@ -1,3 +1,365 @@
-section {
-  scroll-margin-top: 100px;
+@use "../../styles.scss" as *;
+
+.portfolio-outer-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* =========================
+   PORTFOLIO SECTION
+========================= */
+section#portfolio {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 120px 100px 100px;
+
+  @media (max-width: $breakpoint-desktop) {
+    padding: 120px 50px 100px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 106px 25px 40px;
+  }
+
+  .content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* =========================
+     HEADLINE
+  ========================= */
+  .headline {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+
+    h1 {
+      font-size: 90px;
+
+      @media (max-width: $breakpoint-1440p) {
+        font-size: 72px;
+      }
+      @media (max-width: $breakpoint-desktop) {
+        font-size: 56px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 36px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 29px;
+      }
+    }
+
+    .line {
+      position: absolute;
+      width: 1000px;
+      left: -1032px;
+      background-color: $purple;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      @media (max-width: $breakpoint-desktop) {
+        left: -1020px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        left: -1008px;
+      }
+    }
+  }
+
+  /* =========================
+     DESCRIPTION
+  ========================= */
+  .description {
+    margin-top: 48px;
+    max-width: 473px;
+    font-size: 20px;
+
+    @media (max-width: $breakpoint-desktop) {
+      font-size: 16px;
+    }
+  }
+
+  /* =========================
+     PROJECTS GRID
+  ========================= */
+  .item-container {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+    .portfolio-item {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 15px;
+      border: 1px solid $g;
+      background: linear-gradient(45deg, #000000 0%, $darkblue 30%);
+
+      .image-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 125ms ease;
+        }
+      }
+
+      /* =========================
+         OVERLAY
+      ========================= */
+      .project-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 125ms ease;
+
+        .buttons {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          padding: 25px;
+          flex: 1;
+          align-items: flex-end;
+
+          @media (max-width: $breakpoint-tablet) {
+            align-items: center;
+            padding: 15px;
+          }
+
+          .btn {
+            padding: 15px 30px;
+            font-size: 23px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: all 125ms ease-in-out;
+
+            @media (max-width: $breakpoint-tablet) {
+              font-size: 16px;
+              padding: 8px 16px;
+            }
+          }
+
+          .github {
+            border: 1px solid $lightblue;
+
+            &:hover {
+              background-color: $lightblue;
+            }
+          }
+
+          .live-test {
+            background-color: $purple;
+
+            &:hover {
+              background-color: $g;
+            }
+          }
+        }
+
+        .info {
+          background-color: white;
+          border-radius: 30px 30px 0 0;
+          min-height: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 25px 20px;
+          gap: 32px;
+          overflow: auto;
+
+          @media (max-width: $breakpoint-mobile) {
+            gap: 16px;
+            padding: 4px 8px;
+          }
+
+          h2 {
+            color: $purple;
+            font-size: 28px;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 20px;
+            }
+          }
+
+          p {
+            font-size: 20px;
+            color: black;
+
+            @media (max-width: $breakpoint-desktop) {
+              font-size: 16px;
+            }
+          }
+
+          .tech {
+            font-size: 23px;
+            color: $g;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      /* =========================
+         HOVER EFFECTS
+      ========================= */
+      &:hover {
+        .image-wrapper img {
+          transform: scale(2);
+        }
+
+        .project-overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  /* =========================
+     REFERENCES
+  ========================= */
+  .references {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding-top: 64px;
+    }
+
+    .ref-frame {
+      position: relative;
+      padding: 48px 96px;
+      border: 4px solid $purple;
+      border-radius: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      max-width: 850px;
+      background-color: $darkblue;
+
+      @media (max-width: $breakpoint-desktop) {
+        padding: 15px 50px;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+        padding: 15px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-65px, -30px);
+        width: 96px;
+
+        @media (max-width: $breakpoint-desktop) {
+          width: 72px;
+          transform: translate(-30px, -30px);
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          width: 48px;
+          transform: translate(-25px, -20px);
+        }
+      }
+
+      p {
+        font-size: 20px;
+
+        @media (max-width: $breakpoint-desktop) {
+          font-size: 16px;
+        }
+      }
+
+      .ref-name-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .line {
+          flex: 1;
+          background-color: $lightblue;
+        }
+
+        .ref-name {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+/* =========================
+   SHADOW IMAGES
+========================= */
+.portfolio-outer-wrapper .shadow {
+  position: absolute;
+  z-index: -1;
+  height: 800px;
+  pointer-events: none;
+}
+
+.shadow-blue {
+  top: 0;
+  right: -300px;
+
+  @media (max-width: $breakpoint-desktop) {
+    right: -400px;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    height: 600px;
+    right: -250px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    right: -200px;
+    height: 400px;
+  }
+}
+
+.shadow-green {
+  bottom: 200px;
+  left: -600px;
+
+  @media (max-width: $breakpoint-desktop) {
+    left: -500px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    height: 600px;
+    left: -400px;
+  }
+}
+
+/* =========================
+   TOUCH DEVICES
+========================= */
+@media (hover: none), (pointer: coarse) {
+  .portfolio-item .project-overlay {
+    opacity: 1 !important;
+  }
+
+  .image-wrapper img {
+    transform: scale(2);
+  }
 }
