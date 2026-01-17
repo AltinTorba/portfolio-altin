@@ -1,11 +1,17 @@
 <header>
-    <div class="header-content">
-        
-        <div class="logo">
-            Altin
-        </div>
-    
-        <app-navigation></app-navigation>
-
+  <div class="header-content">
+    <a href="#above-the-fold" (click)="closeOverlay()">
+      <img src="./assets/img/logo.png" />
+    </a>
+    <app-navigation class="desktop-nav" [isMobile]="false"></app-navigation>
+    <div class="burger" (click)="toggleOverlay()">
+      {{ overlayOpen ? '✕' : '☰' }}
     </div>
+  </div>
 </header>
+
+<div class="overlay" [class.open]="overlayOpen">
+    <div class="overlay-content">
+        <app-navigation (linkClicked)="closeOverlay()" class="mobile-nav" [isMobile]="true"></app-navigation>
+    </div>
+</div>

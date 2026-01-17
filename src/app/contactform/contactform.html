@@ -1,10 +1,130 @@
-<section id="contact" style="height: 1500px; background: lightgray;">
-  <h2>Contact</h2>
-  <form>
-    <!-- skelet form -->
-    <input type="text" placeholder="Your Name" />
-    <input type="email" placeholder="Your Email" />
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+<div class="contact-outer-wrapper">
+  <section id="contact">
+    <img src="./assets/img/shadow_contact.png" id="shadow" alt="Shadow decoration">
+    <div data-aos="fade-left" class="headline">
+      <h1>{{ 'contact.headline' | translate }}</h1>
+      <div class="line"></div>
+    </div>
+    <div class="contact-content">
+      <div data-aos="fade-right" class="text">
+        <div class="text-headline">
+          <div class="line"></div>
+          <h2>{{ 'contact.problemHeadline' | translate }}</h2>
+        </div>
+        <p>
+          <br>
+          {{ 'contact.introText' | translate }}
+          <br>
+          <br>
+          {{ 'contact.needDev' | translate }}
+          <span>{{ 'contact.contactMe' | translate }}</span>
+        </p>
+      </div>
+      <div class="form-container">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+
+          <!-- Name Input -->
+          <div class="input-group">
+            <input #name="ngModel" [(ngModel)]="contactData.name" (blur)="markAsTouched('name')"
+              [class.valid]="name.valid && nameTouched.name" 
+              [class.invalid]="!name.valid && nameTouched.name"
+              type="text" id="name" name="name" 
+              [placeholder]="'contact.form.namePlaceholder' | translate"
+              pattern="^[a-zA-Z]+ [a-zA-Z]+$" required />
+
+            @if (nameTouched.name) {
+            <span class="status-icon">
+              @if (name.valid) {
+              <img src="assets/img/valid.png" alt="valid icon" />
+              }
+              @if (!name.valid) {
+              <img src="assets/img/invalid.png" alt="invalid icon" />
+              }
+            </span>
+            }
+
+            <span class="invalid" [class.show]="nameTouched.name && !name.valid">
+              {{ 'contact.form.nameError' | translate }}
+            </span>
+          </div>
+
+          <!-- Email Input -->
+          <div class="input-group">
+            <input #email="ngModel" [(ngModel)]="contactData.email" (blur)="markAsTouched('email')"
+              [class.valid]="email.valid && nameTouched.email" 
+              [class.invalid]="!email.valid && nameTouched.email"
+              type="email" id="email" name="email" 
+              [placeholder]="'contact.form.emailPlaceholder' | translate"
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required />
+
+            @if (nameTouched.email) {
+            <span class="status-icon">
+              @if (email.valid) {
+              <img src="assets/img/valid.png" alt="valid icon" />
+              }
+              @if (!email.valid) {
+              <img src="assets/img/invalid.png" alt="invalid icon" />
+              }
+            </span>
+            }
+
+            <span class="invalid" [class.show]="nameTouched.email && !email.valid">
+              {{ 'contact.form.emailError' | translate }}
+            </span>
+          </div>
+
+          <!-- Message Input -->
+          <div class="input-group">
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" (blur)="markAsTouched('message')"
+              [class.valid]="message.valid && nameTouched.message"
+              [class.invalid]="!message.valid && nameTouched.message" 
+              name="message" id="message"
+              [placeholder]="'contact.form.messagePlaceholder' | translate" 
+              minlength="4" required></textarea>
+
+            @if (nameTouched.message) {
+            <span class="status-icon">
+              @if (message.valid) {
+              <img src="assets/img/valid.png" alt="valid icon" />
+              }
+              @if (!message.valid) {
+              <img src="assets/img/invalid.png" alt="invalid icon" />
+              }
+            </span>
+            }
+
+            <span class="invalid" [class.show]="nameTouched.message && !message.valid">
+              {{ 'contact.form.messageError' | translate }}
+            </span>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="agree">
+            <input #checkbox="ngModel" type="checkbox" name="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox"
+              required>
+            <label for="checkbox" class="custom-checkbox"></label>
+            <p>
+              {{ 'contact.form.privacyTextPart1' | translate }}
+              <a routerLink="/privacy">{{ 'contact.form.privacyLinkText' | translate }}</a>
+              {{ 'contact.form.privacyTextPart2' | translate }}
+            </p>
+          </div>
+
+          <span class="invalid" [class.show]="checkbox.touched && !checkbox.valid">
+            {{ 'contact.form.privacyError' | translate }}
+          </span>
+
+          <!-- Submit Button -->
+          <button class="regular-btn" type="submit" [disabled]="!contactForm.valid">
+            {{ 'contact.form.submitBtn' | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Go Up Button -->
+    <a href="#above-the-fold" class="go-up-btn">
+      <img src="./assets/img/go-up.png" alt="Go to top">
+    </a>
+  </section>
+</div>

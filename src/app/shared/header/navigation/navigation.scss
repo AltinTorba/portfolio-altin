@@ -1,19 +1,94 @@
-.navigation {
+@use "./../../../../styles.scss" as *;
+
+.nav-links {
   display: flex;
-  gap: 32px;
+  gap: 29px;
+
+  a {
+    font-size: 23px;
+    color: $w;
+    text-decoration: none;
+    position: relative;
+
+    @media (max-width: $breakpoint-1440p) {
+      font-size: 20px;
+    }
+    @media (max-width: $breakpoint-desktop) {
+      font-size: 29px;
+    }
+
+    &.active {
+      color: $g;
+    }
+
+    &:hover {
+      color: $g;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 56px;
+      height: 4px;
+      background-color: $purple;
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 125ms;
+    }
+
+    &.active::after {
+      opacity: 1;
+    }
+  }
+}
+
+.language-btns {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  gap: 14px;
+
+  .language-btn {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 5px 8px;
+    border: 1px solid $g;
+
+    @media (max-width: $breakpoint-1440p) {
+      font-size: 16px;
+    }
+    @media (max-width: $breakpoint-desktop) {
+      font-size: 23px;
+    }
+
+    &:hover {
+      background-color: $purple;
+    }
+
+    &.active {
+      background-color: $g;
+      font-weight: 700;
+      cursor: unset;
+
+      &:hover {
+        background-color: $g;
+      }
+    }
+  }
 }
 
-.language {
-  display: flex;
-  gap: 12px;
-}
+:host(.mobile-nav) {
+  flex-direction: column;
+  align-items: center;
 
-.navigation a.active {
-  font-weight: 600;
-  text-decoration: underline;
-}
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.invisible-link {
-  display: none;
+  .language-btns {
+    margin-top: 29px;
+  }
 }

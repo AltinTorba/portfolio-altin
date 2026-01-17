@@ -1,0 +1,111 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "atf": {
+    "intro": "I am",
+    "headline": "Developer",
+    "button": "Let's talk!",
+    "vertical": "Scroll down"
+  },
+  "about": {
+    "headline": "About me",
+    "introductionText": "Driven by my own curiosity, I started diving into technology and coding – supported by a good friend who recognized and encouraged my passion. Solving problems through code feels like an endless puzzle to me – and that’s exactly what fascinates me. The ever-changing tech world keeps me curious and constantly challenged.\n\nLet’s connect and create something great together!",
+    "locationText": "Based in Baden-Württemberg – I'm open to remote work, but not looking to relocate.",
+    "learningText": "I'm always curious to explore new technologies and love pushing my skills to the next level.",
+    "solvingText": "When tackling problems, I usually start by experimenting and refining my approach. While I often work analytically on my own, I’m always open to collaborating with others when a challenge goes beyond my skill set. I believe in a mix of planning and hands-on problem solving to find the most effective solutions."
+  },
+  "skills": {
+    "headline": "Skills",
+    "description": "I have gained valuable experience working on a variety of projects using modern front-end technologies like HTML, CSS, and JavaScript. I’m always open to learning and adapting to new tools and frameworks. I believe that continuous learning is key to keeping up with the fast-paced world of web development.",
+    "subheadline": "Looking for ",
+    "highlight": "another skill",
+    "followup": "I'm always eager to explore new technologies and frameworks to expand my capabilities.",
+    "button": "Get in touch"
+  },
+  "portfolio": {
+    "description": "Explore a selection of my work here – Interact with projects to see my skills in action",
+    "projects": {
+      "elpollo": {
+        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+      },
+      "join": {
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      }
+    }
+  },
+  "contact": {
+    "headline": "Contact",
+    "problemHeadline": "Got a problem to solve?",
+    "introText": "I'm excited to bring value to your projects through my work—feel free to reach out if you're looking for a dedicated team member, especially in a front-end or creative development role.",
+    "needDev": "Need a Frontend developer?",
+    "contactMe": "Contact me!",
+
+    "form": {
+      "namePlaceholder": "Your name",
+      "nameError": "Please enter your first name and last name",
+
+      "emailPlaceholder": "Your email",
+      "emailError": "Please enter a valid e-mail address",
+
+      "messagePlaceholder": "Your message",
+      "messageError": "Please enter at least 4 characters",
+      "privacyTextPart1": "I've read the",
+      "privacyLinkText": "privacy policy",
+      "privacyTextPart2": "and agree to the processing of my data as outlined",
+      "privacyError": "Please agree to the privacy policy",
+
+      "submitBtn": "Send message :)"
+    }
+  },
+
+  "imprint": {
+    "title": "Legal Notice",
+    "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
+    "lastUpdate": "Last update: July 2025",
+    "provider": {
+      "head": "Information pursuant to § 5 TMG",
+      "name": "Adrian Kleinschmidt",
+      "location": "Freiburg im Breisgau, Germany "
+    },
+    "contact": { "head": "Contact" },
+    "broadcast": { "head": "Responsible according to § 55 RStV" },
+    "hosting": {
+      "head": "Hosting Provider",
+      "location": "Friedersdorf, Germany"
+    },
+    "os": {
+      "head": "EU Online Dispute Resolution",
+      "text": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr."
+    }
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This privacy notice explains the nature, scope and purpose of processing personal data on this website.",
+    "controller": { "head": "Controller" },
+    "contactForm": {
+      "head": "Contact Form",
+      "text": "If you contact us via the form, we process your name, e‑mail address and message exclusively to handle your request."
+    },
+    "rights": {
+      "head": "Your Rights",
+      "access": "Right of access (Art. 15 GDPR)",
+      "delete": "Right to erasure (Art. 17 GDPR)",
+      "correct": "Right to rectification (Art. 16 GDPR)",
+      "restrict": "Right to restriction (Art. 18 GDPR)",
+      "complain": "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "This site is hosted by ALL‑INKL.COM (Hauptstraße 68, 02742 Friedersdorf, Germany). All data is processed exclusively on servers located in Germany."
+    },
+    "github": {
+      "head": "External GitHub Link Icon",
+      "text": "By clicking the GitHub icon, you will leave this site and be redirected to github.com. GitHub Inc. is responsible for any processing there."
+    }
+  }
+}

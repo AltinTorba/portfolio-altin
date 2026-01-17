@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+// 1. Import i jashtëm (nëse ka)
+// @import "~aos/dist/aos.css";
+
+$w: white;
+$g: #70e61c;
+$r: #e61c40;
+$grey: #b6b6b6;
+$purple: #9747ff;
+$darkblue: #141d2f;
+$lightblue: #1cdae6;
+$c: center;
+$f: flex;
+$col: column;
+$breakpoint-FHD: 1920px;
+$breakpoint-1440p: 1440px;
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+// ===== VARIABLAT E TONA =====
+$primary-color: #007bff;     // Blu nga header
+$dark-bg: #1a1a1a;          // Footer background
+$orange: #ff9900;           // Hover efekt
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $darkblue;
+  color: $w;
+  display: $f;
+  flex-direction: $col;
+  height: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  color: $w;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+button {
+  background-color: $g;
+  color: $w;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 4px #00000025);
+  cursor: pointer;
+  transition: all 125ms ease-in-out;
+}
+
+.regular-btn {
+  width: fit-content;
+  padding: 15px 30px;
+  font-size: 23px;
+  &:hover {
+    transform: scale(1.25) translate(15px, 5px);
+    background-color: $purple;
+  }
+}
+
+.line {
+  height: 4px;
+}
