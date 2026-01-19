@@ -43,7 +43,6 @@ export class Contactform {
     }
   };
 
-  // NDRYSHO KËTU: Hiq NgForm type dhe përdor any ose FormGroup
   onSubmit(form: any) {
     if (form.submitted && form.valid && !this.mailTest) {
       this.http.post(

@@ -17,7 +17,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.elpollo.description',
       tech: ['JavaScript', 'HTML5', 'OOP'],
       github: 'https://github.com/AltinTorba/ElPolloLoco',
-      live: 'https://el-pollo-loco.akleinschmidt.net/'
+      live: 'https://el-pollo-loco.altintorba.net/'
     },
     {
       image: 'join',
@@ -25,7 +25,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.join.description',
       tech: ['JavaScript', 'CSS', 'HTML'],
       github: 'https://github.com/AltinTorba/JOIN',
-      live: 'https://join.akleinschmidt.net/'
+      live: 'https://join.altintorba.net/'
     },
   ];
 

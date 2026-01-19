@@ -13,10 +13,10 @@
   },
   "about": {
     "headline": "Über mich",
-    "introductionText": "Aus eigenem Antrieb habe ich begonnen, mich intensiv mit Technik und Code auseinanderzusetzen – ein guter Freund hat diesen Weg unterstützt, indem er meine Begeisterung erkannte und weiter bestärkte. Probleme mit Code zu lösen fühlt sich für mich an wie ein endloses Puzzle – und genau das fasziniert mich daran. Der ständige Wandel in der Tech-Welt hält mich täglich neugierig und fordert mich immer wieder neu heraus.\n\nLass uns vernetzen und gemeinsam etwas Großartiges schaffen!",
-    "locationText": "Ich bin in Baden-Württemberg ansässig – offen für Remote-Arbeit, aber nicht umzugsbereit.",
-    "learningText": "Ich bin immer neugierig auf neue Technologien und liebe es, meine Fähigkeiten weiterzuentwickeln.",
-    "solvingText": "Bei der Problemlösung experimentiere ich zuerst und verfeinere dann meinen Ansatz. Auch wenn ich oft analytisch alleine arbeite, bin ich immer offen für Teamarbeit, wenn eine Herausforderung meine Fähigkeiten übersteigt. Ich glaube an eine Mischung aus Planung und praxisnahem Arbeiten."
+    "introductionText": "Meine Reise mit dem Programmieren begann in der Kindheit als Computer-Enthusiast und wurde formell durch ein intensives und lohnendes Front-End-Bootcamp bei der Developer Akademie gestartet. Ich betrachte das Programmieren als eine erfolgreiche, endlose Reise - einen faszinierenden Weg, auf dem ich bereits viele Meilensteine erreicht habe. Die dynamische Tech-Welt befeuert ständig meine Neugier und meinen Antrieb. Ich freue mich darauf, mich zu vernetzen und zu sinnvollen Projekten beizutragen.",
+    "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
+    "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
+    "solvingText": "Mein Problemlösungsstil ist praktisch und iterativ. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen."
   },
   "skills": {
     "headline": "Fähigkeiten",
@@ -34,6 +34,12 @@
       },
       "join": {
         "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
+      },
+      "references": {
+        "reference1": {
+          "text": "Altin ist ein sehr verlässlicher Kollege. Auch unter Stress bleibt er ruhig und hilfsbereit. Die Zusammenarbeit mit ihm war ausgezeichnet.",
+          "title": "Team Partner"
+        }
       }
     }
   },

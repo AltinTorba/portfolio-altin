@@ -1,35 +1,35 @@
 <section id="about-me">
   <div class="about-content-wrapper">
-
     <div class="info-container">
-      <h1>About me</h1>
+      <h1 data-aos="fade-right">
+        {{ 'about.headline' | translate }}
+      </h1>
 
       <div class="info-content">
-        <span>
-          This is the about me introduction text.
+        <span data-aos="fade-right">
+          {{ 'about.introductionText' | translate }}
         </span>
 
-        <table>
+        <table data-aos="fade-right">
           <tr>
-            <td>📍</td>
-            <td>Location</td>
+            <td><img src="./assets/img/location.png"></td>
+            <td class="va-middle">{{ 'about.locationText' | translate }}</td>
           </tr>
           <tr>
-            <td>💡</td>
-            <td>Learning</td>
+            <td><img src="./assets/img/bulb.png"></td>
+            <td class="va-middle">{{ 'about.learningText' | translate }}</td>
           </tr>
           <tr>
-            <td>🧩</td>
-            <td>Problem Solving</td>
+            <td><img src="./assets/img/puzzle.png"></td>
+            <td class="va-middle">{{ 'about.solvingText' | translate }}</td>
           </tr>
         </table>
       </div>
     </div>
 
     <div class="photo-container">
-      <div class="photo-placeholder">Photo</div>
+      <img src="./assets/img/photo.png" />
+      <img src="./assets/img/shadows_photo.png" />
     </div>
-    <p style="height: 1500px; background: lightgray;">FAKE CONTENT FOR SCROLL</p>
-
   </div>
 </section>

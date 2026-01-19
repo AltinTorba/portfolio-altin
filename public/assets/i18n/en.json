@@ -13,10 +13,10 @@
   },
   "about": {
     "headline": "About me",
-    "introductionText": "Driven by my own curiosity, I started diving into technology and coding – supported by a good friend who recognized and encouraged my passion. Solving problems through code feels like an endless puzzle to me – and that’s exactly what fascinates me. The ever-changing tech world keeps me curious and constantly challenged.\n\nLet’s connect and create something great together!",
-    "locationText": "Based in Baden-Württemberg – I'm open to remote work, but not looking to relocate.",
-    "learningText": "I'm always curious to explore new technologies and love pushing my skills to the next level.",
-    "solvingText": "When tackling problems, I usually start by experimenting and refining my approach. While I often work analytically on my own, I’m always open to collaborating with others when a challenge goes beyond my skill set. I believe in a mix of planning and hands-on problem solving to find the most effective solutions."
+    "introductionText": "My journey with coding started in childhood as a computer enthusiast, and was formally launched through an intensive and rewarding Front-End bootcamp at Developer Akademie. I see programming as a successful, endless journey—a fascinating path where I have already achieved many milestones. The dynamic tech world constantly fuels my curiosity and drive. I am excited to connect and contribute to meaningful projects.",
+    "locationText": "Based in Siegen, NRW, I am open to remote positions but cannot relocate.",
+    "learningText": "I am passionate about learning new technologies and continuously advancing my skills.",
+    "solvingText": "My problem-solving style is hands-on and iterative. I work well independently but actively seek collaboration on tougher challenges, blending careful planning with actionable solutions."
   },
   "skills": {
     "headline": "Skills",
@@ -34,6 +34,12 @@
       },
       "join": {
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      }, 
+      "references": {
+        "reference1": {
+          "text": "Altin is a very reliable colleague. He remains calm and helpful even under pressure. It was a great pleasure working with him.",
+          "title": "Team Partner" 
+        }
       }
     }
   },
