@@ -16,14 +16,14 @@
     "introductionText": "Meine Reise mit dem Programmieren begann in der Kindheit als Computer-Enthusiast und wurde formell durch ein intensives und lohnendes Front-End-Bootcamp bei der Developer Akademie gestartet. Ich betrachte das Programmieren als eine erfolgreiche, endlose Reise - einen faszinierenden Weg, auf dem ich bereits viele Meilensteine erreicht habe. Die dynamische Tech-Welt befeuert ständig meine Neugier und meinen Antrieb. Ich freue mich darauf, mich zu vernetzen und zu sinnvollen Projekten beizutragen.",
     "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
     "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
-    "solvingText": "Mein Problemlösungsstil ist praktisch und iterativ. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen."
+    "solvingText": "Mein Problemlösungsstil ist praktisch und iteraktiv. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen."
   },
   "skills": {
     "headline": "Fähigkeiten",
-    "description": "Ich habe wertvolle Erfahrungen in verschiedenen Projekten mit modernen Frontend-Technologien wie HTML, CSS und JavaScript gesammelt. Ich bin immer offen dafür, neue Tools und Frameworks zu lernen und anzuwenden. Kontinuierliches Lernen ist für mich der Schlüssel, um mit der schnelllebigen Welt der Webentwicklung Schritt zu halten.",
+    "description": "Durch die praktische Arbeit an verschiedenen Projekten habe ich fundierte Kenntnisse in modernen Frontend-Technologien wie HTML, CSS und JavaScript aufgebaut. Ich bin stets bereit, neue Tools und Frameworks zu erlernen und mich anzupassen. Kontinuierliche Weiterentwicklung ist für mich der Schlüssel, um in der sich schnell verändernden Welt der Webentwicklung up-to-date zu bleiben.",
     "subheadline": "Auf der Suche nach ",
     "highlight": "weiteren Fähigkeiten",
-    "followup": "Ich bin immer neugierig auf neue Technologien und Frameworks, um meine Fähigkeiten weiter auszubauen.",
+    "followup": "Begeistert vom Erlernen neuer Technologien und Frameworks.",
     "button": "Kontaktiere mich"
   },
   "portfolio": {
@@ -34,19 +34,19 @@
       },
       "join": {
         "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
-      },
-      "references": {
-        "reference1": {
-          "text": "Altin ist ein sehr verlässlicher Kollege. Auch unter Stress bleibt er ruhig und hilfsbereit. Die Zusammenarbeit mit ihm war ausgezeichnet.",
-          "title": "Team Partner"
-        }
       }
-    }
+    },
+    "references": {
+      "reference1": {
+        "text": "Altin ist ein sehr verlässlicher Kollege. Auch unter Stress bleibt er ruhig und hilfsbereit. Die Zusammenarbeit mit ihm war ausgezeichnet.",
+        "title": "Team-Partner"
+      }
+    }  
   },
   "contact": {
     "headline": "Kontakt",
     "problemHeadline": "Es gibt ein Problem zu lösen?",
-    "introText": "Ich freue mich, durch meine Arbeit einen Mehrwert für deine Projekte zu schaffen – melde dich gerne, wenn du eine engagierte Teamkraft suchst, besonders im Frontend- oder kreativen Entwicklungsbereich.",
+    "introText": "Bereit, als Frontend-Entwickler Wert für Ihr Team zu schaffen. Lassen Sie uns besprechen, wie ich beitragen kann.",
     "needDev": "Suchst du einen Frontend-Entwickler?",
     "contactMe": "Kontaktiere mich!",
 
@@ -108,7 +108,7 @@
     },
     "hosting": {
       "head": "Hosting",
-      "text": "Diese Website wird bei ALL‑INKL.COM (Hauptstraße 68, 02742 Friedersdorf) gehostet. Alle Daten werden ausschließlich auf Servern in Deutschland verarbeitet."
+      "text": "Alle Daten werden ausschließlich auf Servern in Deutschland verarbeitet."
     },
     "github": {
       "head": "Externes GitHub-Link-Icon",

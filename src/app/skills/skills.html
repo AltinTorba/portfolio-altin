@@ -1,5 +1,36 @@
-<section id="skills">
-  <h2>Skills</h2>
-  <p style="height: 1500px; background: lightgray;">FAKE CONTENT FOR SCROLL</p>
+<div class="skills-wrapper">
+  <section id="skills">
+    <div class="skill-img-container">
+      @for (skill of skills; track skill.image) {
+      <div class="skill-item" (mouseenter)="hoveredSkill = skill.image" (mouseleave)="hoveredSkill = null">
+        <img class="skill" [src]="'./assets/img/' + skill.image + '.png'" [class.no-hover]="skill.image === 'learn'" />
+        <div class="skill-label">{{ skill.label }}</div>
+        @if (skill.image === 'learn' && hoveredSkill === 'learn') {
+        <div class="speech-bubble">
+          <img src="./assets/img/speechbubble.png" />
+        </div>
+        }
+      </div>
+      }
+    </div>
 
-</section>
+    <div data-aos="fade-left" class="skill-text-container">
+      <div class="headline">
+        <h1>{{ 'skills.headline' | translate }}</h1>
+        <div class="line"></div>
+      </div>
+      <p class="description">{{ 'skills.description' | translate }}</p>
+    </div>
+
+    <div data-aos="fade-left" class="skill-followup-container">
+      <h2>
+        {{ 'skills.subheadline' | translate }}
+        <span class="highlight">{{ 'skills.highlight' | translate }}</span>?
+      </h2>
+      <p class="followup">{{ 'skills.followup' | translate }}</p>
+      <a href="#contact">
+        <button class="regular-btn">{{ 'skills.button' | translate }}</button>
+      </a>
+    </div>
+  </section>
+</div>

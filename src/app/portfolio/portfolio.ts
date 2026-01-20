@@ -16,7 +16,7 @@ export class Portfolio {
       name: 'El Pollo Loco',
       descriptionKey: 'portfolio.projects.elpollo.description',
       tech: ['JavaScript', 'HTML5', 'OOP'],
-      github: 'https://github.com/AltinTorba/ElPolloLoco',
+      github: 'https://github.com/AltinTorba/el_pollo_loco',
       live: 'https://el-pollo-loco.altintorba.net/'
     },
     {
@@ -29,11 +29,4 @@ export class Portfolio {
     },
   ];
 
-  references = [
-    {
-      text: 'Altin ist eine verlässliche Person, mit der ich sehr gerne am Projekt gearbeitet habe...',
-      name: 'Dominic Schmid',
-      title: 'Team Partner'
-    }
-  ];
 }

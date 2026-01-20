@@ -20,33 +20,33 @@
   },
   "skills": {
     "headline": "Skills",
-    "description": "I have gained valuable experience working on a variety of projects using modern front-end technologies like HTML, CSS, and JavaScript. I’m always open to learning and adapting to new tools and frameworks. I believe that continuous learning is key to keeping up with the fast-paced world of web development.",
+    "description": "Through hands-on work with diverse projects, I've built strong skills in modern frontend technologies including HTML, CSS, and JavaScript. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
     "subheadline": "Looking for ",
     "highlight": "another skill",
-    "followup": "I'm always eager to explore new technologies and frameworks to expand my capabilities.",
+    "followup": "Enthusiastic about learning new technologies and frameworks.",
     "button": "Get in touch"
   },
   "portfolio": {
-    "description": "Explore a selection of my work here – Interact with projects to see my skills in action",
+    "description": "Explore a selection of my work – Interact with the projects to see my skills in action",
     "projects": {
       "elpollo": {
-        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
       },
       "join": {
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
-      }, 
-      "references": {
-        "reference1": {
-          "text": "Altin is a very reliable colleague. He remains calm and helpful even under pressure. It was a great pleasure working with him.",
-          "title": "Team Partner" 
-        }
+        "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag & drop, assign users and categories."
+      }
+    },
+    "references": {
+      "reference1": {
+        "text": "Altin is a very reliable colleague. He remains calm and helpful even under pressure. It was a great pleasure working with him.",
+        "title": "Team Partner"
       }
     }
   },
   "contact": {
     "headline": "Contact",
     "problemHeadline": "Got a problem to solve?",
-    "introText": "I'm excited to bring value to your projects through my work—feel free to reach out if you're looking for a dedicated team member, especially in a front-end or creative development role.",
+    "introText": "Ready to add value to your team as a frontend developer. Let's discuss how I can contribute.",
     "needDev": "Need a Frontend developer?",
     "contactMe": "Contact me!",
 
@@ -71,11 +71,11 @@
   "imprint": {
     "title": "Legal Notice",
     "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
-    "lastUpdate": "Last update: July 2025",
+    "lastUpdate": "Last update: Januar 2026",
     "provider": {
       "head": "Information pursuant to § 5 TMG",
-      "name": "Adrian Kleinschmidt",
-      "location": "Freiburg im Breisgau, Germany "
+      "name": "Altin Torba",
+      "location": "Effertsufer 104 B, Siegen, Germany"
     },
     "contact": { "head": "Contact" },
     "broadcast": { "head": "Responsible according to § 55 RStV" },
@@ -107,7 +107,7 @@
     },
     "hosting": {
       "head": "Hosting",
-      "text": "This site is hosted by ALL‑INKL.COM (Hauptstraße 68, 02742 Friedersdorf, Germany). All data is processed exclusively on servers located in Germany."
+      "text": "All data is processed exclusively on servers located in Germany."
     },
     "github": {
       "head": "External GitHub Link Icon",
