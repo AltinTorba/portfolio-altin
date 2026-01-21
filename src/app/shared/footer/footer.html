@@ -1,12 +1,17 @@
 <footer id="footer">
   <div class="footer-inner">
 
-    <!-- Logo + Legal -->
+    <!-- Logo + Legal (desktop) -->
     <div class="legal-logo">
-      <a href="#above-the-fold">
-        <img src="./assets/img/logo.png" alt="Logo" />
+      <a href="#above-the-fold" aria-label="Back to top">
+        <img src="assets/img/logo.png" alt="Altin Torba Logo" />
       </a>
-      <a routerLink="/imprint" class="legal-link legal-desktop">
+
+      <a
+        routerLink="/imprint"
+        class="legal-link legal-desktop"
+        routerLinkActive="active"
+      >
         Legal Notice
       </a>
     </div>
@@ -18,18 +23,28 @@
 
     <!-- Socials -->
     <div class="socials">
-      <a href="https://github.com/AltinTorba" target="_blank">
-        <img src="./assets/img/github.png" alt="GitHub" />
+      <a
+        href="https://github.com/AltinTorba"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub profile"
+      >
+        <img src="assets/img/github.png" alt="GitHub" />
       </a>
-      <a href="#contact">
-        <img src="./assets/img/mail.png" alt="Mail" />
+
+      <a href="#contact" aria-label="Contact via email">
+        <img src="assets/img/mail.png" alt="Mail" />
       </a>
     </div>
 
-    <!-- Mobile Legal -->
-    <!-- <a routerLink="/imprint" class="legal-link legal-mobile">
+    <!-- Legal (mobile) -->
+    <a
+      routerLink="/imprint"
+      class="legal-link legal-mobile"
+      routerLinkActive="active"
+    >
       Legal Notice
-    </a> -->
+    </a>
 
   </div>
 </footer>

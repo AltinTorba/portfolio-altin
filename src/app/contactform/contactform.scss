@@ -15,9 +15,11 @@ section#contact {
   @media (max-width: $breakpoint-desktop) {
     padding: 128px 50px 100px;
   }
+
   @media (max-width: $breakpoint-tablet) {
     padding: 128px 30px 100px;
   }
+
   @media (max-width: $breakpoint-mobile) {
     padding: 98px 15px 60px;
   }
@@ -34,6 +36,7 @@ section#contact {
       margin-bottom: 32px;
       right: 200px;
     }
+
     @media (max-width: $breakpoint-mobile) {
       right: 100px;
     }
@@ -68,18 +71,16 @@ section#contact {
     }
   }
 
-  .contact-content {
-    display: $f;
-    justify-content: space-between;
-    gap: 32px;
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // ✅ 2 kolona të barabarta
+      gap: 60px;
+      align-items: start;
 
-    @media (max-width: $breakpoint-desktop) {
-      flex-direction: column;
-      gap: 64px;
-    }
-    @media (max-width: $breakpoint-mobile) {
-      gap: 32px;
-    }
+      @media (max-width: $breakpoint-desktop) {
+        grid-template-columns: 1fr; // ✅ 1 kolonë për tablet/mobile
+        gap: 40px;
+      }
 
     .text {
       flex: 1;
@@ -113,6 +114,7 @@ section#contact {
           @media (max-width: $breakpoint-tablet) {
             left: -1216px;
           }
+
           @media (max-width: $breakpoint-mobile) {
             left: -1204px;
           }
@@ -233,7 +235,7 @@ section#contact {
             z-index: 2;
             cursor: pointer;
 
-            &:hover + .custom-checkbox {
+            &:hover+.custom-checkbox {
               background-color: #183670;
             }
           }
@@ -249,7 +251,7 @@ section#contact {
             flex-shrink: 0;
           }
 
-          input[type="checkbox"]:checked + .custom-checkbox {
+          input[type="checkbox"]:checked+.custom-checkbox {
             background-image: url("/assets/img/checked.png");
           }
 
@@ -310,6 +312,7 @@ section#contact {
       right: 32px;
       bottom: 32px;
     }
+
     @media (max-width: $breakpoint-mobile) {
       right: 16px;
       bottom: 16px;
@@ -321,8 +324,7 @@ section#contact {
       transition: filter 125ms ease-in-out;
 
       &:hover {
-        filter: invert(0) sepia(94%) saturate(7454%) hue-rotate(33deg)
-          brightness(93%) contrast(94%);
+        filter: invert(0) sepia(94%) saturate(7454%) hue-rotate(33deg) brightness(93%) contrast(94%);
       }
 
       @media (max-width: $breakpoint-mobile) {
@@ -347,6 +349,7 @@ section#contact {
       top: unset;
       bottom: 0;
     }
+
     @media (max-width: $breakpoint-mobile) {
       height: 600px;
       right: -100px;

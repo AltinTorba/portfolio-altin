@@ -27,7 +27,7 @@
     "button": "Get in touch"
   },
   "portfolio": {
-    "description": "Explore a selection of my work – Interact with the projects to see my skills in action",
+    "description": "Explore a selection of my work - Interact with the projects to see my skills in action",
     "projects": {
       "elpollo": {
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
@@ -71,17 +71,17 @@
   "imprint": {
     "title": "Legal Notice",
     "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
-    "lastUpdate": "Last update: Januar 2026",
+    "lastUpdate": "Last update: January 2026",
     "provider": {
-      "head": "Information pursuant to § 5 TMG",
+      "head": "Information pursuant to § 5 TMG",
       "name": "Altin Torba",
-      "location": "Effertsufer 104 B, Siegen, Germany"
+      "location": "Siegen, Germany"
     },
     "contact": { "head": "Contact" },
-    "broadcast": { "head": "Responsible according to § 55 RStV" },
+    "broadcast": { "head": "Responsible according to § 55 RStV" },
     "hosting": {
       "head": "Hosting Provider",
-      "location": "Friedersdorf, Germany"
+      "location": "Germany"
     },
     "os": {
       "head": "EU Online Dispute Resolution",
@@ -95,15 +95,15 @@
     "controller": { "head": "Controller" },
     "contactForm": {
       "head": "Contact Form",
-      "text": "If you contact us via the form, we process your name, e‑mail address and message exclusively to handle your request."
+      "text": "If you contact us via the form, we process your name, e-mail address and message exclusively to handle your request."
     },
     "rights": {
       "head": "Your Rights",
-      "access": "Right of access (Art. 15 GDPR)",
-      "delete": "Right to erasure (Art. 17 GDPR)",
-      "correct": "Right to rectification (Art. 16 GDPR)",
-      "restrict": "Right to restriction (Art. 18 GDPR)",
-      "complain": "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+      "access": "Right of access (Art. 15 GDPR)",
+      "delete": "Right to erasure (Art. 17 GDPR)",
+      "correct": "Right to rectification (Art. 16 GDPR)",
+      "restrict": "Right to restriction (Art. 18 GDPR)",
+      "complain": "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
     },
     "hosting": {
       "head": "Hosting",

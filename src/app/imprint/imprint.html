@@ -1,7 +1,40 @@
-<section class="imprint">
-  <h1>Legal Notice</h1>
+<section id="imprint">
+  <div class="imprint-wrapper">
 
-  <p>
-    This is the legal notice page.
-  </p>
+    <h1>{{ 'imprint.title' | translate }}</h1>
+    <p>{{ 'imprint.lastUpdate' | translate }}</p><br>
+    <p>{{ 'imprint.purpose' | translate }}</p>
+
+    <h2>{{ 'imprint.provider.head' | translate }}</h2>
+    <address class="block">
+      <span>{{ 'imprint.provider.name' | translate }}</span><br />
+      <span>{{ 'imprint.provider.location' | translate }}</span>
+    </address>
+
+    <h2>{{ 'imprint.contact.head' | translate }}</h2>
+    <p class="block">
+      <strong>E-Mail: </strong>
+      <a href="mailto:altintorba@gmail.com">
+        altintorba&#64;gmail.com
+      </a>
+    </p>
+
+    <h2>{{ 'imprint.broadcast.head' | translate }}</h2>
+    <p class="block">
+      {{ 'imprint.provider.name' | translate }}<br />
+      {{ 'imprint.provider.location' | translate }}
+    </p>
+
+    <h2>{{ 'imprint.hosting.head' | translate }}</h2>
+    <p class="block">
+      Neue Medien<br>
+      <!-- Deutschland<br>
+      Germany<br> -->
+      {{ 'imprint.hosting.location' | translate }}
+    </p>
+
+    <h2>{{ 'imprint.os.head' | translate }}</h2>
+    <p class="block">{{ 'imprint.os.text' | translate }}</p>
+
+  </div>
 </section>

@@ -1,0 +1,94 @@
+@use "./../../styles.scss" as *;
+
+section#imprint {
+  width: 100%;
+  overflow: hidden;
+  scroll-margin-top: 120px; // DESKTOP
+
+  @media (max-width: $breakpoint-mobile) {
+    scroll-margin-top: 80px; // MOBILE
+  }
+
+  .imprint-wrapper {
+    max-width: $breakpoint-1440p;
+    margin: 0 auto;
+    padding: 120px 100px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 106px 15px;
+    }
+  }
+
+  hr {
+    height: 1px;
+    border-width: 0;
+    background: linear-gradient(90deg, $g, $g, $purple, $purple);
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 26px;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 40px 0 8px;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 23px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 20px;
+    }
+  }
+
+  p,
+  address,
+  li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .block {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(90deg, $g, $purple);
+
+    background-clip: text; // STANDARD
+    -webkit-background-clip: text; // SAFARI / WEBKIT
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    transition: background-position 125ms ease-in-out;
+  }
+
+  a:hover {
+    background-position: right center;
+  }
+
+  .email-link {
+    background: none;
+    color: $w;
+    -webkit-text-fill-color: $w;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

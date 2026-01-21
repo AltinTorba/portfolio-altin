@@ -1,7 +1,34 @@
-<section class="privacy">
-  <h1>Privacy Policy</h1>
+<section id="privacy">
+  <div class="privacy-wrapper">
+    <h1>{{ 'privacy.title' | translate }}</h1>
+    <p>{{ 'privacy.intro' | translate }}</p>
 
-  <p>
-    This is the privacy policy page.
-  </p>
+    <h2>{{ 'privacy.controller.head' | translate }}</h2>
+    <p class="block">
+      {{ 'imprint.provider.name' | translate }}<br />
+      {{ 'imprint.provider.location' | translate }}<br />
+      <strong>E-Mail: </strong>
+      <a href="mailto:altintorba@gmail.com">
+        altintorba&#64;gmail.com
+      </a>
+    </p>
+
+    <h2>{{ 'privacy.contactForm.head' | translate }}</h2>
+    <p>{{ 'privacy.contactForm.text' | translate }}</p>
+
+    <h2>{{ 'privacy.rights.head' | translate }}</h2>
+    <ul>
+      <li>{{ 'privacy.rights.access' | translate }}</li>
+      <li>{{ 'privacy.rights.delete' | translate }}</li>
+      <li>{{ 'privacy.rights.correct' | translate }}</li>
+      <li>{{ 'privacy.rights.restrict' | translate }}</li>
+      <li>{{ 'privacy.rights.complain' | translate }}</li>
+    </ul>
+
+    <h2>{{ 'privacy.hosting.head' | translate }}</h2>
+    <p>{{ 'privacy.hosting.text' | translate }}</p>
+
+    <h2>{{ 'privacy.github.head' | translate }}</h2>
+    <p>{{ 'privacy.github.text' | translate }}</p>
+  </div>
 </section>

@@ -27,7 +27,7 @@
     "button": "Kontaktiere mich"
   },
   "portfolio": {
-    "description": "Entdecke eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
+    "description": "Entdecke eine Auswahl meiner Arbeiten - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
     "projects": {
       "elpollo": {
         "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
@@ -72,17 +72,17 @@
   "imprint": {
     "title": "Impressum",
     "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Auf Wunsch übermittle ich vollständige Kontaktinformationen direkt auf Anfrage.",
-    "lastUpdate": "Letzte Aktualisierung: Juli 2025",
+    "lastUpdate": "Letzte Aktualisierung: Januar 2026",
     "provider": {
-      "head": "Angaben gemäß § 5 TMG",
-      "name": "Adrian Kleinschmidt",
-      "location": "Freiburg im Breisgau, Deutschland"
+      "head": "Angaben gemäß § 5 TMG",
+      "name": "Altin Torba",
+      "location": "Siegen, Deutschland"
     },
     "contact": { "head": "Kontakt" },
-    "broadcast": { "head": "Verantwortlich i. S. d. § 55 Abs. 2 RStV" },
+    "broadcast": { "head": "Verantwortlich i. S. d. § 55 Abs. 2 RStV" },
     "hosting": {
       "head": "Hosting-Dienstleister",
-      "location": "Friedersdorf, Deutschland"
+      "location": "Deutschland"
     },
     "os": {
       "head": "EU-Streitschlichtung",
@@ -100,11 +100,11 @@
     },
     "rights": {
       "head": "Ihre Rechte",
-      "access": "Auskunft nach Art. 15 DSGVO",
-      "delete": "Löschung nach Art. 17 DSGVO",
-      "correct": "Berichtigung nach Art. 16 DSGVO",
-      "restrict": "Einschränkung nach Art. 18 DSGVO",
-      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
+      "access": "Auskunft nach Art. 15 DSGVO",
+      "delete": "Löschung nach Art. 17 DSGVO",
+      "correct": "Berichtigung nach Art. 16 DSGVO",
+      "restrict": "Einschränkung nach Art. 18 DSGVO",
+      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
     },
     "hosting": {
       "head": "Hosting",

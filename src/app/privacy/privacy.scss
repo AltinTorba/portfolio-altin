@@ -1,0 +1,70 @@
+@use "./../../styles.scss" as *;
+
+section#privacy {
+  width: 100%;
+  overflow: hidden;
+
+  .privacy-wrapper {
+    max-width: $breakpoint-1440p;
+    margin: 0 auto;
+    padding: 120px 100px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 106px 15px;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0 0 32px 0;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 26px;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 40px 0 8px 0;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 20px;
+    }
+  }
+
+  p,
+  ul,
+  li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .block {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(90deg, $g, $purple);
+    background-size: 200% auto;
+    background-position: left center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 125ms ease-in-out;
+  }
+
+  a:hover {
+    background-position: right center;
+  }
+}
