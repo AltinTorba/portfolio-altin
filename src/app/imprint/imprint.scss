@@ -3,10 +3,10 @@
 section#imprint {
   width: 100%;
   overflow: hidden;
-  scroll-margin-top: 120px; // DESKTOP
+  scroll-margin-top: 120px;
 
   @media (max-width: $breakpoint-mobile) {
-    scroll-margin-top: 80px; // MOBILE
+    scroll-margin-top: 80px;
   }
 
   .imprint-wrapper {
@@ -71,8 +71,8 @@ section#imprint {
     text-decoration: none;
     background: linear-gradient(90deg, $g, $purple);
 
-    background-clip: text; // STANDARD
-    -webkit-background-clip: text; // SAFARI / WEBKIT
+    background-clip: text;
+    -webkit-background-clip: text;
 
     color: transparent;
     -webkit-text-fill-color: transparent;

@@ -6,9 +6,6 @@
   position: relative;
 }
 
-/* =========================
-   PORTFOLIO SECTION
-========================= */
 section#portfolio {
   max-width: 1440px;
   margin: 0 auto;
@@ -29,9 +26,6 @@ section#portfolio {
     margin: 0 auto;
   }
 
-  /* =========================
-     HEADLINE
-  ========================= */
   .headline {
     display: flex;
     align-items: center;
@@ -72,9 +66,6 @@ section#portfolio {
     }
   }
 
-  /* =========================
-     DESCRIPTION
-  ========================= */
   .description {
     margin-top: 48px;
     max-width: 473px;
@@ -85,9 +76,6 @@ section#portfolio {
     }
   }
 
-  /* =========================
-     PROJECTS GRID
-  ========================= */
   .item-container {
     margin-top: 32px;
     display: flex;
@@ -118,9 +106,6 @@ section#portfolio {
         }
       }
 
-      /* =========================
-         OVERLAY
-      ========================= */
       .project-overlay {
         position: absolute;
         inset: 0;
@@ -221,9 +206,6 @@ section#portfolio {
         }
       }
 
-      /* =========================
-         HOVER EFFECTS
-      ========================= */
       &:hover {
         .image-wrapper img {
           transform: scale(2);
@@ -236,9 +218,6 @@ section#portfolio {
     }
   }
 
-  /* =========================
-     REFERENCES
-  ========================= */
   .references {
     padding-top: 100px;
     display: flex;
@@ -311,9 +290,6 @@ section#portfolio {
   }
 }
 
-/* =========================
-   SHADOW IMAGES
-========================= */
 .portfolio-outer-wrapper .shadow {
   position: absolute;
   z-index: -1;
@@ -351,9 +327,6 @@ section#portfolio {
   }
 }
 
-/* =========================
-   TOUCH DEVICES
-========================= */
 @media (hover: none), (pointer: coarse) {
   .portfolio-item .project-overlay {
     opacity: 1 !important;

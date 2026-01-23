@@ -3,7 +3,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [TranslateModule], // Nuk duhet CommonModule në Angular 17+ për kontrollet e template
+  imports: [TranslateModule], 
   templateUrl: './skills.html',
   styleUrls: ['./skills.scss']
 })

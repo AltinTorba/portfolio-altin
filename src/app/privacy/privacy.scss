@@ -21,6 +21,7 @@ section#privacy {
     @media (max-width: $breakpoint-tablet) {
       font-size: 32px;
     }
+
     @media (max-width: $breakpoint-mobile) {
       font-size: 26px;
     }
@@ -33,6 +34,7 @@ section#privacy {
     @media (max-width: $breakpoint-tablet) {
       font-size: 23px;
     }
+
     @media (max-width: $breakpoint-mobile) {
       font-size: 20px;
     }
@@ -59,6 +61,7 @@ section#privacy {
     background: linear-gradient(90deg, $g, $purple);
     background-size: 200% auto;
     background-position: left center;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background-position 125ms ease-in-out;

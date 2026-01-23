@@ -1,6 +1,3 @@
-// 1. Import i jashtëm (nëse ka)
-// @import "~aos/dist/aos.css";
-
 $w: white;
 $g: #70e61c;
 $r: #e61c40;
@@ -17,10 +14,9 @@ $breakpoint-desktop: 1024px;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 480px;
 
-// ===== VARIABLAT E TONA =====
-$primary-color: #007bff;     // Blu nga header
-$dark-bg: #1a1a1a;          // Footer background
-$orange: #ff9900;           // Hover efekt
+$primary-color: #007bff;
+$dark-bg: #1a1a1a; 
+$orange: #ff9900;
 
 * {
   margin: 0;

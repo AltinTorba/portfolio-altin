@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // Hiq NgForm
+import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
@@ -35,6 +35,8 @@ export class Contactform {
 
   mailTest = false;
 
+  submitStatus: 'idle' | 'success' | 'error' = 'idle';
+
   post = {
     endPoint: 'https://jetaever8.de/wp-json/contact/v1/send',
   };
@@ -43,6 +45,8 @@ export class Contactform {
     if (form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.contactData).subscribe({
         next: () => {
+          this.submitStatus = 'success';
+
           form.reset();
           this.contactData = {
             name: '',
@@ -56,10 +60,9 @@ export class Contactform {
             email: false,
             message: false
           };
-          console.log('Email sent successfully');
         },
-        error: (err) => {
-          console.error('Sending failed:', err);
+        error: () => {
+          this.submitStatus = 'error';
         }
       });
     }

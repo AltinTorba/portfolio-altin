@@ -71,16 +71,16 @@ section#contact {
     }
   }
 
-    .contact-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr; // ✅ 2 kolona të barabarta
-      gap: 60px;
-      align-items: start;
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
 
-      @media (max-width: $breakpoint-desktop) {
-        grid-template-columns: 1fr; // ✅ 1 kolonë për tablet/mobile
-        gap: 40px;
-      }
+    @media (max-width: $breakpoint-desktop) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
 
     .text {
       flex: 1;
@@ -293,6 +293,41 @@ section#contact {
           @media (max-width: $breakpoint-mobile) {
             margin-top: 8px;
             font-size: 16px;
+          }
+        }
+
+        .submit-success,
+        .submit-error {
+          margin-top: 16px;
+          font-size: 16px;
+          text-align: center;
+          padding: 12px;
+          border-radius: 8px;
+          animation: fadeIn 200ms ease-in-out;
+          position: sticky;
+          bottom: 0;
+          z-index: 10;
+        }
+
+        .submit-success {
+          color: $g;
+          background-color: rgba($g, 0.1);
+        }
+
+        .submit-error {
+          color: $r;
+          background-color: rgba($r, 0.1);
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(4px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
           }
         }
       }

@@ -23,13 +23,10 @@
       <div class="form-container">
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
 
-          <!-- Name Input -->
           <div class="input-group">
             <input #name="ngModel" [(ngModel)]="contactData.name" (blur)="markAsTouched('name')"
-              [class.valid]="name.valid && nameTouched.name" 
-              [class.invalid]="!name.valid && nameTouched.name"
-              type="text" id="name" name="name" 
-              [placeholder]="'contact.form.namePlaceholder' | translate"
+              [class.valid]="name.valid && nameTouched.name" [class.invalid]="!name.valid && nameTouched.name"
+              type="text" id="name" name="name" [placeholder]="'contact.form.namePlaceholder' | translate"
               pattern="^[a-zA-Z]+ [a-zA-Z]+$" required />
 
             @if (nameTouched.name) {
@@ -48,13 +45,10 @@
             </span>
           </div>
 
-          <!-- Email Input -->
           <div class="input-group">
             <input #email="ngModel" [(ngModel)]="contactData.email" (blur)="markAsTouched('email')"
-              [class.valid]="email.valid && nameTouched.email" 
-              [class.invalid]="!email.valid && nameTouched.email"
-              type="email" id="email" name="email" 
-              [placeholder]="'contact.form.emailPlaceholder' | translate"
+              [class.valid]="email.valid && nameTouched.email" [class.invalid]="!email.valid && nameTouched.email"
+              type="email" id="email" name="email" [placeholder]="'contact.form.emailPlaceholder' | translate"
               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required />
 
             @if (nameTouched.email) {
@@ -73,14 +67,11 @@
             </span>
           </div>
 
-          <!-- Message Input -->
           <div class="input-group">
             <textarea #message="ngModel" [(ngModel)]="contactData.message" (blur)="markAsTouched('message')"
               [class.valid]="message.valid && nameTouched.message"
-              [class.invalid]="!message.valid && nameTouched.message" 
-              name="message" id="message"
-              [placeholder]="'contact.form.messagePlaceholder' | translate" 
-              minlength="4" required></textarea>
+              [class.invalid]="!message.valid && nameTouched.message" name="message" id="message"
+              [placeholder]="'contact.form.messagePlaceholder' | translate" minlength="4" required></textarea>
 
             @if (nameTouched.message) {
             <span class="status-icon">
@@ -98,7 +89,6 @@
             </span>
           </div>
 
-          <!-- Checkbox -->
           <div class="agree">
             <input #checkbox="ngModel" type="checkbox" name="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox"
               required>
@@ -114,15 +104,24 @@
             {{ 'contact.form.privacyError' | translate }}
           </span>
 
-          <!-- Submit Button -->
           <button class="regular-btn" type="submit" [disabled]="!contactForm.valid">
             {{ 'contact.form.submitBtn' | translate }}
           </button>
         </form>
+        @if (submitStatus === 'success') {
+        <p class="submit-success">
+          {{ 'contact.success' | translate }}
+        </p>
+        }
+        @if (submitStatus === 'error') {
+        <p class="submit-error">
+          {{ 'contact.error' | translate }}
+        </p>
+        }
+
       </div>
     </div>
 
-    <!-- Go Up Button -->
     <a href="#above-the-fold" class="go-up-btn">
       <img src="./assets/img/go-up.png" alt="Go to top">
     </a>

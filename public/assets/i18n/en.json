@@ -50,24 +50,23 @@
     "needDev": "Need a Frontend developer?",
     "contactMe": "Contact me!",
 
+    "success": "Your message has been sent successfully. I will get back to you soon.",
+    "error": "Something went wrong. Please try again later.",
+    
     "form": {
       "namePlaceholder": "Your name",
       "nameError": "Please enter your first name and last name",
-
       "emailPlaceholder": "Your email",
       "emailError": "Please enter a valid e-mail address",
-
       "messagePlaceholder": "Your message",
       "messageError": "Please enter at least 4 characters",
       "privacyTextPart1": "I've read the",
       "privacyLinkText": "privacy policy",
       "privacyTextPart2": "and agree to the processing of my data as outlined",
       "privacyError": "Please agree to the privacy policy",
-
       "submitBtn": "Send message :)"
     }
   },
-
   "imprint": {
     "title": "Legal Notice",
     "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
@@ -77,8 +76,12 @@
       "name": "Altin Torba",
       "location": "Siegen, Germany"
     },
-    "contact": { "head": "Contact" },
-    "broadcast": { "head": "Responsible according to § 55 RStV" },
+    "contact": {
+      "head": "Contact"
+    },
+    "broadcast": {
+      "head": "Responsible according to § 55 RStV"
+    },
     "hosting": {
       "head": "Hosting Provider",
       "location": "Germany"
@@ -88,11 +91,12 @@
       "text": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr."
     }
   },
-
   "privacy": {
     "title": "Privacy Policy",
     "intro": "This privacy notice explains the nature, scope and purpose of processing personal data on this website.",
-    "controller": { "head": "Controller" },
+    "controller": {
+      "head": "Controller"
+    },
     "contactForm": {
       "head": "Contact Form",
       "text": "If you contact us via the form, we process your name, e-mail address and message exclusively to handle your request."

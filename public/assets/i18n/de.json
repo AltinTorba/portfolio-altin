@@ -50,6 +50,9 @@
     "needDev": "Suchst du einen Frontend-Entwickler?",
     "contactMe": "Kontaktiere mich!",
 
+    "success": "Deine Nachricht wurde erfolgreich gesendet. Ich werde mich bald bei dir melden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
+
     "form": {
       "namePlaceholder": "Dein Name",
       "nameError": "Bitte gib deinen Vor- und Nachnamen ein",
