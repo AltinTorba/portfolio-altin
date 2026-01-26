@@ -13,7 +13,7 @@
   },
   "about": {
     "headline": "About me",
-    "introductionText": "My journey with coding started in childhood as a computer enthusiast, and was formally launched through an intensive and rewarding Front-End bootcamp at Developer Akademie. I see programming as a successful, endless journey—a fascinating path where I have already achieved many milestones. The dynamic tech world constantly fuels my curiosity and drive. I am excited to connect and contribute to meaningful projects.",
+    "introductionText": "My programming journey started in childhood and was deepened through an intensive Front-End bootcamp at the Developer Akademie. I see programming as an exciting, endless journey on which I have already achieved many milestones. The dynamic tech world constantly inspires me, and I look forward to contributing to meaningful projects.",
     "locationText": "Based in Siegen, NRW, I am open to remote positions but cannot relocate.",
     "learningText": "I am passionate about learning new technologies and continuously advancing my skills.",
     "solvingText": "My problem-solving style is hands-on and iterative. I work well independently but actively seek collaboration on tougher challenges, blending careful planning with actionable solutions."
@@ -40,6 +40,14 @@
       "reference1": {
         "text": "Altin is a very reliable colleague. He remains calm and helpful even under pressure. It was a great pleasure working with him.",
         "title": "Team Partner"
+      }, 
+      "reference2": {
+        "text": "Altin is a reliable and calm colleague. Great to work with.",
+        "title": "Frontend Developer"
+      },
+      "reference3": {
+        "text": "Altin is always helpful and delivers good work.",
+        "title": "Fullstack Developer"
       }
     }
   },

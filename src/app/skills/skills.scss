@@ -53,6 +53,7 @@ section#skills {
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
+    margin-top: 20px;
 
     @media (max-width: $breakpoint-desktop) {
       order: 2;

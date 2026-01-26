@@ -19,7 +19,7 @@ section#about-me {
     width: 100%;
     display: $f;
     justify-content: space-between;
-    gap: 32px;
+    gap: 100px;
     margin: 0 auto;
 
     @media (max-width: $breakpoint-desktop) {
@@ -33,6 +33,7 @@ section#about-me {
   .photo-container {
     flex: 1;
     min-width: 0;
+    margin-top: 37px;
   }
 
   .info-container {
@@ -118,7 +119,7 @@ section#about-me {
     justify-content: center;
     z-index: 0;
     max-height: 800px;
-    min-height: 680px;
+    min-height: 780px;
 
     @media (max-width: $breakpoint-1440p) {
       min-height: 600px;

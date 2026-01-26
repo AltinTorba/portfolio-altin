@@ -11,7 +11,7 @@ header {
   .header-content {
     max-width: $breakpoint-1440p;
     margin: 0 auto;
-    padding: 30px 100px;
+    padding: 37px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #404857;
+  background-color: #404857f2;
   z-index: 998;
   display: none;
   justify-content: $c;

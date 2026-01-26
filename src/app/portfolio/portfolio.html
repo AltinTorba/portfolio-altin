@@ -6,44 +6,63 @@
         <h1>Portfolio</h1>
       </div>
       <div data-aos="fade-right" class="description">{{ 'portfolio.description' | translate }}</div>
-      <img class="shadow shadow-blue" src="./assets/img/shadow_portfolio.png">
-      <img class="shadow shadow-green" src="./assets/img/shadow_portfolio_green.png">
+      <img class="shadow shadow-blue" src="./assets/img/shadow_portfolio.png" />
+      <img class="shadow shadow-green" src="./assets/img/shadow_portfolio_green.png" />
       <div class="item-container">
         @for (project of projects; track $index) {
-        <div class="portfolio-item">
-          <div class="image-wrapper">
-            <img [src]="'./assets/img/' + project.image + '.png'" [alt]="project.name" />
-          </div>
-          <div class="project-overlay">
-            <div class="buttons">
-              @if (project.github) {
-              <a [href]="project.github" target="_blank" class="btn github">GitHub</a>
-              }
-              @if (project.live) {
-              <a [href]="project.live" target="_blank" class="btn live-test">Live Test</a>
-              }
+          <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img [src]="'./assets/img/' + project.image + '.png'" [alt]="project.name" />
             </div>
-            <div class="info">
-              <h2>{{ project.name }}</h2>
-              <p>{{ project.descriptionKey | translate }}</p>
-              <span class="tech">{{ project.tech.join(' | ') }}</span>
+            <div class="project-overlay">
+              <div class="buttons">
+                @if (project.github) {
+                  <a [href]="project.github" target="_blank" class="btn github">GitHub</a>
+                }
+                @if (project.live) {
+                  <a [href]="project.live" target="_blank" class="btn live-test">Live Test</a>
+                }
+              </div>
+              <div class="info">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.descriptionKey | translate }}</p>
+                <span class="tech">{{ project.tech.join(' | ') }}</span>
+              </div>
             </div>
           </div>
-        </div>
-      }
+        }
       </div>
 
       <div class="references">
         <div class="ref-frame">
-          <img src="./assets/img/speechmark.png" alt="Speech mark icon">
-          <p>{{ 'portfolio.references.reference1.text' | translate }}</p>
+          <img src="./assets/img/speechmark.png" alt="Speech mark icon" />
+
+          <p>
+            {{ references[currentReferenceIndex].textKey | translate }}
+          </p>
+
           <div class="ref-name-container">
             <div class="line"></div>
-            <p class="ref-name">Dominic Schmid - {{ 'portfolio.references.reference1.title' | translate }}</p>
+            <p class="ref-name">
+              {{ references[currentReferenceIndex].name }} -
+              {{ references[currentReferenceIndex].titleKey | translate }}
+            </p>
           </div>
         </div>
+
+        <!-- NAVIGATION UNDER FRAME -->
+        <div class="ref-navigation">
+          <button class="nav-arrow" (click)="prevReference()">&#8592;</button>
+
+          <div class="ref-dots">
+            @for (ref of references; track $index) {
+              <span class="dot" [class.active]="$index === currentReferenceIndex"> </span>
+            }
+          </div>
+
+          <button class="nav-arrow" (click)="nextReference()">&#8594;</button>
+        </div>
       </div>
-      
     </div>
   </section>
 </div>

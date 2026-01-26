@@ -17,11 +17,11 @@ export class Skills {
     { image: 'javascript', label: 'JavaScript' },
     { image: 'typescript', label: 'TypeScript' },
     { image: 'angular', label: 'Angular' },
-    // { image: 'firebase', label: 'Firebase' },
+    { image: 'firebase', label: 'Firebase' },
     { image: 'git', label: 'Git' },
-    // { image: 'restapi', label: 'Rest Api' },
-    // { image: 'scrum', label: 'Scrum' },
-    // { image: 'material', label: 'Material Design' },
+    { image: 'restapi', label: 'Rest Api' },
+    { image: 'scrum', label: 'Scrum' },
+    { image: 'material', label: 'Material Design' },
     { image: 'learn', label: 'Always expanding skills' },
   ];
 }

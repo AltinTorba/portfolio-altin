@@ -8,12 +8,12 @@
   "atf": {
     "intro": "Ich bin",
     "headline": "Entwickler",
-    "button": "Lass' plaudern!",
+    "button": "Lass uns reden!",
     "vertical": "Scrolle runter"
   },
   "about": {
     "headline": "Über mich",
-    "introductionText": "Meine Reise mit dem Programmieren begann in der Kindheit als Computer-Enthusiast und wurde formell durch ein intensives und lohnendes Front-End-Bootcamp bei der Developer Akademie gestartet. Ich betrachte das Programmieren als eine erfolgreiche, endlose Reise - einen faszinierenden Weg, auf dem ich bereits viele Meilensteine erreicht habe. Die dynamische Tech-Welt befeuert ständig meine Neugier und meinen Antrieb. Ich freue mich darauf, mich zu vernetzen und zu sinnvollen Projekten beizutragen.",
+    "introductionText": "Meine Programmierreise begann in der Kindheit und wurde durch ein intensives Front-End-Bootcamp bei der Developer Akademie vertieft. Programmieren ist für mich eine spannende, endlose Reise, auf der ich bereits viele Meilensteine erreicht habe. Die dynamische Tech-Welt inspiriert mich ständig, und ich freue mich darauf, an sinnvollen Projekten mitzuwirken.",
     "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
     "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
     "solvingText": "Mein Problemlösungsstil ist praktisch und iteraktiv. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen."
@@ -40,6 +40,14 @@
       "reference1": {
         "text": "Altin ist ein sehr verlässlicher Kollege. Auch unter Stress bleibt er ruhig und hilfsbereit. Die Zusammenarbeit mit ihm war ausgezeichnet.",
         "title": "Team-Partner"
+      }, 
+      "reference2": {
+        "text": "Altin ist ein zuverlässiger Kollege. Gute Zusammenarbeit.",
+        "title": "Frontend Developer"
+      }, 
+      "reference3": {
+        "text": "Altin ist Hilfsbereit und professionell.",
+        "title": "Fullstack Developer"
       }
     }  
   },
