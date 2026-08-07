@@ -1,17 +1,19 @@
 <header>
   <div class="header-content">
     <a href="#above-the-fold" (click)="closeOverlay()">
-      <img src="./assets/img/logo.png" />
+      <img src="./assets/img/logo.png" alt="Logo" />
     </a>
     <app-navigation class="desktop-nav" [isMobile]="false"></app-navigation>
-    <div class="burger" (click)="toggleOverlay()">
-      {{ overlayOpen ? '✕' : '☰' }}
-    </div>
-  </div>
+    <button class="burger" (click)="toggleOverlay()" (keydown.enter)="toggleOverlay()" [class.open]="overlayOpen" aria-label="Toggle menu">
+      <span class="burger-line top"></span>
+      <span class="burger-line middle"></span>
+      <span class="burger-line bottom"></span>
+    </button> <!-- 👈 KJO MBYLLJE E BURGER-IT -->
+  </div> <!-- 👈 KJO MBYLLJE E HEADER-CONTENT -->
 </header>
 
 <div class="overlay" [class.open]="overlayOpen">
-    <div class="overlay-content">
-        <app-navigation (linkClicked)="closeOverlay()" class="mobile-nav" [isMobile]="true"></app-navigation>
-    </div>
+  <div class="overlay-content">
+    <app-navigation (linkClicked)="closeOverlay()" class="mobile-nav" [isMobile]="true"></app-navigation>
+  </div>
 </div>

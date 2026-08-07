@@ -3,11 +3,11 @@
     <div class="skill-img-container">
       @for (skill of skills; track skill.image) {
       <div class="skill-item" (mouseenter)="hoveredSkill = skill.image" (mouseleave)="hoveredSkill = null">
-        <img class="skill" [src]="'./assets/img/' + skill.image + '.png'" [class.no-hover]="skill.image === 'learn'" />
+        <img class="skill" [src]="'./assets/img/' + skill.image + '.png'" [alt]="skill.label" [class.no-hover]="skill.image === 'learn'" />
         <div class="skill-label">{{ skill.label }}</div>
         @if (skill.image === 'learn' && hoveredSkill === 'learn') {
         <div class="speech-bubble">
-          <img src="./assets/img/speechbubble.png" />
+          <img src="./assets/img/speechbubble.png" alt="" />
         </div>
         }
       </div>

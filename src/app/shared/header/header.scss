@@ -32,17 +32,44 @@ header {
 
     .burger {
       display: none;
-      text-align: center;
-      font-size: 60px;
-      color: $w;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 32px;
+      height: 32px;
       cursor: pointer;
+      padding: 4px;
+      transition: all 125ms ease;
 
-      @media (max-width: $breakpoint-desktop) {
+      .burger-line {
         display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $w;
+        border-radius: 2px;
+        transition: transform 250ms ease, opacity 250ms ease;
+        transform-origin: center;
       }
 
-      @media (max-width: $breakpoint-mobile) {
-        font-size: 40px;
+      &.open {
+        .top {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .middle {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+        .bottom {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+
+      &:hover .burger-line {
+        background-color: $g;
+      }
+
+      @media (max-width: $breakpoint-desktop) {
+        display: flex;
       }
     }
 
@@ -63,11 +90,11 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #404857f2;
+  background-color: #40485796;
   z-index: 998;
   display: none;
-  justify-content: $c;
-  align-items: $c;
+  justify-content: center;
+  align-items: center;
   transform: translateX(100%);
   transition: transform 125ms ease-in-out;
 
@@ -78,9 +105,22 @@ header {
   &.open {
     transform: translateX(0);
   }
+
   .overlay-content {
-    display: $f;
-    flex-direction: $col;
-    align-items: $c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 100px 50px 50px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 80px 24px 40px;
+    }
+
+    app-navigation {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

@@ -12,15 +12,15 @@
 
         <table data-aos="fade-right">
           <tr>
-            <td><img src="./assets/img/location.png"></td>
+            <td><img src="./assets/img/location.png" alt="" /></td>
             <td class="va-middle">{{ 'about.locationText' | translate }}</td>
           </tr>
           <tr>
-            <td><img src="./assets/img/bulb.png"></td>
+            <td><img src="./assets/img/bulb.png" alt="" /></td>
             <td class="va-middle">{{ 'about.learningText' | translate }}</td>
           </tr>
           <tr>
-            <td><img src="./assets/img/puzzle.png"></td>
+            <td><img src="./assets/img/puzzle.png" alt="" /></td>
             <td class="va-middle">{{ 'about.solvingText' | translate }}</td>
           </tr>
         </table>
@@ -28,8 +28,8 @@
     </div>
 
     <div class="photo-container">
-      <img src="./assets/img/photo.png" />
-      <img src="./assets/img/shadows_photo.png" />
+      <img src="./assets/img/photo.png" [attr.alt]="'about.profilePhotoAlt' | translate" />
+      <img src="./assets/img/shadows_photo.png" alt="" />
     </div>
   </div>
 </section>

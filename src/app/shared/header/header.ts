@@ -11,13 +11,22 @@ import { Navigation } from './navigation/navigation';
 export class Header {
   overlayOpen = false;
 
-toggleOverlay() {
-  this.overlayOpen = !this.overlayOpen;
+// toggleOverlay() {
+//   this.overlayOpen = !this.overlayOpen;
 
+//   if (this.overlayOpen) {
+//     document.body.classList.add('no-scroll');
+//   } else {
+//     document.body.classList.remove('no-scroll');
+//   }
+// }
+
+toggleOverlay() {
   if (this.overlayOpen) {
-    document.body.classList.add('no-scroll');
+    this.closeOverlay();
   } else {
-    document.body.classList.remove('no-scroll');
+    this.overlayOpen = true;
+    document.body.classList.add('no-scroll');
   }
 }
 

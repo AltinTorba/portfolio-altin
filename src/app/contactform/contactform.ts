@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
@@ -12,8 +12,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contactform.scss'
 })
 export class Contactform {
+  private http = inject(HttpClient);
 
-  constructor (private http: HttpClient) { }
 
   contactData = {
     name: "",
@@ -41,7 +41,7 @@ export class Contactform {
     endPoint: 'https://jetaever8.de/wp-json/contact/v1/send',
   };
 
-  onSubmit(form: any) {
+  onSubmit(form: NgForm) {
     if (form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.contactData).subscribe({
         next: () => {

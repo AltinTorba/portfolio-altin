@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,15 +8,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './navigation.html',
   styleUrls: ['./navigation.scss']
 })
-export class Navigation {
+export class Navigation implements OnInit {
+  private translate = inject(TranslateService);
 
-  @Input() isMobile: boolean = false;
+
+  @Input() isMobile = false;
   @Output() linkClicked = new EventEmitter<void>();
 
   currentLang = 'en';
-  activeLink: string = '';
-
-  constructor(private translate: TranslateService) { }
+  activeLink = '';
 
   ngOnInit() {
     const savedLang = localStorage.getItem('lang');

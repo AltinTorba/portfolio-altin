@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './shared/header/header';
@@ -16,10 +16,10 @@ import 'aos/dist/aos.css';
   styleUrls: ['./app.scss']
 })
 export class App implements AfterViewInit {
-  constructor(
-    private translate: TranslateService,
-    private router: Router
-  ) {
+  private translate = inject(TranslateService);
+  private router = inject(Router);
+
+  constructor() {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');

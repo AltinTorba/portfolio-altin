@@ -6,8 +6,8 @@
         <h1>Portfolio</h1>
       </div>
       <div data-aos="fade-right" class="description">{{ 'portfolio.description' | translate }}</div>
-      <img class="shadow shadow-blue" src="./assets/img/shadow_portfolio.png" />
-      <img class="shadow shadow-green" src="./assets/img/shadow_portfolio_green.png" />
+      <img class="shadow shadow-blue" src="./assets/img/shadow_portfolio.png" alt="" />
+      <img class="shadow shadow-green" src="./assets/img/shadow_portfolio_green.png" alt="" />
       <div class="item-container">
         @for (project of projects; track $index) {
           <div class="portfolio-item">
@@ -44,7 +44,7 @@
           <div class="ref-name-container">
             <div class="line"></div>
             <p class="ref-name">
-              {{ references[currentReferenceIndex].name }} -
+              <!-- {{ references[currentReferenceIndex].name }} - -->
               {{ references[currentReferenceIndex].titleKey | translate }}
             </p>
           </div>

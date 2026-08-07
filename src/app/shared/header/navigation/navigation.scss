@@ -41,6 +41,12 @@
     &.active::after {
       opacity: 1;
     }
+
+    &.hide-contact {
+      @media (min-width: 1030px) {
+        display: none;
+      }
+    }
   }
 }
 
