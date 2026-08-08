@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -7,7 +8,28 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skills.html',
   styleUrls: ['./skills.scss']
 })
-export class Skills {
+export class Skills implements OnInit {
+  private translate = inject(TranslateService);
+  private cdr = inject(ChangeDetectorRef);
+  isGerman = false;
+
+  ngOnInit() {
+    const updateLine = (lang: string) => {
+      const line = document.querySelector('app-skills .line') as HTMLElement;
+      if (line) {
+        if (lang === 'de') {
+        line.style.right = '';
+        line.style.left = '';
+        line.style.width = '';
+        line.style.transform = 'translateX(150px)';
+      } else {
+        line.style.transform = '';
+      }
+      }
+    };
+    updateLine(localStorage.getItem('lang') || 'en');
+    this.translate.onLangChange.subscribe(e => updateLine(e.lang));
+  }
 
   hoveredSkill: string | null = null;
 

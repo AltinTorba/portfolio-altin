@@ -13,24 +13,24 @@
       </div>
       }
     </div>
-
-    <div data-aos="fade-left" class="skill-text-container">
-      <div class="headline">
-        <h1>{{ 'skills.headline' | translate }}</h1>
-        <div class="line"></div>
+    <div class="skill-right-container">
+      <div data-aos="fade-left" class="skill-text-container">
+        <div class="headline">
+          <h1>{{ 'skills.headline' | translate }}</h1>
+          <div class="line" [style.max-width]="isGerman ? '50%' : null"></div>
+        </div>
+        <p class="description">{{ 'skills.description' | translate }}</p>
       </div>
-      <p class="description">{{ 'skills.description' | translate }}</p>
-    </div>
-
-    <div data-aos="fade-left" class="skill-followup-container">
-      <h2>
-        {{ 'skills.subheadline' | translate }}
-        <span class="highlight">{{ 'skills.highlight' | translate }}</span>?
-      </h2>
-      <p class="followup">{{ 'skills.followup' | translate }}</p>
-      <a href="#contact">
-        <button class="regular-btn">{{ 'skills.button' | translate }}</button>
-      </a>
+      <div data-aos="fade-left" class="skill-followup-container">
+        <h2>
+          {{ 'skills.subheadline' | translate }}
+          <span class="highlight">{{ 'skills.highlight' | translate }}</span>?
+        </h2>
+        <p class="followup">{{ 'skills.followup' | translate }}</p>
+        <a href="#contact">
+          <button class="regular-btn">{{ 'skills.button' | translate }}</button>
+        </a>
+      </div>
     </div>
   </section>
 </div>

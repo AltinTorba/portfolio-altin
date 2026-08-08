@@ -1,11 +1,15 @@
 .transition-wrapper {
-  position: relative;
+  position: absolute;
   width: 100%;
-
-  aspect-ratio: 1440 / 280;
-
-  // background-image: url("/assets/img/curved.png");
+  height: 100%;
+  background-image: url('/assets/img/curved.png');
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
+  background-color: #141D30;
+
+  margin-top: -350px;
+
+  @media (max-width: 1440px) {
+    margin-top: -275px;
+  }
 }

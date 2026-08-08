@@ -31,6 +31,8 @@ export class Navigation implements OnInit {
     this.translate.use(lang);
     this.currentLang = lang;
     localStorage.setItem('lang', lang);
+    document.body.classList.remove('lang-de', 'lang-en');
+    document.body.classList.add('lang-' + lang);
   }
 
   handleClick(linkId: string) {
