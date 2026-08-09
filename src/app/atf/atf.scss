@@ -24,6 +24,7 @@ section#above-the-fold {
 
   @media (max-width: $breakpoint-mobile) {
     padding: 0 15px;
+    max-height: 80vh
   }
 
   .left,

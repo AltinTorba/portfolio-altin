@@ -40,6 +40,9 @@ header {
       cursor: pointer;
       padding: 4px;
       transition: all 125ms ease;
+      background: transparent;
+      border: none;
+      outline: none;
 
       .burger-line {
         display: block;
@@ -65,7 +68,7 @@ header {
       }
 
       &:hover .burger-line {
-        background-color: $g;
+        background-color: $w;
       }
 
       @media (max-width: $breakpoint-desktop) {
