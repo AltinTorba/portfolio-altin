@@ -10,7 +10,7 @@ section#about-me {
   }
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 80px 15px 15px;
+    padding: 0px 15px 15px;
     scroll-margin-top: 40px;
   }
 
@@ -43,6 +43,15 @@ section#about-me {
       display: $f;
       flex-direction: $col;
       align-self: flex-start;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 50px 38px;
+      background-color: #1C2840;
+      box-sizing: border-box;
     }
 
     h1 {

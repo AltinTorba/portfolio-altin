@@ -104,7 +104,7 @@
             {{ 'contact.form.privacyError' | translate }}
           </span>
 
-          <button class="regular-btn" type="submit" [disabled]="!contactForm.valid">
+          <button class="regular-btn" type="submit" [disabled]="!contactForm.valid || isSubmitting">
             {{ 'contact.form.submitBtn' | translate }}
           </button>
         </form>

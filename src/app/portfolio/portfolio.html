@@ -56,7 +56,7 @@
 
           <div class="ref-dots">
             @for (ref of references; track $index) {
-              <span class="dot" [class.active]="$index === currentReferenceIndex"> </span>
+              <span class="dot" [class.active]="$index === currentReferenceIndex" (click)="currentReferenceIndex = $index"></span>
             }
           </div>
 

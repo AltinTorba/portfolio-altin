@@ -243,11 +243,11 @@ section#portfolio {
       max-width: 850px;
       width: 100%;
       min-height: 300px;
-      max-height: 400px;
-      overflow-y: auto;
-      overflow: visible;
+      // max-height: 400px;
+      overflow-x: visible;
+      // overflow-y: auto;
       background-color: $darkblue;
-      justify-content: center;
+      justify-content: safe center;
 
       @media (max-width: 1250px) {
         width: calc(100% - 40px);
