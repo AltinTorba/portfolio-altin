@@ -34,6 +34,9 @@
       "elpollo": {
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
       },
+      "pokedex": {
+        "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
+      },
       "join": {
         "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag & drop, assign users and categories."
       }

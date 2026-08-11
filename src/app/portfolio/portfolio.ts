@@ -11,19 +11,27 @@ import { TranslateModule } from '@ngx-translate/core';
 export class Portfolio {
   projects = [
     {
+      image: 'pokedex',
+      name: 'Pokedex',
+      descriptionKey: 'portfolio.projects.pokedex.description',
+      tech: ['JavaScript', 'HTML5', 'REST API'],
+      github: 'https://github.com/AltinTorba/mein_pokedex_projekt',
+      live: 'https://altintorba.github.io/mein_pokedex_projekt/',
+    },
+    {
       image: 'elpolloloco',
       name: 'El Pollo Loco',
       descriptionKey: 'portfolio.projects.elpollo.description',
       tech: ['JavaScript', 'HTML5', 'OOP'],
       github: 'https://github.com/AltinTorba/el_pollo_loco',
-      live: 'https://el-pollo-loco.altintorba.net/',
+      live: 'https://altintorba.github.io/el_pollo_loco/',
     },
     {
       image: 'join',
       name: 'Join',
       descriptionKey: 'portfolio.projects.join.description',
-      tech: ['JavaScript', 'CSS', 'HTML'],
-      github: 'https://github.com/AltinTorba/JOIN',
+      tech: ['Angular', 'TypeScript', 'SCSS'],
+      github: 'https://github.com/AltinTorba/join-app',
       live: 'https://join.altintorba.net/',
     },
   ];

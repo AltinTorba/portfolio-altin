@@ -34,6 +34,9 @@
       "elpollo": {
         "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
       },
+      "pokedex": {
+        "description": "Interaktiver Pokémon-Katalog mit Live-Daten von der PokéAPI. Durchsuche und zeige detaillierte Werte für Hunderte von Pokémon an."
+      },
       "join": {
         "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
       }
