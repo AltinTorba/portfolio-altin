@@ -37,6 +37,9 @@
       "pokedex": {
         "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
       },
+      "quizly": {
+        "description": "REST API backend that turns YouTube videos into multiple-choice quizzes. Extracts audio, transcribes it via speech-to-text, and generates structured quiz questions using AI."
+      },
       "coderr": {
         "description": "REST API backend for a freelancer platform. Providers create tiered offers, customers place orders, and completed jobs get reviewed - all via HTTP endpoints."
       },

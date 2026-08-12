@@ -61,6 +61,14 @@ export class Portfolio {
       github: 'https://github.com/AltinTorba/coderr_backend',
       live: 'https://altintorba-coderr.duckdns.org/index.html',
     },
+    {
+      image: 'quizly',
+      name: 'Quizly',
+      descriptionKey: 'portfolio.projects.quizly.description',
+      tech: ['Python', 'Django', 'DRF'],
+      github: 'https://github.com/AltinTorba/quizly-backend',
+      live: '',
+    },
   ];
 
   references = [
