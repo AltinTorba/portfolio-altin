@@ -53,6 +53,14 @@ export class Portfolio {
       github: 'https://github.com/AltinTorba/KanMind',
       live: 'https://kanmind-altin.duckdns.org/pages/dashboard/index.html',
     },
+    {
+      image: 'coderr',
+      name: 'Coderr',
+      descriptionKey: 'portfolio.projects.coderr.description',
+      tech: ['Python', 'Django REST Framework', 'SQLite'],
+      github: 'https://github.com/AltinTorba/coderr_backend',
+      live: 'https://altintorba-coderr.duckdns.org/index.html',
+    },
   ];
 
   references = [

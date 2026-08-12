@@ -37,6 +37,9 @@
       "pokedex": {
         "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
       },
+      "coderr": {
+        "description": "REST API backend for a freelancer platform. Providers create tiered offers, customers place orders, and completed jobs get reviewed - all via HTTP endpoints."
+      },
       "kanmind": {
         "description": "REST API backend for a Kanban-style project management tool built with Django REST Framework, supporting boards, task management, and comments."
       },
