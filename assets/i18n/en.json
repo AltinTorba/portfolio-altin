@@ -51,6 +51,9 @@
       },
       "join": {
         "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag & drop, assign users and categories."
+      },
+      "portfolioProject": {
+        "description": "Personal portfolio website built with Angular, featuring bilingual content, an EmailJS-powered contact form, and live project showcases."
       }
     },
     "references": {
