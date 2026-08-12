@@ -69,6 +69,14 @@ export class Portfolio {
       github: 'https://github.com/AltinTorba/quizly-backend',
       live: '',
     },
+    {
+      image: 'videoflix',
+      name: 'Videoflix',
+      descriptionKey: 'portfolio.projects.videoflix.description',
+      tech: ['Python', 'Django REST Framework', 'HLS'],
+      github: 'https://github.com/AltinTorba/videoflix-backend',
+      live: '',
+    },
   ];
 
   references = [

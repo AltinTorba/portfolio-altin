@@ -37,6 +37,9 @@
       "pokedex": {
         "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
       },
+      "videoflix": {
+        "description": "REST API backend for a Netflix-style streaming platform. Manages user accounts, videos, and adaptive HLS playback - all via HTTP endpoints."
+      },
       "quizly": {
         "description": "REST API backend that turns YouTube videos into multiple-choice quizzes. Extracts audio, transcribes it via speech-to-text, and generates structured quiz questions using AI."
       },
