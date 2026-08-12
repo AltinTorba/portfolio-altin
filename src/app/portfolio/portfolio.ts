@@ -1,6 +1,16 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+interface Project {
+  image: string;
+  name: string;
+  descriptionKey: string;
+  tech: string[];
+  github: string;
+  live: string;
+  team?: number;
+}
+
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -9,7 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./portfolio.scss'],
 })
 export class Portfolio {
-  projects = [
+  projects: Project[] = [
     {
       image: 'pokedex',
       name: 'Pokedex',
@@ -30,9 +40,18 @@ export class Portfolio {
       image: 'join',
       name: 'Join',
       descriptionKey: 'portfolio.projects.join.description',
-      tech: ['Angular', 'TypeScript', 'SCSS'],
+      tech: ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
+      team: 4,
       github: 'https://github.com/AltinTorba/join-app',
-      live: 'https://join.altintorba.net/',
+      live: 'https://altintorba.github.io/join-app/',
+    },
+    {
+      image: 'kanmind',
+      name: 'KanMind',
+      descriptionKey: 'portfolio.projects.kanmind.description',
+      tech: ['Python', 'Django REST Framework', 'REST API'],
+      github: 'https://github.com/AltinTorba/KanMind',
+      live: 'https://kanmind-altin.duckdns.org/pages/dashboard/index.html',
     },
   ];
 

@@ -37,6 +37,9 @@
       "pokedex": {
         "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
       },
+      "kanmind": {
+        "description": "REST API backend for a Kanban-style project management tool built with Django REST Framework, supporting boards, task management, and comments."
+      },
       "join": {
         "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag & drop, assign users and categories."
       }
