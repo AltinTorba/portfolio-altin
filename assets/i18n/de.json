@@ -1,0 +1,146 @@
+{
+  "header": {
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "atf": {
+    "intro": "Ich bin",
+    "headline": "Entwickler",
+    "button": "Lass uns reden!",
+    "vertical": "Scrolle runter",
+    "contactAlt": "Kontakt per E-Mail"
+  },
+  "about": {
+    "headline": "Über mich",
+    "introductionText": "Meine Programmierreise begann in der Kindheit und wurde durch ein intensives Front-End-Bootcamp bei der Developer Akademie vertieft. Die dynamische Tech-Welt inspiriert mich ständig, und ich freue mich darauf, an sinnvollen Projekten mitzuwirken.",
+    "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
+    "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
+    "solvingText": "Mein Problemlösungsstil ist praktisch und iteraktiv. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen.",
+    "profilePhotoAlt": "Profilfoto von Altin"
+  },
+  "skills": {
+    "headline": "Fähigkeiten",
+    "description": "Durch die praktische Arbeit an verschiedenen Projekten habe ich fundierte Kenntnisse in modernen Frontend-Technologien wie HTML, CSS und JavaScript aufgebaut. Ich bin stets bereit, neue Tools und Frameworks zu erlernen und mich anzupassen. Kontinuierliche Weiterentwicklung ist für mich der Schlüssel, um in der sich schnell verändernden Welt der Webentwicklung up-to-date zu bleiben.",
+    "subheadline": "Auf der Suche nach ",
+    "highlight": "weiteren Fähigkeiten",
+    "followup": "Begeistert vom Erlernen neuer Technologien und Frameworks.",
+    "button": "Kontaktiere mich"
+  },
+  "portfolio": {
+    "description": "Entdecke eine Auswahl meiner Arbeiten - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
+    "projects": {
+      "elpollo": {
+        "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+      },
+      "pokedex": {
+        "description": "Interaktiver Pokémon-Katalog mit Live-Daten von der PokéAPI. Durchsuche und zeige detaillierte Werte für Hunderte von Pokémon an."
+      },
+      "videoflix": {
+        "description": "REST-API-Backend für eine Netflix-artige Streaming-Plattform. Verwaltet Benutzerkonten, Videos und adaptives HLS-Streaming - alles über HTTP-Endpunkte."
+      },
+      "quizly": {
+        "description": "REST-API-Backend, das YouTube-Videos in Multiple-Choice-Quiz verwandelt. Extrahiert Audio, transkribiert es per Speech-to-Text und generiert strukturierte Quizfragen mittels KI."
+      },
+      "coderr": {
+        "description": "REST-API-Backend für eine Freelancer-Plattform. Anbieter erstellen gestaffelte Angebote, Kunden geben Bestellungen auf und abgeschlossene Aufträge werden bewertet - alles über HTTP-Endpunkte."
+      },
+      "kanmind": {
+        "description": "REST-API-Backend für ein Kanban-Projektmanagement-Tool, entwickelt mit Django REST Framework, mit Unterstützung für Boards, Aufgabenverwaltung und Kommentare."
+      },
+      "join": {
+        "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
+      }
+    },
+    "references": {
+      "reference1": {
+        "text": "Altin ist verlässlich, arbeitet gründlich und verantwortungsbewusst. Es hat Spaß gemacht, mit ihm an unserem gemeinsamen Projekt zu arbeiten.",
+        "title": "Refiye Külhanbey"
+      }, 
+      "reference2": {
+        "text": "Altin arbeitet fleißig und zuverlässig, erledigt seine Aufgaben stets gewissenhaft, und sein Code ist gut strukturiert, lesbar und wartbar.",
+        "title": "Philipp Biebert"
+      }, 
+      "reference3": {
+        "text": "Mein Teamkollege Altin hat zuverlässig an der Gruppenarbeit mitgearbeitet und seine Aufgaben sorgfältig erledigt. Besonders positiv ist mir aufgefallen, dass er bei Problemen unterstützend zur Seite stand und zur Lösung beigetragen hat. Die Zusammenarbeit im Team verlief insgesamt angenehm und konstruktiv. Er hat sich engagiert eingebracht und zum Fortschritt der Gruppe beigetragen.",
+        "title": "Frank Meckel"
+      }
+    }  
+  },
+  "contact": {
+    "headline": "Kontakt",
+    "problemHeadline": "Es gibt ein Problem zu lösen?",
+    "introText": "Bereit, als Frontend-Entwickler Wert für Ihr Team zu schaffen. Lassen Sie uns besprechen, wie ich beitragen kann.",
+    "needDev": "Suchst du einen Frontend-Entwickler?",
+    "contactMe": "Kontaktiere mich!",
+
+    "success": "Deine Nachricht wurde erfolgreich gesendet. Ich werde mich bald bei dir melden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
+
+    "form": {
+      "namePlaceholder": "Dein Name",
+      "nameError": "Bitte gib deinen Vor- und Nachnamen ein",
+
+      "emailPlaceholder": "Deine E-Mail",
+      "emailError": "Bitte gib eine gültige E-Mail-Adresse ein",
+
+      "messagePlaceholder": "Deine Nachricht",
+      "messageError": "Bitte gib mindestens 4 Zeichen ein",
+
+      "privacyTextPart1": "Ich habe die",
+      "privacyLinkText": "Datenschutzerklärung",
+      "privacyTextPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
+      "privacyError": "Bitte stimme der Datenschutzerklärung zu",
+
+      "submitBtn": "Nachricht senden :)"
+    }
+  },
+
+  "imprint": {
+    "title": "Impressum",
+    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Auf Wunsch übermittle ich vollständige Kontaktinformationen direkt auf Anfrage.",
+    "lastUpdate": "Letzte Aktualisierung: Januar 2026",
+    "provider": {
+      "head": "Angaben gemäß § 5 TMG",
+      "name": "Altin Torba",
+      "location": "Siegen, Deutschland"
+    },
+    "contact": { "head": "Kontakt" },
+    "broadcast": { "head": "Verantwortlich i. S. d. § 55 Abs. 2 RStV" },
+    "hosting": {
+      "head": "Hosting-Dienstleister",
+      "location": "Deutschland"
+    },
+    "os": {
+      "head": "EU-Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr."
+    }
+  },
+
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten innerhalb dieser Website.",
+    "controller": { "head": "Verantwortlicher" },
+    "contactForm": {
+      "head": "Kontaktformular",
+      "text": "Wenn Sie uns über das Formular kontaktieren, verarbeiten wir Name, E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage."
+    },
+    "rights": {
+      "head": "Ihre Rechte",
+      "access": "Auskunft nach Art. 15 DSGVO",
+      "delete": "Löschung nach Art. 17 DSGVO",
+      "correct": "Berichtigung nach Art. 16 DSGVO",
+      "restrict": "Einschränkung nach Art. 18 DSGVO",
+      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "Alle Daten werden ausschließlich auf Servern in Deutschland verarbeitet."
+    },
+    "github": {
+      "head": "Externes GitHub-Link-Icon",
+      "text": "Durch Klick auf das GitHub-Icon verlassen Sie diese Website und werden zu github.com weitergeleitet. Für dortige Datenverarbeitungen ist GitHub Inc. verantwortlich."
+    }
+  }
+}

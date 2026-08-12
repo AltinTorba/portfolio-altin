@@ -1,0 +1,146 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "atf": {
+    "intro": "I am",
+    "headline": "Developer",
+    "button": "Let's talk!",
+    "vertical": "Scroll down",
+    "contactAlt": "Contact via email"
+  },
+  "about": {
+    "headline": "About me",
+    "introductionText": "My programming journey started in childhood and was deepened through an intensive Front-End bootcamp at the Developer Akademie. The dynamic tech world constantly inspires me, and I look forward to contributing to meaningful projects.",
+    "locationText": "Based in Siegen, NRW, I am open to remote positions but cannot relocate.",
+    "learningText": "I am passionate about learning new technologies and continuously advancing my skills.",
+    "solvingText": "My problem-solving style is hands-on and iterative. I work well independently but actively seek collaboration on tougher challenges, blending careful planning with actionable solutions.",
+    "profilePhotoAlt": "Profile photo of Altin"
+  },
+  "skills": {
+    "headline": "Skills",
+    "description": "Through hands-on work with diverse projects, I've built strong skills in modern frontend technologies including HTML, CSS, and JavaScript. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
+    "subheadline": "Looking for ",
+    "highlight": "another skill",
+    "followup": "Enthusiastic about learning new technologies and frameworks.",
+    "button": "Get in touch"
+  },
+  "portfolio": {
+    "description": "Explore a selection of my work - Interact with the projects to see my skills in action",
+    "projects": {
+      "elpollo": {
+        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
+      },
+      "pokedex": {
+        "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
+      },
+      "videoflix": {
+        "description": "REST API backend for a Netflix-style streaming platform. Manages user accounts, videos, and adaptive HLS playback - all via HTTP endpoints."
+      },
+      "quizly": {
+        "description": "REST API backend that turns YouTube videos into multiple-choice quizzes. Extracts audio, transcribes it via speech-to-text, and generates structured quiz questions using AI."
+      },
+      "coderr": {
+        "description": "REST API backend for a freelancer platform. Providers create tiered offers, customers place orders, and completed jobs get reviewed - all via HTTP endpoints."
+      },
+      "kanmind": {
+        "description": "REST API backend for a Kanban-style project management tool built with Django REST Framework, supporting boards, task management, and comments."
+      },
+      "join": {
+        "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag & drop, assign users and categories."
+      }
+    },
+    "references": {
+      "reference1": {
+        "text": "Altin is reliable, works thoroughly and responsibly. It was a pleasure collaborating with him on our shared project.",
+        "title": "Refiye Külhanbey"
+      }, 
+      "reference2": {
+         "text": "Altin works diligently and reliably, consistently completes his tasks successfully, and his code is well-structured, readable, and maintainable.",
+        "title": "Philipp Biebert"
+      },
+      "reference3": {
+        "text": "My team colleague Altin reliably contributed to the group work and completed his tasks carefully. I particularly appreciated that he provided supportive assistance when problems arose and contributed to finding solutions. The teamwork was pleasant and constructive overall. He actively participated and contributed to the group's progress.",
+        "title": "Frank Meckel"
+      }
+    }
+  },
+  "contact": {
+    "headline": "Contact",
+    "problemHeadline": "Got a problem to solve?",
+    "introText": "Ready to add value to your team as a frontend developer. Let's discuss how I can contribute.",
+    "needDev": "Need a Frontend developer?",
+    "contactMe": "Contact me!",
+
+    "success": "Your message has been sent successfully. I will get back to you soon.",
+    "error": "Something went wrong. Please try again later.",
+    
+    "form": {
+      "namePlaceholder": "Your name",
+      "nameError": "Please enter your first name and last name",
+      "emailPlaceholder": "Your email",
+      "emailError": "Please enter a valid e-mail address",
+      "messagePlaceholder": "Your message",
+      "messageError": "Please enter at least 4 characters",
+      "privacyTextPart1": "I've read the",
+      "privacyLinkText": "privacy policy",
+      "privacyTextPart2": "and agree to the processing of my data as outlined",
+      "privacyError": "Please agree to the privacy policy",
+      "submitBtn": "Send message :)"
+    }
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
+    "lastUpdate": "Last update: January 2026",
+    "provider": {
+      "head": "Information pursuant to § 5 TMG",
+      "name": "Altin Torba",
+      "location": "Siegen, Germany"
+    },
+    "contact": {
+      "head": "Contact"
+    },
+    "broadcast": {
+      "head": "Responsible according to § 55 RStV"
+    },
+    "hosting": {
+      "head": "Hosting Provider",
+      "location": "Germany"
+    },
+    "os": {
+      "head": "EU Online Dispute Resolution",
+      "text": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This privacy notice explains the nature, scope and purpose of processing personal data on this website.",
+    "controller": {
+      "head": "Controller"
+    },
+    "contactForm": {
+      "head": "Contact Form",
+      "text": "If you contact us via the form, we process your name, e-mail address and message exclusively to handle your request."
+    },
+    "rights": {
+      "head": "Your Rights",
+      "access": "Right of access (Art. 15 GDPR)",
+      "delete": "Right to erasure (Art. 17 GDPR)",
+      "correct": "Right to rectification (Art. 16 GDPR)",
+      "restrict": "Right to restriction (Art. 18 GDPR)",
+      "complain": "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "All data is processed exclusively on servers located in Germany."
+    },
+    "github": {
+      "head": "External GitHub Link Icon",
+      "text": "By clicking the GitHub icon, you will leave this site and be redirected to github.com. GitHub Inc. is responsible for any processing there."
+    }
+  }
+}
