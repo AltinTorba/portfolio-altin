@@ -51,7 +51,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.kanmind.description',
       tech: ['Python', 'Django REST Framework', 'REST API'],
       github: 'https://github.com/AltinTorba/KanMind',
-      live: 'https://kanmind-altin.duckdns.org/pages/dashboard/index.html',
+      live: 'https://kanmind-altin.duckdns.org/pages/auth/login.html',
     },
     {
       image: 'coderr',
@@ -76,6 +76,14 @@ export class Portfolio {
       tech: ['Python', 'Django REST Framework', 'HLS'],
       github: 'https://github.com/AltinTorba/videoflix-backend',
       live: '',
+    },
+    {
+      image: 'portfolio',
+      name: 'Portfolio',
+      descriptionKey: 'portfolio.projects.portfolioProject.description',
+      tech: ['Angular', 'TypeScript', 'SCSS'],
+      github: 'https://github.com/AltinTorba/portfolio-altin',
+      live: 'https://altintorba.github.io/portfolio-altin/',
     },
   ];
 

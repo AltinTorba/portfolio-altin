@@ -51,6 +51,9 @@
       },
       "join": {
         "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop, weise Benutzer und Kategorien zu."
+      },
+      "portfolioProject": {
+        "description": "Persönliche Portfolio-Website, entwickelt mit Angular, mit zweisprachigen Inhalten, einem EmailJS-basierten Kontaktformular und Live-Projektpräsentationen."
       }
     },
     "references": {
