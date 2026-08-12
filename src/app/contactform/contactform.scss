@@ -247,7 +247,7 @@ section#contact {
           .custom-checkbox {
             width: 24px;
             height: 24px;
-            background-image: url("./assets/img/unchecked.png");
+            background-image: url("../../../public/assets/img/unchecked.png");
             background-size: cover;
             background-repeat: no-repeat;
             transition: all 125ms ease-in-out;
@@ -256,7 +256,7 @@ section#contact {
           }
 
           input[type="checkbox"]:checked+.custom-checkbox {
-            background-image: url("./assets/img/checked.png");
+            background-image: url("../../../public/assets/img/checked.png");
           }
 
           p {
