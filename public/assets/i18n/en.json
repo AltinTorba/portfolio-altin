@@ -97,10 +97,10 @@
   },
   "imprint": {
     "title": "Legal Notice",
-    "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. If you wish, I will provide full contact information directly upon request.",
-    "lastUpdate": "Last update: January 2026",
+    "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales. Full contact information, including postal address, is available upon request.",
+    "lastUpdate": "Last update: August 2026",
     "provider": {
-      "head": "Information pursuant to § 5 TMG",
+      "head": "Information pursuant to § 5 DDG (Digitale-Dienste-Gesetz)",
       "name": "Altin Torba",
       "location": "Siegen, Germany"
     },
@@ -108,10 +108,11 @@
       "head": "Contact"
     },
     "broadcast": {
-      "head": "Responsible according to § 55 RStV"
+      "head": "Responsible for content pursuant to § 18 Abs. 2 MStV (Medienstaatsvertrag)"
     },
     "hosting": {
       "head": "Hosting Provider",
+      "text": "This website is hosted via GitHub Pages.",
       "location": "Germany"
     },
     "os": {
@@ -122,24 +123,32 @@
   "privacy": {
     "title": "Privacy Policy",
     "intro": "This privacy notice explains the nature, scope and purpose of processing personal data on this website.",
+    "lastUpdate": "Last update: August 2026",
     "controller": {
       "head": "Controller"
     },
+    "hosting": {
+      "head": "Hosting",
+      "text": "This website is hosted via GitHub Pages (GitHub, Inc., USA). Access data (e.g. IP address, browser type, date and time of access) may be processed by GitHub as part of standard server operation. For details, see GitHub's Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+    },
     "contactForm": {
       "head": "Contact Form",
-      "text": "If you contact us via the form, we process your name, e-mail address and message exclusively to handle your request."
+      "text": "If you contact me via the contact form, your name, e-mail address and message are processed exclusively to handle your request. The form is powered by EmailJS (EmailJS Corp., USA), a third-party service that transmits your message to my e-mail inbox. Processing is based on your consent (Art. 6(1)(a) GDPR) and my legitimate interest in responding to inquiries (Art. 6(1)(f) GDPR)."
+    },
+    "retention": {
+      "head": "Data Retention",
+      "text": "Personal data submitted via the contact form is deleted once your inquiry has been fully resolved, unless a longer retention period is required by law."
     },
     "rights": {
       "head": "Your Rights",
-      "access": "Right of access (Art. 15 GDPR)",
-      "delete": "Right to erasure (Art. 17 GDPR)",
-      "correct": "Right to rectification (Art. 16 GDPR)",
-      "restrict": "Right to restriction (Art. 18 GDPR)",
-      "complain": "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
-    },
-    "hosting": {
-      "head": "Hosting",
-      "text": "All data is processed exclusively on servers located in Germany."
+      "intro": "Under the GDPR, you have the right to:",
+      "access": "Access your personal data (Art. 15 GDPR)",
+      "correct": "Rectify inaccurate data (Art. 16 GDPR)",
+      "delete": "Request erasure of your data (Art. 17 GDPR)",
+      "restrict": "Restrict processing (Art. 18 GDPR)",
+      "portability": "Data portability (Art. 20 GDPR)",
+      "object": "Object to processing (Art. 21 GDPR)",
+      "complain": "Lodge a complaint with a supervisory authority (Art. 77 GDPR) - in North Rhine-Westphalia, this is the Landesbeauftragte für Datenschutz und Informationsfreiheit NRW (LDI NRW)"
     },
     "github": {
       "head": "External GitHub Link Icon",
