@@ -102,17 +102,18 @@
 
   "imprint": {
     "title": "Impressum",
-    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Auf Wunsch übermittle ich vollständige Kontaktinformationen direkt auf Anfrage.",
-    "lastUpdate": "Letzte Aktualisierung: Januar 2026",
+    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Vollständige Kontaktinformationen, einschließlich Postanschrift, stelle ich auf Anfrage gerne zur Verfügung.",
+    "lastUpdate": "Letzte Aktualisierung: August 2026",
     "provider": {
-      "head": "Angaben gemäß § 5 TMG",
+      "head": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)",
       "name": "Altin Torba",
       "location": "Siegen, Deutschland"
     },
     "contact": { "head": "Kontakt" },
-    "broadcast": { "head": "Verantwortlich i. S. d. § 55 Abs. 2 RStV" },
+    "broadcast": { "head": "Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV (Medienstaatsvertrag)" },
     "hosting": {
       "head": "Hosting-Dienstleister",
+      "text": "Diese Website wird über GitHub Pages gehostet.",
       "location": "Deutschland"
     },
     "os": {
@@ -124,22 +125,30 @@
   "privacy": {
     "title": "Datenschutzerklärung",
     "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten innerhalb dieser Website.",
+    "lastUpdate": "Letzte Aktualisierung: August 2026",
     "controller": { "head": "Verantwortlicher" },
+    "hosting": {
+      "head": "Hosting",
+      "text": "Diese Website wird über GitHub Pages gehostet (GitHub, Inc., USA). Zugriffsdaten (z. B. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriffs) können im Rahmen des üblichen Serverbetriebs von GitHub verarbeitet werden. Details finden Sie in der Datenschutzerklärung von GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+    },
     "contactForm": {
       "head": "Kontaktformular",
-      "text": "Wenn Sie uns über das Formular kontaktieren, verarbeiten wir Name, E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage."
+      "text": "Wenn Sie mich über das Kontaktformular kontaktieren, verarbeite ich Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage. Das Formular nutzt den Drittanbieter-Dienst EmailJS (EmailJS Corp., USA), der Ihre Nachricht an mein E-Mail-Postfach übermittelt. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sowie meines berechtigten Interesses an der Beantwortung von Anfragen (Art. 6 Abs. 1 lit. f DSGVO)."
+    },
+    "retention": {
+      "head": "Speicherdauer",
+      "text": "Über das Kontaktformular übermittelte personenbezogene Daten werden gelöscht, sobald Ihre Anfrage vollständig bearbeitet wurde, sofern keine längere Aufbewahrung gesetzlich vorgeschrieben ist."
     },
     "rights": {
       "head": "Ihre Rechte",
-      "access": "Auskunft nach Art. 15 DSGVO",
-      "delete": "Löschung nach Art. 17 DSGVO",
-      "correct": "Berichtigung nach Art. 16 DSGVO",
-      "restrict": "Einschränkung nach Art. 18 DSGVO",
-      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
-    },
-    "hosting": {
-      "head": "Hosting",
-      "text": "Alle Daten werden ausschließlich auf Servern in Deutschland verarbeitet."
+      "intro": "Nach der DSGVO haben Sie folgende Rechte:",
+      "access": "Auskunft über Ihre personenbezogenen Daten (Art. 15 DSGVO)",
+      "correct": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+      "delete": "Löschung Ihrer Daten (Art. 17 DSGVO)",
+      "restrict": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+      "portability": "Datenübertragbarkeit (Art. 20 DSGVO)",
+      "object": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+      "complain": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO) - in Nordrhein-Westfalen ist dies die Landesbeauftragte für Datenschutz und Informationsfreiheit NRW (LDI NRW)"
     },
     "github": {
       "head": "Externes GitHub-Link-Icon",
