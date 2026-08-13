@@ -29,7 +29,7 @@
     "button": "Get in touch"
   },
   "portfolio": {
-    "description": "Explore a selection of my work - Interact with the projects to see my skills in action",
+    "description": "Explore a selection of my work — interact with the projects to see my skills in action.",
     "projects": {
       "elpollo": {
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
@@ -87,10 +87,10 @@
       "emailPlaceholder": "Your email",
       "emailError": "Please enter a valid e-mail address",
       "messagePlaceholder": "Your message",
-      "messageError": "Please enter at least 4 characters",
+      "messageError": "Please enter at least 10 characters",
       "privacyTextPart1": "I've read the",
       "privacyLinkText": "privacy policy",
-      "privacyTextPart2": "and agree to the processing of my data as outlined",
+      "privacyTextPart2": "and agree to the processing of my data as outlined there.",
       "privacyError": "Please agree to the privacy policy",
       "submitBtn": "Send message :)"
     }

@@ -1,59 +1,71 @@
-# PortfolioAltin
+# Portfolio – Altin Torba
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.13.
+Personal portfolio website showcasing my projects, skills, and background as a fullstack developer, built with Angular. Live at [altintorba.github.io/portfolio-altin](https://altintorba.github.io/portfolio-altin/).
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Bilingual content (DE/EN)** — full German/English translation via `@ngx-translate/core`, with the selected language persisted in `localStorage`
+- **Interactive contact form** — client-side validation, EmailJS integration for message delivery, and clear success/error feedback
+- **Project showcase** — live demos and GitHub links for 8 projects (frontend and backend), each with a consistent laptop-mockup preview
+- **Legal pages** — GDPR-compliant Privacy Policy and Legal Notice (Impressum)
+- **Responsive design** — mobile, tablet, and desktop layouts, including widescreen (>1440px) adjustments
+- **Automated deployment** — deployed to GitHub Pages via `angular-cli-ghpages`
 
+## Tech Stack
+
+- **Framework:** Angular (standalone components)
+- **Language:** TypeScript
+- **Styling:** SCSS
+- **i18n:** @ngx-translate/core
+- **Email:** EmailJS
+- **Animations:** AOS (Animate On Scroll)
+- **Linting:** ESLint (Angular ESLint rules)
+
+## Getting Started
+
+### Prerequisites
+- Node.js and npm installed
+
+### Installation
+```bash
+npm install
+```
+
+### Development server
 ```bash
 ng serve
 ```
+Navigate to `http://localhost:4200/`. The app reloads automatically on source changes.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
+### Build
 ```bash
 ng build
 ```
+Build artifacts are output to `dist/`.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+### Lint
 ```bash
-ng test
+ng lint
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+### Deploy to GitHub Pages
 ```bash
-ng e2e
+npx ng deploy portfolio-altin --base-href=/portfolio-altin/
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Structure
+src/app/
+├── atf/ # Hero / above-the-fold section
+├── about-me/ # About me section
+├── skills/ # Skills showcase
+├── portfolio/ # Project cards and testimonials
+├── contactform/ # Contact form with EmailJS
+├── imprint/ # Legal notice page
+├── privacy/ # Privacy policy page
+├── shared/
+│ ├── header/ # Navigation, language switcher
+│ └── footer/ # Footer with social links, legal links
+└── transition-image/ # Section transition graphics
+## License
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for personal, non-commercial use as a digital application document.

@@ -71,7 +71,7 @@
             <textarea #message="ngModel" [(ngModel)]="contactData.message" (blur)="markAsTouched('message')"
               [class.valid]="message.valid && nameTouched.message"
               [class.invalid]="!message.valid && nameTouched.message" name="message" id="message"
-              [placeholder]="'contact.form.messagePlaceholder' | translate" minlength="4" required></textarea>
+              [placeholder]="'contact.form.messagePlaceholder' | translate" minlength="10" required></textarea>
 
             @if (nameTouched.message) {
             <span class="status-icon">
