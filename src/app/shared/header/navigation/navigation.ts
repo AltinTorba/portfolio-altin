@@ -18,6 +18,10 @@ export class Navigation implements OnInit {
   currentLang = 'en';
   activeLink = '';
 
+  /**
+   * Initializes the navigation language on component load. Restores the
+   * language saved in localStorage, or falls back to the app's default.
+   */
   ngOnInit() {
     const savedLang = localStorage.getItem('lang');
     if (savedLang) {
@@ -27,6 +31,11 @@ export class Navigation implements OnInit {
     }
   }
 
+  /**
+   * Switches the active language, persists the choice to localStorage,
+   * and updates the body class so language-specific styles can apply.
+   * @param lang - The language code to switch to (e.g. 'en' or 'de').
+   */
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
@@ -35,11 +44,21 @@ export class Navigation implements OnInit {
     document.body.classList.add('lang-' + lang);
   }
 
+  /**
+   * Marks the given link as active and notifies the parent component
+   * that a navigation link was clicked (e.g. to close a mobile menu).
+   * @param linkId - The identifier of the clicked navigation link.
+   */
   handleClick(linkId: string) {
     this.activeLink = linkId;
     this.linkClicked.emit();
   }
 
+  /**
+   * Checks whether the given link is currently the active one.
+   * @param linkId - The identifier of the navigation link to check.
+   * @returns True if the link is currently active.
+   */
   isActive(linkId: string): boolean {
     return this.activeLink === linkId;
   }

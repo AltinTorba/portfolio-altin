@@ -11,29 +11,24 @@ import { Navigation } from './navigation/navigation';
 export class Header {
   overlayOpen = false;
 
-// toggleOverlay() {
-//   this.overlayOpen = !this.overlayOpen;
-
-//   if (this.overlayOpen) {
-//     document.body.classList.add('no-scroll');
-//   } else {
-//     document.body.classList.remove('no-scroll');
-//   }
-// }
-
-toggleOverlay() {
-  if (this.overlayOpen) {
-    this.closeOverlay();
-  } else {
-    this.overlayOpen = true;
-    document.body.classList.add('no-scroll');
+  /**
+   * Toggles the mobile navigation overlay open or closed, locking body
+   * scroll while the overlay is open.
+   */
+  toggleOverlay() {
+    if (this.overlayOpen) {
+      this.closeOverlay();
+    } else {
+      this.overlayOpen = true;
+      document.body.classList.add('no-scroll');
+    }
   }
-}
 
-closeOverlay() {
-  this.overlayOpen = false;
-  document.body.classList.remove('no-scroll');
-}
-
-
+  /**
+   * Closes the mobile navigation overlay and restores body scroll.
+   */
+  closeOverlay() {
+    this.overlayOpen = false;
+    document.body.classList.remove('no-scroll');
+  }
 }

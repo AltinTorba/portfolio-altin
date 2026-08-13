@@ -14,11 +14,11 @@ import emailjs from '@emailjs/browser';
 export class Contactform {
 
   contactData = {
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
     checkbox: false,
-    company: ""
+    company: ''
   };
 
   nameTouched = {
@@ -27,6 +27,10 @@ export class Contactform {
     message: false
   };
 
+  /**
+   * Marks a form field as touched, triggering validation display on blur.
+   * @param field - The name of the field to mark as touched ('name', 'email', or 'message').
+   */
   markAsTouched(field: 'name' | 'email' | 'message') {
     this.nameTouched[ field ] = true;
   }
@@ -43,6 +47,12 @@ export class Contactform {
     publicKey: 'hK94NwwkXIftab1dj',
   };
 
+  /**
+   * Handles contact form submission. Sends the message via EmailJS if the form
+   * is valid and no submission is currently in progress. Updates submitStatus
+   * and resets the form on success.
+   * @param form - The Angular NgForm instance representing the contact form.
+   */
   onSubmit(form: NgForm) {
     if (form.valid && !this.mailTest && !this.isSubmitting) {
       this.isSubmitting = true;
@@ -69,7 +79,7 @@ export class Contactform {
             email: '',
             message: '',
             checkbox: false,
-            company: ""
+            company: ''
           };
           this.nameTouched = {
             name: false,

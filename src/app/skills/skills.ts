@@ -49,13 +49,10 @@ export class Skills implements OnInit {
     { image: 'python', label: 'Python'},
     { image: 'django', label: 'Django'},
     { image: 'drf', label: 'DRF'},
-    // { image: 'shell-scripting-1', label: 'Shell-Scripting'},
     { image: 'shell-scripting', label: 'Shell-Scripting'},
     { image: 'cloud', label: 'Cloud'},
-    // { image: 'docker', label: 'Docker'},
     { image: 'sql', label: 'SQL'},
     { image: 'postgre-sql', label: 'PostgreSQL'},
-    // { image: 'flask', label: 'Flask'},
     { image: 'continually_learning', label: 'Always expanding skills'},
   ];
 }

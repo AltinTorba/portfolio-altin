@@ -107,11 +107,19 @@ export class Portfolio {
 
   currentReferenceIndex = 0;
 
+  /**
+   * Moves to the previous testimonial in the references carousel,
+   * wrapping around to the last one if currently at the first.
+   */
   prevReference() {
     this.currentReferenceIndex =
       (this.currentReferenceIndex - 1 + this.references.length) % this.references.length;
   }
 
+  /**
+   * Moves to the next testimonial in the references carousel,
+   * wrapping around to the first one if currently at the last.
+   */
   nextReference() {
     this.currentReferenceIndex = (this.currentReferenceIndex + 1) % this.references.length;
   }
