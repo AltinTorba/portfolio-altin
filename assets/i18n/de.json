@@ -17,7 +17,7 @@
     "introductionText": "Meine Programmierreise begann in der Kindheit und wurde durch ein intensives Front-End-Bootcamp bei der Developer Akademie vertieft. Die dynamische Tech-Welt inspiriert mich ständig, und ich freue mich darauf, an sinnvollen Projekten mitzuwirken.",
     "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
     "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
-    "solvingText": "Mein Problemlösungsstil ist praktisch und iteraktiv. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen.",
+    "solvingText": "Mein Problemlösungsstil ist praktisch und iterativ. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen.",
     "profilePhotoAlt": "Profilfoto von Altin"
   },
   "skills": {
@@ -29,7 +29,7 @@
     "button": "Kontaktiere mich"
   },
   "portfolio": {
-    "description": "Entdecke eine Auswahl meiner Arbeiten - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
+    "description": "Entdecke eine Auswahl meiner Arbeiten — interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "projects": {
       "elpollo": {
         "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
@@ -73,7 +73,7 @@
   },
   "contact": {
     "headline": "Kontakt",
-    "problemHeadline": "Es gibt ein Problem zu lösen?",
+    "problemHeadline": "Haben Sie ein Problem zu lösen?",
     "introText": "Bereit, als Frontend-Entwickler Wert für Ihr Team zu schaffen. Lassen Sie uns besprechen, wie ich beitragen kann.",
     "needDev": "Suchst du einen Frontend-Entwickler?",
     "contactMe": "Kontaktiere mich!",
@@ -89,7 +89,7 @@
       "emailError": "Bitte gib eine gültige E-Mail-Adresse ein",
 
       "messagePlaceholder": "Deine Nachricht",
-      "messageError": "Bitte gib mindestens 4 Zeichen ein",
+      "messageError": "Bitte gib mindestens 10 Zeichen ein",
 
       "privacyTextPart1": "Ich habe die",
       "privacyLinkText": "Datenschutzerklärung",
