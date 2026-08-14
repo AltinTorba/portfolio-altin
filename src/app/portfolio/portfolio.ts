@@ -8,7 +8,6 @@ interface Project {
   tech: string[];
   github: string;
   live: string;
-  team?: number;
 }
 
 @Component({
@@ -21,12 +20,12 @@ interface Project {
 export class Portfolio {
   projects: Project[] = [
     {
-      image: 'pokedex',
-      name: 'Pokedex',
-      descriptionKey: 'portfolio.projects.pokedex.description',
-      tech: ['JavaScript', 'HTML5', 'REST API'],
-      github: 'https://github.com/AltinTorba/mein_pokedex_projekt',
-      live: 'https://altintorba.github.io/mein_pokedex_projekt/',
+      image: 'join',
+      name: 'Join',
+      descriptionKey: 'portfolio.projects.join.description',
+      tech: ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
+      github: 'https://github.com/AltinTorba/join-app',
+      live: 'https://altintorba.github.io/join-app/',
     },
     {
       image: 'elpolloloco',
@@ -35,15 +34,6 @@ export class Portfolio {
       tech: ['JavaScript', 'HTML5', 'OOP'],
       github: 'https://github.com/AltinTorba/el_pollo_loco',
       live: 'https://altintorba.github.io/el_pollo_loco/',
-    },
-    {
-      image: 'join',
-      name: 'Join',
-      descriptionKey: 'portfolio.projects.join.description',
-      tech: ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
-      team: 4,
-      github: 'https://github.com/AltinTorba/join-app',
-      live: 'https://altintorba.github.io/join-app/',
     },
     {
       image: 'kanmind',
@@ -68,22 +58,6 @@ export class Portfolio {
       tech: ['Python', 'Django', 'DRF'],
       github: 'https://github.com/AltinTorba/quizly-backend',
       live: '',
-    },
-    {
-      image: 'videoflix',
-      name: 'Videoflix',
-      descriptionKey: 'portfolio.projects.videoflix.description',
-      tech: ['Python', 'Django REST Framework', 'HLS'],
-      github: 'https://github.com/AltinTorba/videoflix-backend',
-      live: '',
-    },
-    {
-      image: 'portfolio',
-      name: 'Portfolio',
-      descriptionKey: 'portfolio.projects.portfolioProject.description',
-      tech: ['Angular', 'TypeScript', 'SCSS'],
-      github: 'https://github.com/AltinTorba/portfolio-altin',
-      live: 'https://altintorba.github.io/portfolio-altin/',
     },
   ];
 

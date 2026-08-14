@@ -190,24 +190,6 @@ section#portfolio {
             }
           }
 
-          .team-badge {
-            display: inline-block;
-            background-color: $purple;
-            color: white;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 4px 14px;
-            border-radius: 20px;
-
-            @media (max-width: $breakpoint-mobile) {
-              font-size: 12px;
-              padding: 3px 10px;
-            }
-          }
-
-          .team-badge.solo {
-            background-color: $g;
-          }
 
           p {
             font-size: 20px;
