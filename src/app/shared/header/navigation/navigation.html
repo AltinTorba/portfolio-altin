@@ -1,14 +1,14 @@
 <div class="nav-links">
-  <a href="#about-me" (click)="handleClick('about-me')" [class.active]="isActive('about-me')">
+  <a routerLink="/" fragment="about-me" (click)="handleClick('about-me')" [class.active]="isActive('about-me')">
     {{ 'header.aboutMe' | translate }}
   </a>
-  <a href="#skills" (click)="handleClick('skills')" [class.active]="isActive('skills')">
+  <a routerLink="/" fragment="skills" (click)="handleClick('skills')" [class.active]="isActive('skills')">
     {{ 'header.skills' | translate }}
   </a>
-  <a href="#portfolio" (click)="handleClick('portfolio')" [class.active]="isActive('portfolio')">
+  <a routerLink="/" fragment="portfolio" (click)="handleClick('portfolio')" [class.active]="isActive('portfolio')">
     {{ 'header.portfolio' | translate }}
   </a>
-  <a  href="#contact" (click)="handleClick('contact')" [class.active]="isActive('contact')" class="hide-contact">
+  <a routerLink="/" fragment="contact" (click)="handleClick('contact')" [class.active]="isActive('contact')" class="hide-contact">
     {{ 'header.contact' | translate }}
   </a>
 </div>

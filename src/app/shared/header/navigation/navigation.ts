@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output, inject, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './navigation.html',
   styleUrls: ['./navigation.scss']
 })

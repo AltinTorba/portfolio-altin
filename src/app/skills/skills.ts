@@ -1,10 +1,11 @@
 import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
-  imports: [TranslateModule], 
+  imports: [TranslateModule, RouterLink], 
   templateUrl: './skills.html',
   styleUrls: ['./skills.scss']
 })
