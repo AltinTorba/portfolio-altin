@@ -102,12 +102,12 @@
 
   "imprint": {
     "title": "Impressum",
-    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf. Vollständige Kontaktinformationen, einschließlich Postanschrift, stelle ich auf Anfrage gerne zur Verfügung.",
+    "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf.",
     "lastUpdate": "Letzte Aktualisierung: August 2026",
     "provider": {
       "head": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)",
       "name": "Altin Torba",
-      "location": "Siegen, Deutschland"
+      "location": "Effertsufer 104, 57072 Siegen, Deutschland"
     },
     "contact": { "head": "Kontakt" },
     "broadcast": { "head": "Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV (Medienstaatsvertrag)" },
