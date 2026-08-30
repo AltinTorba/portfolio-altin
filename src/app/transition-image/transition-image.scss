@@ -1,48 +1,40 @@
-@use './../../styles.scss' as *;
-
 .transition-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('../../../public/assets/img/curved.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  // background-color: #141D30;
-
+  background-image: url('../../../public/assets/img/curved.png');
+  background-size: 1440px 879px;
   margin-top: -175px;
 
-  // @media (max-width: 1440px) {
-  //   margin-top: -235px;
-  // }
+  @media (min-width: 1441px) {
+    margin-top: -165px;
+  }
 
   @media (max-width: 1024px) {
-    margin-top: -650px;
+    background-size: 140.6vw calc(140.6vw * 0.6104);
+    margin-top: -610px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
-    margin-top: clamp(-1100px, -1770px + 1.657 * 100vw, -670px);
-  }
+  @media (max-width: 574px)  { margin-top: -630px; }
+  @media (max-width: 560px)  { margin-top: -640px; }
+  @media (max-width: 510px)  { margin-top: -660px; }
+
+  @media (max-width: 480px)  { margin-top: -730px; }
+  @media (max-width: 450px)  { margin-top: -750px; }
+  @media (max-width: 442px)  { margin-top: -770px; }
+
+  @media (max-width: 440px)  { margin-top: -790px; }
+  @media (max-width: 418px)  { margin-top: -810px; }
+  @media (max-width: 406px)  { margin-top: -830px; }
+  
+  @media (max-width: 383px)  { margin-top: -850px; }
+  @media (max-width: 363px)  { margin-top: -870px; }
+  @media (max-width: 354px)  { margin-top: -895px; }
+
+  @media (max-width: 350px)  { margin-top: -920px; }
+  @media (max-width: 344px)  { margin-top: -940px; }
+  @media (max-width: 342px)  { margin-top: -965px; }
+  @media (max-width: 338px)  { margin-top: -990px; }
+  @media (max-width: 319px)  { margin-top: -1010px; }
 }
-// .transition-wrapper {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   background-image: url('../../../public/assets/img/curved.png');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   // background-color: #141D30;
-
-//   margin-top: -175px;
-
-//   // @media (max-width: 1440px) {
-//   //   margin-top: -235px;
-//   // }
-
-//   @media (max-width: 1024px) {
-//     margin-top: -650px;
-//   }
-
-//   @media (max-width: $breakpoint-mobile) {
-//     margin-top: clamp(-1100px, -1770px + 1.657 * 100vw, -670px);
-//   }
-// }

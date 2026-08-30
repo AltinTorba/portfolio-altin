@@ -179,15 +179,19 @@ section#about-me {
     img:nth-child(2) {
       position: absolute;
       z-index: -1;
-      width: 100%;
-      max-width: 500px;
+      width: 125%; // = raporti Figma (shadow 1.069× foto), foto = 100% e .photo-container
+      // max-width: 90vw;
       object-fit: cover;
-      bottom: -20px;
+      bottom: -60px;
+
+      @media (max-width: $breakpoint-desktop) {
+        width: 125%;
+      }
 
       @media (max-width: $breakpoint-mobile) {
         object-fit: contain;
-        width: 100%;
-        max-width: 400px;
+        width: 125%;
+        // max-width: 90vw;
       }
     }
   }
