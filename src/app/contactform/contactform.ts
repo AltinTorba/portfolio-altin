@@ -49,51 +49,58 @@ export class Contactform {
 
   /**
    * Handles contact form submission. Sends the message via EmailJS if the form
-   * is valid and no submission is currently in progress. Updates submitStatus
-   * and resets the form on success.
+   * is valid and no submission is currently in progress.
    * @param form - The Angular NgForm instance representing the contact form.
    */
   onSubmit(form: NgForm) {
-    if (form.valid && !this.mailTest && !this.isSubmitting) {
-      this.isSubmitting = true;
-
-      const templateParams = {
-        name: this.contactData.name,
-        email: this.contactData.email,
-        message: this.contactData.message,
-      };
-
-      emailjs.send(
+    if (!form.valid || this.mailTest || this.isSubmitting) {
+      return;
+    }
+    this.isSubmitting = true;
+    const templateParams = this.buildTemplateParams();
+    emailjs
+      .send(
         this.emailjsConfig.serviceId,
         this.emailjsConfig.templateId,
         templateParams,
         this.emailjsConfig.publicKey
-      ).then(
-        () => {
-          this.submitStatus = 'success';
-          this.isSubmitting = false;
-
-          form.reset();
-          this.contactData = {
-            name: '',
-            email: '',
-            message: '',
-            checkbox: false,
-            company: ''
-          };
-          this.nameTouched = {
-            name: false,
-            email: false,
-            message: false
-          };
-        },
-        (error) => {
-          console.error('EmailJS error:', error);
-          this.submitStatus = 'error';
-          this.isSubmitting = false;
-        }
+      )
+      .then(
+        () => this.handleSubmitSuccess(form),
+        (error) => this.handleSubmitError(error)
       );
-    }
   }
 
+  /**
+   * Builds the parameter object sent to the EmailJS template from the current form data.
+   */
+  private buildTemplateParams() {
+    return {
+      name: this.contactData.name,
+      email: this.contactData.email,
+      message: this.contactData.message,
+    };
+  }
+
+  /**
+   * Resets form state and marks the submission as successful.
+   * @param form - The Angular NgForm instance to reset.
+   */
+  private handleSubmitSuccess(form: NgForm) {
+    this.submitStatus = 'success';
+    this.isSubmitting = false;
+    form.reset();
+    this.contactData = { name: '', email: '', message: '', checkbox: false, company: '' };
+    this.nameTouched = { name: false, email: false, message: false };
+  }
+
+  /**
+   * Logs the EmailJS error and marks the submission as failed.
+   * @param error - The error returned by the EmailJS send call.
+   */
+  private handleSubmitError(error: unknown) {
+    console.error('EmailJS error:', error);
+    this.submitStatus = 'error';
+    this.isSubmitting = false;
+  }
 }
