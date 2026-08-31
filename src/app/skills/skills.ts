@@ -15,21 +15,28 @@ export class Skills implements OnInit {
   isGerman = false;
 
   ngOnInit() {
-    const updateLine = (lang: string) => {
-      const line = document.querySelector('app-skills .line') as HTMLElement;
-      if (line) {
-        if (lang === 'de') {
-        line.style.right = '';
-        line.style.left = '';
-        line.style.width = '';
-        line.style.transform = 'translateX(150px)';
-      } else {
-        line.style.transform = '';
-      }
-      }
-    };
-    updateLine(localStorage.getItem('lang') || 'en');
-    this.translate.onLangChange.subscribe(e => updateLine(e.lang));
+    this.updateLine(localStorage.getItem('lang') || 'en');
+    this.translate.onLangChange.subscribe((e) => this.updateLine(e.lang));
+  }
+
+  /**
+   * Adjusts the position of the decorative line next to the Skills headline
+   * based on the current language, since German text requires a different offset.
+   * @param lang - The active language code (e.g. 'en' or 'de').
+   */
+  private updateLine(lang: string): void {
+    const line = document.querySelector('app-skills .line') as HTMLElement;
+    if (!line) {
+      return;
+    }
+    if (lang === 'de') {
+      line.style.right = '';
+      line.style.left = '';
+      line.style.width = '';
+      line.style.transform = 'translateX(150px)';
+    } else {
+      line.style.transform = '';
+    }
   }
 
   hoveredSkill: string | null = null;
