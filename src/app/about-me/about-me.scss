@@ -155,14 +155,16 @@ section#about-me {
       height: auto;
       object-fit: cover;
       max-width: 100%;
-      // max-width: clamp(260px, 45vw, 100%);
+      /**
+       * Below 1024px, .about-content-wrapper switches to a column layout
+       * and .photo-container takes up 100% of the width, not roughly half
+       * as in the two-column desktop layout. A 45vw max-width here would
+       * wrongly constrain the photo, so it is expanded to the actual
+       * available width instead.
+       */
+      max-width: 100%;
       min-width: 240px;
       min-height: 360px;
-
-      // Nën 1024px, .about-content-wrapper bëhet column dhe
-      // .photo-container zë 100% të gjerësisë — jo ~gjysmën si në
-      // layout dy-kolonësh, prandaj 45vw këtu do ta shtrëngonte fotos
-      // padrejtësisht. E rrisim drejt gjerësisë reale të disponueshme.
       @media (max-width: $breakpoint-desktop) {
         max-width: clamp(320px, 60vw, 480px);
       }
@@ -179,8 +181,11 @@ section#about-me {
     img:nth-child(2) {
       position: absolute;
       z-index: -1;
-      width: 125%; // = raporti Figma (shadow 1.069× foto), foto = 100% e .photo-container
-      // max-width: 90vw;
+      /**
+       * 125% matches the Figma ratio (shadow is 1.069x the photo width,
+       * with the photo set to 100% of .photo-container).
+       */
+      width: 125%;
       object-fit: cover;
       bottom: -60px;
 
@@ -191,7 +196,6 @@ section#about-me {
       @media (max-width: $breakpoint-mobile) {
         object-fit: contain;
         width: 125%;
-        // max-width: 90vw;
       }
     }
   }

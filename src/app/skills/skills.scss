@@ -188,9 +188,6 @@ section#skills {
 
       h1 {
         font-size: 90px;
-        // flex-shrink: 0;
-        // white-space: nowrap;
-
         @media (max-width: $breakpoint-1440p) {
           font-size: 72px;
         }
@@ -217,7 +214,6 @@ section#skills {
         background-color: $lightblue;
         border-bottom-left-radius: 2px;
         border-top-left-radius: 2px;
-        // transform: translateX(100px);
 
         @media (max-width: $breakpoint-desktop) {
           position: static;

@@ -1,7 +1,6 @@
 @use '../../styles.scss' as *;
 
 .portfolio-outer-wrapper { 
-  // background-color: #1B253A;
   background-color: #141D30;
   width: 100%;
   overflow: hidden;
@@ -245,9 +244,7 @@ section#portfolio {
       max-width: 850px;
       width: 100%;
       min-height: 300px;
-      // max-height: 400px;
       overflow-x: visible;
-      // overflow-y: auto;
       background-color: $darkblue;
       justify-content: safe center;
 
@@ -355,7 +352,6 @@ section#portfolio {
   }
 }
 
-/* Navigation poshte */
 .ref-navigation {
   display: flex;
   flex-direction: center;
@@ -382,35 +378,6 @@ section#portfolio {
       }
     }
   }
-
-  //   .nav-btns {
-  //     display: flex;
-  //     gap: 24px;
-  //     margin-top: 12px;
-
-  //     .nav-btn {
-  //       width: 48px;
-  //       height: 48px;
-  //       border-radius: 50%;
-  //       border: none;
-  //       background-color: $g;
-  //       color: $w;
-  //       font-size: 24px;
-  //       cursor: pointer;
-  //       transition: all 125ms ease-in-out;
-
-  //       &:hover {
-  //         background-color: $purple;
-  //         transform: scale(1.15);
-  //       }
-
-  //       @media (max-width: $breakpoint-mobile) {
-  //         width: 40px;
-  //         height: 40px;
-  //         font-size: 20px;
-  //       }
-  //     }
-  //   }
 }
 
 .nav-arrow {
@@ -448,7 +415,6 @@ section#portfolio {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  // margin-top: 32px;
 
   .dot {
     width: 10px;
