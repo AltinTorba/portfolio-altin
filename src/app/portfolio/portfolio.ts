@@ -25,7 +25,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.join.description',
       tech: ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
       github: 'https://github.com/AltinTorba/join-app',
-      live: 'https://altintorba.github.io/join-app/',
+      live: 'https://join.altintorba.de',
     },
     {
       image: 'elpolloloco',
@@ -33,7 +33,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.elpollo.description',
       tech: ['JavaScript', 'HTML5', 'OOP'],
       github: 'https://github.com/AltinTorba/el_pollo_loco',
-      live: 'https://altintorba.github.io/el_pollo_loco/',
+      live: 'https://el-pollo-loco.altintorba.de',
     },
     {
       image: 'kanmind',
@@ -41,7 +41,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.kanmind.description',
       tech: ['Python', 'Django REST Framework', 'REST API'],
       github: 'https://github.com/AltinTorba/KanMind',
-      live: 'https://kanmind-altin.duckdns.org/pages/auth/login.html',
+      live: 'https://kanmind.altintorba.de',
     },
     {
       image: 'coderr',
@@ -49,7 +49,7 @@ export class Portfolio {
       descriptionKey: 'portfolio.projects.coderr.description',
       tech: ['Python', 'Django REST Framework', 'SQLite'],
       github: 'https://github.com/AltinTorba/coderr_backend',
-      live: 'https://altintorba-coderr.duckdns.org/index.html',
+      live: 'https://coderr.altintorba.de',
     },
     {
       image: 'quizly',
