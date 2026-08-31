@@ -1,0 +1,199 @@
+@use '../../styles.scss' as *;
+
+.form-container {
+  align-self: center;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (max-width: $breakpoint-mobile) {
+      gap: 8px;
+    }
+
+    .input-group {
+      position: relative;
+
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background-color: $darkblue;
+        border: 1px solid $purple;
+        border-radius: 10px;
+        padding: 15px 45px 15px 25px;
+        color: $w;
+        line-height: 120%;
+        letter-spacing: 0;
+        font-size: 16px;
+
+        &::placeholder {
+          color: $w;
+          font-weight: 700;
+        }
+
+        &:hover {
+          border-color: $lightblue;
+        }
+
+        &:-webkit-autofill {
+          box-shadow: 0 0 0px 1000px $darkblue inset !important;
+          -webkit-text-fill-color: $w !important;
+          transition: background-color 5000s ease-in-out 0s;
+          caret-color: $w;
+          border: 1px solid $purple !important;
+        }
+
+        &:-moz-autofill {
+          box-shadow: 0 0 0px 1000px $darkblue inset;
+          -moz-text-fill-color: $w !important;
+          caret-color: $w;
+        }
+
+        &.valid {
+          border-color: $g !important;
+        }
+
+        &.invalid {
+          border-color: $r;
+        }
+      }
+
+      .status-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        pointer-events: none;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 202px;
+    }
+
+    .agree {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @media (max-width: $breakpoint-mobile) {
+        align-items: flex-start;
+      }
+
+      input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover+.custom-checkbox {
+          background-color: #183670;
+        }
+      }
+
+      .custom-checkbox {
+        width: 24px;
+        height: 24px;
+        background-image: url("../../../public/assets/img/unchecked.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 125ms ease-in-out;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      input[type="checkbox"]:checked+.custom-checkbox {
+        background-image: url("../../../public/assets/img/checked.png");
+      }
+
+      p {
+        font-size: 16px;
+
+        a {
+          text-decoration: none;
+          color: $purple;
+
+          @media (max-width: $breakpoint-mobile) {
+            color: $g;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .regular-btn {
+      align-self: center;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:disabled,
+      &[disabled] {
+        background-color: $grey;
+        pointer-events: none;
+
+        &:hover {
+          transform: none;
+        }
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+        margin-top: 8px;
+        font-size: 16px;
+      }
+    }
+
+    .submit-success,
+    .submit-error {
+      margin-top: 16px;
+      font-size: 16px;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      animation: fadeIn 200ms ease-in-out;
+      position: sticky;
+      bottom: 0;
+      z-index: 10;
+    }
+
+    .submit-success {
+      color: $g;
+      background-color: rgba($g, 0.1);
+    }
+
+    .submit-error {
+      color: $r;
+      background-color: rgba($r, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
