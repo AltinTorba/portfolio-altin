@@ -25,39 +25,65 @@ export class App implements AfterViewInit {
     this.translate.use('en');
   }
 
+  private readonly sectionOffsets: Record<string, number> = {
+    'skills': 140,
+    'about-me': 60,
+    'portfolio': 98,
+    'contact': 60,
+    'above-the-fold': 0,
+  };
+
+  /**
+   * Initializes AOS animations and sets up scroll behavior on route changes.
+   */
   ngAfterViewInit(): void {
+    this.initAnimations();
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.handleRouteScroll();
+      }
+    });
+  }
+
+  /**
+   * Initializes the AOS (Animate On Scroll) library with the app's animation settings.
+   */
+  private initAnimations(): void {
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
       once: false,
       mirror: true,
     });
+  }
 
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const hashIndex = this.router.url.indexOf('#');
-        if (hashIndex === -1) {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else {
-          const fragment = this.router.url.substring(hashIndex + 1);
-          setTimeout(() => {
-            const target = document.getElementById(fragment);
-            if (target) {
-              const offsets: Record<string, number> = {
-                'skills': 140,
-                'about-me': 60,
-                'portfolio': 98,
-                'contact': 60,
-                'above-the-fold': 0,
-              };
-              const headerOffset = offsets[fragment] ?? 100;
-              const elementPosition = target.getBoundingClientRect().top + window.scrollY;
-              window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
-            }
-          }, 0);
-        }
-      }
-    });
+  /**
+   * Scrolls to the top of the page, or to a specific section if the current
+   * route contains a fragment (e.g. #about-me).
+   */
+  private handleRouteScroll(): void {
+    const hashIndex = this.router.url.indexOf('#');
+    if (hashIndex === -1) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const fragment = this.router.url.substring(hashIndex + 1);
+    setTimeout(() => this.scrollToFragment(fragment), 0);
+  }
+
+  /**
+   * Scrolls smoothly to the element matching the given fragment id,
+   * offsetting for the fixed header height of that section.
+   * @param fragment - The id of the target section (from the URL hash).
+   */
+  private scrollToFragment(fragment: string): void {
+    const target = document.getElementById(fragment);
+    if (!target) {
+      return;
+    }
+    const headerOffset = this.sectionOffsets[fragment] ?? 100;
+    const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
   }
 
 
