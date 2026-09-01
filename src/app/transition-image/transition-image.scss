@@ -4,18 +4,26 @@
   height: 100%;
   background-repeat: no-repeat;
   background-image: url('../../../public/assets/img/curved.png');
-  background-size: 100% auto;
-  top: calc(var(--photo-bottom, 800px) - 165px);
+  background-size: cover;
+  top: calc(var(--photo-bottom, 800px) - 280px);
+
+  @media (max-width: 1919px) {
+    top: calc(var(--photo-bottom, 800px) - 220px);
+    background-size: 100% auto;
+    background-position: center top;
+
+  }
 
   @media (max-width: 1440px) {
-    top: calc(var(--photo-bottom, 800px) - 155px);
+    top: calc(var(--photo-bottom, 800px) - 160px);
+    background-size: 100% auto;
+    background-position: center top;
   }
 
   @media (max-width: 1024px) {
-    top: calc(var(--photo-bottom, 800px) - 125px);
+    top: calc(var(--photo-bottom, 800px) - 120px);
+    background-size: 100% auto;
+    background-position: center top;
   }
 
-  @media (max-width: 700px) {
-    top: calc(var(--photo-bottom, 800px) - 125px);
-  }
 }
