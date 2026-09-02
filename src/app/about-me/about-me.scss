@@ -48,6 +48,11 @@ section#about-me {
       box-sizing: border-box;
     }
 
+    @media (max-width: 1345px) and (min-width: 1151px) {
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+
     @media (max-width: $breakpoint-desktop) {
       display: $f;
       flex-direction: $col;
