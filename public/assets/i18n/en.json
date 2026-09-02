@@ -98,7 +98,7 @@
   "imprint": {
     "title": "Legal Notice",
     "purpose": "This website is intended exclusively for private use, primarily as a digital application document. It does not contain any commercial offers, advertisements, or sales.",
-    "lastUpdate": "Last update: August 2026",
+    "lastUpdate": "Last update: September 2026",
     "provider": {
       "head": "Information pursuant to § 5 DDG (Digitale-Dienste-Gesetz)",
       "name": "Altin Torba",
@@ -111,8 +111,8 @@
       "head": "Responsible for content pursuant to § 18 Abs. 2 MStV (Medienstaatsvertrag)"
     },
     "hosting": {
-      "head": "Hosting Provider",
-      "text": "This website is hosted via GitHub Pages.",
+      "head": "Hosting",
+      "text": "This website is self-hosted and can be reached at altintorba.de as well as at https://altintorba.duckdns.org. A mirror version is additionally available via GitHub Pages at https://altintorba.github.io/portfolio-altin/ (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).",
       "location": "Germany"
     },
     "os": {
@@ -123,13 +123,13 @@
   "privacy": {
     "title": "Privacy Policy",
     "intro": "This privacy notice explains the nature, scope and purpose of processing personal data on this website.",
-    "lastUpdate": "Last update: August 2026",
+    "lastUpdate": "Last update: September 2026",
     "controller": {
       "head": "Controller"
     },
     "hosting": {
       "head": "Hosting",
-      "text": "This website is hosted via GitHub Pages (GitHub, Inc., USA). Access data (e.g. IP address, browser type, date and time of access) may be processed by GitHub as part of standard server operation. For details, see GitHub's Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+      "text": "This website is hosted at altintorba.de and https://altintorba.duckdns.org on a privately operated server. When the website is accessed, the web server (nginx) automatically records access data (including IP address, date and time of access, page requested, browser type) in a log file. This data is used exclusively for technical security and error analysis and is not shared with third parties. A mirror version of this website is additionally available via GitHub Pages at https://altintorba.github.io/portfolio-altin/. Accessing this version may involve processing of access data by GitHub (GitHub, Inc., USA) as part of standard server operation. For details, see GitHub's Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
     },
     "contactForm": {
       "head": "Contact Form",
