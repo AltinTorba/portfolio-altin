@@ -103,7 +103,7 @@
   "imprint": {
     "title": "Impressum",
     "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf.",
-    "lastUpdate": "Letzte Aktualisierung: August 2026",
+    "lastUpdate": "Letzte Aktualisierung: September 2026",
     "provider": {
       "head": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)",
       "name": "Altin Torba",
@@ -112,8 +112,8 @@
     "contact": { "head": "Kontakt" },
     "broadcast": { "head": "Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV (Medienstaatsvertrag)" },
     "hosting": {
-      "head": "Hosting-Dienstleister",
-      "text": "Diese Website wird über GitHub Pages gehostet.",
+      "head": "Hosting",
+      "text": "Diese Website wird eigenständig gehostet und ist unter altintorba.de sowie unter https://altintorba.duckdns.org erreichbar. Zusätzlich steht eine Spiegelversion über GitHub Pages unter https://altintorba.github.io/portfolio-altin/ zur Verfügung (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).",
       "location": "Deutschland"
     },
     "os": {
@@ -125,11 +125,11 @@
   "privacy": {
     "title": "Datenschutzerklärung",
     "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten innerhalb dieser Website.",
-    "lastUpdate": "Letzte Aktualisierung: August 2026",
+    "lastUpdate": "Letzte Aktualisierung: September 2026",
     "controller": { "head": "Verantwortlicher" },
     "hosting": {
       "head": "Hosting",
-      "text": "Diese Website wird über GitHub Pages gehostet (GitHub, Inc., USA). Zugriffsdaten (z. B. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriffs) können im Rahmen des üblichen Serverbetriebs von GitHub verarbeitet werden. Details finden Sie in der Datenschutzerklärung von GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+      "text": "Diese Website wird über altintorba.de und https://altintorba.duckdns.org auf einem eigenen, privat betriebenen Server gehostet. Beim Aufruf der Website werden durch den Webserver (nginx) automatisch Zugriffsdaten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp) in einer Logdatei gespeichert. Diese Daten dienen ausschließlich der technischen Sicherheit und Fehleranalyse und werden nicht an Dritte weitergegeben. Zusätzlich ist eine Spiegelversion dieser Website über GitHub Pages unter https://altintorba.github.io/portfolio-altin/ erreichbar. Beim Aufruf dieser Version können Zugriffsdaten im Rahmen des üblichen Serverbetriebs von GitHub (GitHub, Inc., USA) verarbeitet werden. Details finden Sie in der Datenschutzerklärung von GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
     },
     "contactForm": {
       "head": "Kontaktformular",
