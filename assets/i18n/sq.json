@@ -1,0 +1,157 @@
+{
+  "header": {
+    "aboutMe": "Rreth meje",
+    "skills": "Aftësitë",
+    "portfolio": "Portofoli",
+    "contact": "Kontakt"
+  },
+  "atf": {
+    "intro": "Unë jam",
+    "headline": "Zhvillues",
+    "button": "Le të flasim!",
+    "vertical": "Lëviz poshtë",
+    "contactAlt": "Kontakto me email"
+  },
+  "about": {
+    "headline": "Rreth meje",
+    "introductionText": "Udhëtimi im në programim filloi që në fëmijëri dhe u thellua përmes një bootcamp-i intensiv Front-End në Developer Akademie. Bota dinamike e teknologjisë më frymëzon vazhdimisht, dhe pres me padurim të kontribuoj në projekte kuptimplota.",
+    "locationText": "Jetoj në Siegen, NRW, dhe jam i hapur për pozicione remote, por s'mund të zhvendosem.",
+    "learningText": "Jam i pasionuar pas mësimit të teknologjive të reja dhe zhvillimit të vazhdueshëm të aftësive të mia.",
+    "solvingText": "Stili im i zgjidhjes së problemeve është praktik dhe hap pas hapi. Punoj mirë në mënyrë të pavarur, por kërkoj aktivisht bashkëpunim në sfida më komplekse, duke kombinuar planifikim të kujdesshëm me zgjidhje të zbatueshme.",
+    "profilePhotoAlt": "Foto profili e Altinit"
+  },
+  "skills": {
+    "headline": "Aftësitë",
+    "description": "Përmes punës praktike me projekte të ndryshme, kam ndërtuar aftësi të forta në teknologjitë moderne frontend, duke përfshirë HTML, CSS dhe JavaScript. Jam gjithmonë i gatshëm të mësoj dhe të përshtatem me mjete dhe framework-e të reja. Për mua, rritja e vazhdueshme është thelbësore për të qëndruar i përditësuar në fushën me zhvillim të shpejtë të web-development-it.",
+    "subheadline": "Duke kërkuar ",
+    "highlight": "një aftësi tjetër",
+    "followup": "I entuziazmuar për të mësuar teknologji dhe framework-e të reja.",
+    "button": "Na kontakto"
+  },
+  "portfolio": {
+    "description": "Eksploro një seleksion të punës sime — ndërvepro me projektet për të parë aftësitë e mia në veprim.",
+    "projects": {
+      "elpollo": {
+        "description": "Lojë jump, run dhe throw e bazuar në qasje të orientuar nga objekti. Ndihmoje Pepe-n të gjejë monedha dhe salcë tabasco për të luftuar pulën e çmendur."
+      },
+      "pokedex": {
+        "description": "Katalog interaktiv Pokémon që merr të dhëna live nga PokéAPI. Shfleto, kërko dhe shiko statistika të detajuara për qindra Pokémon."
+      },
+      "videoflix": {
+        "description": "Backend REST API për një platformë streaming në stilin Netflix. Menaxhon llogaritë e përdoruesve, videot dhe luajtjen adaptive HLS - gjithçka përmes HTTP endpoints."
+      },
+      "quizly": {
+        "description": "Backend REST API që shndërron video YouTube në kuiz me zgjedhje të shumëfishta. Ekstrakton audion, e transkripton përmes speech-to-text, dhe gjeneron pyetje kuizi të strukturuara duke përdorur AI."
+      },
+      "coderr": {
+        "description": "Backend REST API për një platformë freelancerësh. Ofruesit krijojnë oferta me nivele, klientët bëjnë porosi, dhe punët e përfunduara vlerësohen - gjithçka përmes HTTP endpoints."
+      },
+      "kanmind": {
+        "description": "Backend REST API për një mjet menaxhimi projektesh në stilin Kanban, ndërtuar me Django REST Framework, që mbështet borde, menaxhim detyrash dhe komente."
+      },
+      "join": {
+        "description": "Menaxher detyrash i frymëzuar nga sistemi Kanban. Krijo dhe organizo detyra duke përdorur drag & drop, cakto përdorues dhe kategori."
+      },
+      "portfolioProject": {
+        "description": "Website personal portofoli i ndërtuar me Angular, me përmbajtje dygjuhëshe, formular kontakti të mbështetur nga EmailJS, dhe paraqitje live të projekteve."
+      }
+    },
+    "references": {
+      "reference1": {
+        "text": "Altini është i besueshëm, punon me kujdes dhe përgjegjshmëri. Ishte kënaqësi të bashkëpunoja me të në projektin tonë të përbashkët.",
+        "title": "Refiye Külhanbey"
+      },
+      "reference2": {
+        "text": "Altini punon me përkushtim dhe besueshmëri, i përfundon detyrat me sukses në mënyrë konsistente, dhe kodi i tij është i strukturuar mirë, i lexueshëm dhe i mirëmbajtshëm.",
+        "title": "Philipp Biebert"
+      },
+      "reference3": {
+        "text": "Kolegu im i ekipit, Altini, kontribuoi në mënyrë të besueshme në punën në grup dhe i përfundoi detyrat me kujdes. Vlerësova veçanërisht që ai ofroi ndihmë mbështetëse kur lindën probleme dhe kontribuoi në gjetjen e zgjidhjeve. Puna në ekip ishte e këndshme dhe konstruktive në përgjithësi. Ai mori pjesë aktivisht dhe kontribuoi në progresin e grupit.",
+        "title": "Frank Meckel"
+      }
+    }
+  },
+  "contact": {
+    "headline": "Kontakt",
+    "problemHeadline": "Ke një problem për të zgjidhur?",
+    "introText": "Gati për të shtuar vlerë në ekipin tënd si zhvillues frontend. Le të diskutojmë se si mund të kontribuoj.",
+    "needDev": "Ke nevojë për një zhvillues Frontend?",
+    "contactMe": "Më kontakto!",
+    "success": "Mesazhi yt u dërgua me sukses. Do të të kontaktoj së shpejti.",
+    "error": "Diçka shkoi keq. Provo përsëri më vonë.",
+
+    "form": {
+      "namePlaceholder": "Emri yt",
+      "nameError": "Të lutem shkruaj emrin dhe mbiemrin tënd",
+      "emailPlaceholder": "Email-i yt",
+      "emailError": "Të lutem shkruaj një adresë email të vlefshme",
+      "messagePlaceholder": "Mesazhi yt",
+      "messageError": "Të lutem shkruaj të paktën 10 karaktere",
+      "privacyTextPart1": "Kam lexuar",
+      "privacyLinkText": "politikën e privatësisë",
+      "privacyTextPart2": "dhe pajtohem me përpunimin e të dhënave të mia siç përshkruhet aty.",
+      "privacyError": "Të lutem pajtohu me politikën e privatësisë",
+      "submitBtn": "Dërgo mesazhin :)"
+    }
+  },
+  "imprint": {
+    "title": "Shënim Ligjor",
+    "purpose": "Ky website shërben ekskluzivisht për qëllime private, kryesisht si dokument dixhital aplikimi. S'përmban asnjë ofertë komerciale, reklamë apo shitje.",
+    "lastUpdate": "Përditësimi i fundit: Shtator 2026",
+    "provider": {
+      "head": "Të dhëna sipas § 5 DDG (Digitale-Dienste-Gesetz)",
+      "name": "Altin Torba",
+      "location": "Effertsufer 104, 57072 Siegen, Gjermani"
+    },
+    "contact": {
+      "head": "Kontakt"
+    },
+    "broadcast": {
+      "head": "Përgjegjës për përmbajtjen sipas § 18 Abs. 2 MStV (Medienstaatsvertrag)"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "Ky website hostohet në mënyrë vetjake dhe mund të arrihet te altintorba.de si dhe te https://altintorba.duckdns.org. Shtesë, ekziston një version pasqyrues përmes GitHub Pages te https://altintorba.github.io/portfolio-altin/ (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).",
+      "location": "Gjermani"
+    },
+    "os": {
+      "head": "Zgjidhja e Mosmarrëveshjeve BE",
+      "text": "Komisioni Evropian ofron një platformë për zgjidhjen e mosmarrëveshjeve online (ODR): https://ec.europa.eu/consumers/odr."
+    }
+  },
+  "privacy": {
+    "title": "Politika e Privatësisë",
+    "intro": "Ky njoftim privatësie ju informon mbi natyrën, shtrirjen dhe qëllimin e përpunimit të të dhënave personale brenda këtij website-i.",
+    "lastUpdate": "Përditësimi i fundit: Shtator 2026",
+    "controller": {
+      "head": "Përgjegjësi"
+    },
+    "hosting": {
+      "head": "Hosting",
+      "text": "Ky website hostohet te altintorba.de dhe https://altintorba.duckdns.org në një server privat, të operuar vetjakisht. Kur website-i qaset, serveri web (nginx) ruan automatikisht të dhëna qasjeje (përfshirë adresën IP, datën dhe orën e qasjes, faqen e kërkuar, tipin e browser-it) në një log-file. Këto të dhëna përdoren ekskluzivisht për siguri teknike dhe analizë gabimesh dhe s'ndahen me palë të treta. Shtesë, ekziston një version pasqyrues i këtij website-i përmes GitHub Pages te https://altintorba.github.io/portfolio-altin/. Qasja në këtë version mund të përfshijë përpunim të dhënash qasjeje nga GitHub (GitHub, Inc., USA) si pjesë e operimit standard të serverit. Për detaje, shiko Deklaratën e Privatësisë të GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+    },
+    "contactForm": {
+      "head": "Formulari i Kontaktit",
+      "text": "Nëse më kontakton përmes formularit të kontaktit, emri, adresa email dhe mesazhi yt përpunohen ekskluzivisht për të trajtuar kërkesën tënde. Formulari mbështetet nga EmailJS (EmailJS Corp., USA), një shërbim palë e tretë që e transmeton mesazhin tënd te kutia ime postare email. Përpunimi bazohet në pëlqimin tënd (Art. 6(1)(a) GDPR) dhe interesin tim legjitim për t'iu përgjigjur kërkesave (Art. 6(1)(f) GDPR)."
+    },
+    "retention": {
+      "head": "Ruajtja e të Dhënave",
+      "text": "Të dhënat personale të dërguara përmes formularit të kontaktit fshihen sapo kërkesa jote të jetë trajtuar plotësisht, përveç nëse një periudhë më e gjatë ruajtjeje kërkohet me ligj."
+    },
+    "rights": {
+      "head": "Të Drejtat e Tua",
+      "intro": "Sipas GDPR, ke të drejtë të:",
+      "access": "Aksesosh të dhënat e tua personale (Art. 15 GDPR)",
+      "correct": "Korrigjosh të dhëna të pasakta (Art. 16 GDPR)",
+      "delete": "Kërkosh fshirjen e të dhënave të tua (Art. 17 GDPR)",
+      "restrict": "Kufizosh përpunimin (Art. 18 GDPR)",
+      "portability": "Bartshmërinë e të dhënave (Art. 20 GDPR)",
+      "object": "Kundërshtosh përpunimin (Art. 21 GDPR)",
+      "complain": "Bësh ankesë te një autoritet mbikëqyrës (Art. 77 GDPR) - në Rhein-Westfalinë e Veriut, ky është Landesbeauftragte für Datenschutz und Informationsfreiheit NRW (LDI NRW)"
+    },
+    "github": {
+      "head": "Ikona e Jashtme e Lidhjes GitHub",
+      "text": "Duke klikuar ikonën GitHub, do të largohesh nga ky sajt dhe do të ridrejtohesh te github.com. GitHub Inc. është përgjegjës për çdo përpunim atje."
+    }
+  }
+}
