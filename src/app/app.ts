@@ -20,7 +20,7 @@ export class App implements AfterViewInit {
   private router = inject(Router);
 
   constructor() {
-    this.translate.addLangs(['de', 'en']);
+    this.translate.addLangs(['de', 'en', 'sq']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }

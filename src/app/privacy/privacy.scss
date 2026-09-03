@@ -7,10 +7,10 @@ section#privacy {
   .privacy-wrapper {
     max-width: $breakpoint-1440p;
     margin: 0 auto;
-    padding: 120px 100px;
+    padding: 180px 100px 120px;
 
     @media (max-width: $breakpoint-mobile) {
-      padding: 106px 15px;
+      padding: 150px 15px 106px;
     }
   }
 
