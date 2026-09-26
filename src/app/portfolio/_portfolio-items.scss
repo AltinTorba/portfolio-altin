@@ -1,5 +1,12 @@
 @use '../../styles.scss' as *;
 
+// Matches devices that cannot hover at all (touchscreens), regardless of
+// viewport width — a wide touchscreen laptop/tablet in landscape is still
+// "narrow" in the sense that ":hover" will never reliably fire on it, so
+// the same always-visible treatment used below $breakpoint-tablet must
+// also apply there.
+$touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointer: coarse)';
+
 .item-container {
   margin-top: 32px;
   display: flex;
@@ -17,10 +24,26 @@
     border: 1px solid $g;
     background: linear-gradient(45deg, #000000 0%, $darkblue 30%);
 
+    // Below tablet width — or on any device that cannot hover, whatever
+    // its width — the card switches from "image with absolute overlay
+    // on hover" to a plain stacked card: image on top, buttons + info
+    // always visible below.
+    @media #{$touch-or-narrow} {
+      aspect-ratio: auto;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+    }
+
     .image-wrapper {
       width: 100%;
       height: 100%;
       overflow: hidden;
+
+      @media #{$touch-or-narrow} {
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
 
       img {
         width: 100%;
@@ -40,6 +63,16 @@
       background-color: rgba(0, 0, 0, 0.5);
       transition: opacity 125ms ease;
 
+      // Rejoins the normal document flow, right below the image, instead
+      // of floating on top of it, and stays permanently visible. This
+      // also covers wide touchscreens that are above $breakpoint-tablet
+      // in raw width.
+      @media #{$touch-or-narrow} {
+        opacity: 1;
+        position: static;
+        background-color: transparent;
+      }
+
       .buttons {
         display: flex;
         justify-content: center;
@@ -48,9 +81,10 @@
         flex: 1;
         align-items: flex-end;
 
-        @media (max-width: $breakpoint-tablet) {
+        @media #{$touch-or-narrow} {
           align-items: center;
-          padding: 15px;
+          padding: 16px 12px;
+          flex: none;
         }
 
         .btn {
@@ -61,9 +95,9 @@
           text-decoration: none;
           transition: all 125ms ease-in-out;
 
-          @media (max-width: $breakpoint-tablet) {
+          @media #{$touch-or-narrow} {
             font-size: 16px;
-            padding: 8px 16px;
+            padding: 10px 20px;
           }
         }
 
@@ -94,9 +128,14 @@
         gap: 32px;
         overflow: auto;
 
+        @media #{$touch-or-narrow} {
+          min-height: 0;
+          border-radius: 0 0 15px 15px;
+        }
+
         @media (max-width: $breakpoint-mobile) {
           gap: 16px;
-          padding: 4px 8px;
+          padding: 12px 8px;
         }
 
         h2 {
@@ -131,6 +170,12 @@
       }
       .project-overlay {
         opacity: 1;
+      }
+    }
+
+    @media #{$touch-or-narrow} {
+      &:hover .image-wrapper img {
+        transform: none;
       }
     }
   }
