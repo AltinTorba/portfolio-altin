@@ -120,9 +120,15 @@ section#certifications {
         overflow: hidden;
         background-color: $w;
 
+        // Without this, the image's own sharp corners sit exactly on top
+        // of .cert-item's rounded top corners (overflow: visible above no
+        // longer clips them), making the border look cut off/uneven at
+        // the top instead of following the card's rounded outline.
         @media #{$touch-or-narrow} {
           height: auto;
           aspect-ratio: 3 / 2;
+          border-radius: 15px 15px 0 0;
+          overflow: hidden;
         }
 
         img {
@@ -278,18 +284,20 @@ section#certifications {
         }
       }
 
-      &:hover {
-        .image-wrapper img {
-          transform: scale(1.05);
-        }
-        .cert-overlay {
-          opacity: 1;
-        }
-      }
-
-      @media #{$touch-or-narrow} {
-        &:hover .image-wrapper img {
-          transform: none;
+      // Gated to real hover-capable pointers only (mouse/trackpad),
+      // instead of overriding a plain &:hover afterwards — a touch tap
+      // can still trigger :hover in some browsers/emulators regardless
+      // of width, so relying on "undo it later inside touch-or-narrow"
+      // was fragile. This way the zoom-on-hover effect simply does not
+      // exist for touch input at all, at any width.
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          .image-wrapper img {
+            transform: scale(1.05);
+          }
+          .cert-overlay {
+            opacity: 1;
+          }
         }
       }
     }

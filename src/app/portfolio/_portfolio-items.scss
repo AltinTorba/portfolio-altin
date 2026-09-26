@@ -40,9 +40,15 @@ $touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointe
       height: 100%;
       overflow: hidden;
 
+      // Without this, the image's own sharp corners sit exactly on top
+      // of .portfolio-item's rounded top corners (overflow: visible above
+      // no longer clips them), making the border look cut off/uneven at
+      // the top instead of following the card's rounded outline.
       @media #{$touch-or-narrow} {
         height: auto;
         aspect-ratio: 1 / 1;
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
       }
 
       img {
@@ -50,6 +56,15 @@ $touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointe
         height: 100%;
         object-fit: cover;
         transition: transform 125ms ease;
+
+        // On touch/narrow the image is shown at rest (no hover zoom to
+        // reveal the cropped-out parts later), so show it uncropped
+        // instead of tightly filling the square and cutting off edges.
+        // The card's own dark gradient background shows through the
+        // letterboxed space, matching the look on tap.
+        @media #{$touch-or-narrow} {
+          object-fit: contain;
+        }
       }
     }
 
@@ -164,18 +179,20 @@ $touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointe
       }
     }
 
-    &:hover {
-      .image-wrapper img {
-        transform: scale(2);
-      }
-      .project-overlay {
-        opacity: 1;
-      }
-    }
-
-    @media #{$touch-or-narrow} {
-      &:hover .image-wrapper img {
-        transform: none;
+    // Gated to real hover-capable pointers only (mouse/trackpad), instead
+    // of overriding a plain &:hover afterwards — a touch tap can still
+    // trigger :hover in some browsers/emulators regardless of width, so
+    // relying on "undo it later inside touch-or-narrow" was fragile.
+    // This way the zoom-on-hover effect simply does not exist for touch
+    // input at all, at any width.
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        .image-wrapper img {
+          transform: scale(2);
+        }
+        .project-overlay {
+          opacity: 1;
+        }
       }
     }
   }
