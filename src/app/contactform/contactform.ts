@@ -3,11 +3,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
+import { BusinessCard } from '../business-card/business-card';
 
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [ FormsModule, TranslateModule, RouterLink ],
+  imports: [ FormsModule, TranslateModule, RouterLink, BusinessCard ],
   templateUrl: './contactform.html',
   styleUrl: './contactform.scss'
 })
@@ -26,6 +27,8 @@ export class Contactform {
     email: false,
     message: false
   };
+
+  showBusinessCard = false;
 
   /**
    * Marks a form field as touched, triggering validation display on blur.

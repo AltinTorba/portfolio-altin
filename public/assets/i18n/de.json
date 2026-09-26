@@ -3,11 +3,14 @@
     "aboutMe": "Über mich",
     "skills": "Fähigkeiten",
     "portfolio": "Portfolio",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "certifications": "Zertifikate"
   },
   "atf": {
     "intro": "Ich bin",
     "headline": "Entwickler",
+    "role": "Fullstack Entwickler",
+    "stack": "[Frontend & Backend]",
     "button": "Lass uns reden!",
     "vertical": "Scrolle runter",
     "contactAlt": "Kontakt per E-Mail"
@@ -18,11 +21,13 @@
     "locationText": "Ich lebe in Siegen, NRW, und bin für Remote-Positionen offen, kann jedoch nicht umziehen.",
     "learningText": "Ich bin leidenschaftlich daran interessiert, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich weiterzuentwickeln.",
     "solvingText": "Mein Problemlösungsstil ist praktisch und schrittweise. Ich arbeite gut selbstständig, suche aber aktiv die Zusammenarbeit bei anspruchsvolleren Herausforderungen und verbinde dabei sorgfältige Planung mit umsetzbaren Lösungen.",
-    "profilePhotoAlt": "Profilfoto von Altin"
+    "profilePhotoAlt": "Profilfoto von Altin",
+    "viewCv": "CV ansehen",
+    "downloadCv": "Lebenslauf herunterladen"
   },
   "skills": {
     "headline": "Fähigkeiten",
-    "description": "Durch die praktische Arbeit an verschiedenen Projekten habe ich fundierte Kenntnisse in modernen Frontend-Technologien wie HTML, CSS und JavaScript aufgebaut. Ich bin stets bereit, neue Tools und Frameworks zu erlernen und mich anzupassen. Kontinuierliche Weiterentwicklung ist für mich der Schlüssel, um in der sich schnell verändernden Welt der Webentwicklung up-to-date zu bleiben.",
+    "description": "Durch die praktische Arbeit an verschiedenen Projekten habe ich fundierte Kenntnisse in modernen Frontend-Technologien wie HTML, CSS und JavaScript aufgebaut. Ich bin stets bereit, neue Tools und Frameworks zu erlernen und mich anzupassen. KontinuierlicheWeiterentwicklung ist für mich der Schlüssel, um in der sich schnell verändernden Welt der Webentwicklung up-to-date zu bleiben.",
     "subheadline": "Auf der Suche nach ",
     "highlight": "weiteren Fähigkeiten",
     "followup": "Begeistert vom Erlernen neuer Technologien und Frameworks.",
@@ -32,10 +37,10 @@
     "description": "Entdecke eine Auswahl meiner Arbeiten — interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "projects": {
       "elpollo": {
-        "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+        "description": "Jump-, Run- und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden,um gegen das verrückte Huhn zu kämpfen."
       },
       "pokedex": {
-        "description": "Interaktiver Pokémon-Katalog mit Live-Daten von der PokéAPI. Durchsuche und zeige detaillierte Werte für Hunderte von Pokémon an."
+        "description": "Interaktiver Pokémon-Katalog mit Live-Daten von der PokéAPI. Durchsuche und zeige detaillierte Werte für Hundertevon Pokémon an."
       },
       "videoflix": {
         "description": "REST-API-Backend für eine Netflix-artige Streaming-Plattform. Verwaltet Benutzerkonten, Videos und adaptives HLS-Streaming - alles über HTTP-Endpunkte."
@@ -58,48 +63,42 @@
     },
     "references": {
       "reference1": {
-        "text": "Altin ist verlässlich, arbeitet gründlich und verantwortungsbewusst. Es hat Spaß gemacht, mit ihm an unserem gemeinsamen Projekt zu arbeiten.",
+        "text": "Altin ist verlässlich, arbeitet gründlich und verantwortungsbewusst. Es hat Spaß gemacht, mit ihm an unserem gemeinsamenProjekt zu arbeiten.",
         "title": "Refiye Külhanbey"
-      }, 
+      },
       "reference2": {
         "text": "Altin arbeitet fleißig und zuverlässig, erledigt seine Aufgaben stets gewissenhaft, und sein Code ist gut strukturiert, lesbar und wartbar.",
         "title": "Philipp Biebert"
-      }, 
+      },
       "reference3": {
-        "text": "Mein Teamkollege Altin hat zuverlässig an der Gruppenarbeit mitgearbeitet und seine Aufgaben sorgfältig erledigt. Besonders positiv ist mir aufgefallen, dass er bei Problemen unterstützend zur Seite stand und zur Lösung beigetragen hat. Die Zusammenarbeit im Team verlief insgesamt angenehm und konstruktiv. Er hat sich engagiert eingebracht und zum Fortschritt der Gruppe beigetragen.",
+        "text": "Mein Teamkollege Altin hat zuverlässig an der Gruppenarbeit mitgearbeitet und seine Aufgaben sorgfältig erledigt. Besonders positiv ist mir aufgefallen, dass er bei Problemen unterstützend zur Seite stand und zur Lösung beigetragen hat. Die Zusammenarbeit imTeam verlief insgesamt angenehm und konstruktiv. Er hat sich engagiert eingebracht und zum Fortschritt der Gruppe beigetragen.",
         "title": "Frank Meckel"
       }
-    }  
+    }
   },
   "contact": {
+    "businessCardBtn": "Visitenkarte ansehen",
     "headline": "Kontakt",
     "problemHeadline": "Haben Sie ein Problem zu lösen?",
     "introText": "Bereit, als Frontend-Entwickler Wert für Ihr Team zu schaffen. Lassen Sie uns besprechen, wie ich beitragen kann.",
     "needDev": "Suchst du einen Frontend-Entwickler?",
     "contactMe": "Kontaktiere mich!",
-
     "success": "Deine Nachricht wurde erfolgreich gesendet. Ich werde mich bald melden.",
     "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
-
     "form": {
       "namePlaceholder": "Dein Name",
       "nameError": "Bitte gib deinen Vor- und Nachnamen ein",
-
       "emailPlaceholder": "Deine E-Mail",
       "emailError": "Bitte gib eine gültige E-Mail-Adresse ein",
-
       "messagePlaceholder": "Deine Nachricht",
       "messageError": "Bitte gib mindestens 10 Zeichen ein",
-
       "privacyTextPart1": "Ich habe die",
       "privacyLinkText": "Datenschutzerklärung",
       "privacyTextPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
       "privacyError": "Bitte stimme der Datenschutzerklärung zu",
-
       "submitBtn": "Nachricht senden :)"
     }
   },
-
   "imprint": {
     "title": "Impressum",
     "purpose": "Diese Website dient ausschließlich privaten Zwecken, insbesondere als digitale Bewerbungsunterlage. Es erfolgt kein kommerzielles Angebot, keine Werbung, kein Verkauf.",
@@ -121,7 +120,6 @@
       "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr."
     }
   },
-
   "privacy": {
     "title": "Datenschutzerklärung",
     "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten innerhalb dieser Website.",
@@ -154,5 +152,159 @@
       "head": "Externes GitHub-Link-Icon",
       "text": "Durch Klick auf das GitHub-Icon verlassen Sie diese Website und werden zu github.com weitergeleitet. Für dortige Datenverarbeitungen ist GitHub Inc. verantwortlich."
     }
+  },
+  "certifications": {
+    "headline": "Zertifikate",
+    "description": "Offiziell akkreditierte Zertifikate, die meine Qualifikation als Front-End- und Back-End-Entwickler bestätigen, sowie eine staatlich geförderte Python-Weiterbildung.",
+    "viewButton": "Zertifikat ansehen",
+    "certNumber": "Zertifikats-Nr.",
+    "readButton": "Zertifikat lesen",
+    "certificates": {
+      "backend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba hat unsere Weiterbildung im Bereich Backend Development zum 19. August 2026 erfolgreich abgeschlossen."
+            ]
+          },
+          {
+            "heading": "Über die Developer Akademie:",
+            "paragraphs": [
+              "Die Developer Akademie wurde von ehemaligen Managern und Tech-Mitarbeitern erfolgreicher Digitalunternehmen gegründet. Das Ziel ist, eine zeitlich flexible und intensive Online-Weiterbildung zu Software-Entwicklern für Quereinsteiger zu ermöglichen. Die Weiterbildung erfolgt stark praxisbezogen und im direkten Austausch mit erfahrenen Entwicklern. Dabei steht permanentes Feedback für Projekte und der Check von Softwarecode & -architektur auf Best Practices im Vordergrund.",
+              "Mehrere hundert Arbeitgeber in Deutschland, Österreich und der Schweiz haben bereits Developer Akademie Absolventen eingestellt. Unsere Absolventen arbeiten in IT-Berufen u.a. bei Konzernen (z.B. Siemens, Allianz, Eurowings, KPMG) sowie bei Start-ups (z.B. RobCo, sellerpoint) und Web Agenturen (z.B. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba wurde von uns intensiv zu folgenden Backend-Inhalten geschult:",
+            "bullets": [
+              "Aufsetzen einer skalierbaren Business Architektur (Venv, signals, OS packages, main memory caching, redis, task queue)",
+              "Professionelles Deployment (Docker, CDN, Google Cloud, Heroku)",
+              "Python, Django als Framework (inkl. Django-REST-Framework)",
+              "Betriebssysteme und allgemeine Grundlagen (Linux, Terminalnutzung, WSL, Linux Programme, Package Manager, Honeypot)",
+              "Umgang mit verschiedenen Typen von Datenbanken (SQLite, PostgreSQL, REDIS, SUPABASE)",
+              "Erstellung von REST-APIs",
+              "HTTP & HTTPS (mit SSL)"
+            ]
+          },
+          {
+            "heading": "Insgesamt wurden in den letzten Monaten die Backends für mehr als 4 komplexe Projekte umgesetzt, darunter:",
+            "bullets": [
+              "Kanban-Projektmanagement-Tool mit Statistik-Dashboard (Python & Django inkl. REST-Framework)",
+              "Freelancer B2B-Marktplatz für Entwickler (Python, Django inkl. REST-Framework)",
+              "Performante Videoplattform im Stile von YouTube oder Netflix (Django & Python)",
+              "KI-gestützte Applikation zur automatischen Erstellung interaktiver Quizze aus Videos (Python, Django inkl. REST-Framework, JWT-Authentifizierung, LLMs)"
+            ]
+          },
+          {
+            "heading": "Eigenschaften der Absolventen:",
+            "paragraphs": [
+              "Die abgeschlossene Weiterbildung ist anspruchsvoll, zeitintensiv und praxisbezogen. Erfolgreiche Absolventen weisen deshalb ein überdurchschnittlich hohes Maß an Disziplin, Zielstrebigkeit und Teamfähigkeit auf. Aufgrund der monatelangen Praxiserfahrung finden sie sich schnell in wertschaffenden Rollen in ihren Teams ein."
+            ]
+          },
+          {
+            "paragraphs": [
+              "Das Team der Developer Akademie freut sich mit Altin Torba über die erbrachten Leistungen und den erfolgreichen Abschluss und wünscht alles Gute für die weitere Karriere."
+            ]
+          }
+        ]
+      },
+      "frontend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba hat unsere Weiterbildung im Bereich Front-End Web Development zum 2. September 2026 erfolgreich abgeschlossen."
+            ]
+          },
+          {
+            "heading": "Über die Developer Akademie:",
+            "paragraphs": [
+              "Die Developer Akademie wurde von ehemaligen Managern und Tech-Mitarbeitern erfolgreicher Digitalunternehmen gegründet. Das Ziel ist, eine zeitlich flexible und intensive Online-Weiterbildung zu Software Entwicklern für Quereinsteiger zu ermöglichen. Die Weiterbildung erfolgt stark praxisbezogen und im direkten Austausch mit erfahrenen Entwicklern. Dabei steht permanentes Feedback für Projekte und der Check von Softwarecode & -architektur auf Best Practices im Vordergrund.",
+              "Mehrere hundert Arbeitgeber in Deutschland, Österreich und der Schweiz haben bereits Developer Akademie Absolventen eingestellt. Unsere Absolventen arbeiten in IT-Berufen u.a. bei Konzernen (z.B. Siemens, Allianz, Eurowings, KPMG) sowie bei Startups (z.B. RobCo, sellerpoint) und Web Agenturen (z.B. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba konnte sich umfangreiche Kenntnisse in folgenden Bereichen aneignen:",
+            "bullets": [
+              "Web Front-End Entwicklung mit Angular und TypeScript",
+              "Umsetzung von UI/UX-Designs (Figma)",
+              "Zusammenarbeit mit anderen Entwicklern im Team (Gemeinschaftsprojekte)",
+              "Web-Programmierung mit HTML, CSS (SCSS) und JavaScript",
+              "Nutzung von Design-Frameworks (Bootstrap, Material Design)",
+              "Interaktion mit Datenbanken (Google Firebase und Supabase)",
+              "Versionskontrolle mit Git (Github)",
+              "Agiles Projektmanagement (SCRUM, Kanban)",
+              "Einsatz von KI-Tools für Debugging und Entwicklung"
+            ]
+          },
+          {
+            "heading": "Ein erweitertes Grundverständnis wurde sich in folgenden Bereichen angeeignet:",
+            "bullets": [
+              "IT-Sicherheit, Sessions, HTTP-Requests",
+              "Funktionsweise & Nutzung von APIs",
+              "Authentifizierungsverfahren"
+            ]
+          },
+          {
+            "heading": "Insgesamt wurden in den letzten Monaten über 12 Projekte umgesetzt, darunter:",
+            "bullets": [
+              "Eine Chatplattform im Stile von Slack (Angular, TypeScript, Firebase)",
+              "Eine Projektmanagement-App zur Projektkoordination mehrerer User inkl. Login (insb. JavaScript, REST)",
+              "Web-Applikationen zur Darstellung und Verarbeitung von Daten, die über APIs abgerufen werden (insb. JS, REST, JSON)",
+              "Objektbasierte Programmierung von Applikationen und Spielen (insb. JS)",
+              "Interaktive Landingpages & Web-Apps (insb. HTML, CSS, JS)"
+            ]
+          },
+          {
+            "heading": "Eigenschaften der Absolventen:",
+            "paragraphs": [
+              "Die abgeschlossene Weiterbildung ist anspruchsvoll, zeitintensiv und praxisbezogen. Erfolgreiche Absolventen weisen deshalb ein überdurchschnittlich hohes Maß an Disziplin, Zielstrebigkeit und Teamfähigkeit auf. Aufgrund der monatelangen Praxiserfahrung finden sie sich schnell in wertschaffenden Rollen in ihren Teams ein."
+            ]
+          },
+          {
+            "paragraphs": [
+              "Das Team der Developer Akademie freut sich mit Altin Torba über die erbrachten Leistungen und den erfolgreichen Abschluss und wünscht alles Gute für die weitere Karriere."
+            ]
+          }
+        ]
+      },
+      "python": {
+        "sections": [
+          {
+            "heading": "ICT for Kosovo's Growth",
+            "paragraphs": [
+              "EU-Unterstützung für die Wettbewerbsfähigkeit des IKT-Sektors im Kosovo"
+            ]
+          },
+          {
+            "heading": "Bestätigt, dass Altin Torba",
+            "paragraphs": [
+              "die 300-stündige Schulung „ICT & Digital Skills Training on Python Programming\" erfolgreich abgeschlossen hat.",
+              "Juli 2023"
+            ]
+          },
+          {
+            "heading": "Unterzeichner",
+            "bullets": [
+              "Grigoris Kontzoglou — im Namen des Projekts",
+              "Agim Kukaj — Wirtschaftsministerium"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Umgesetzt von: WEglobal"
+            ]
+          }
+        ]
+      }
+    },
+    "originalTranscript": "Original-Transkript ansehen (PDF)"
+  },
+  "businessCard": {
+    "roleFn": "fullstack_entwickler()",
+    "country": "Deutschland",
+    "saveContact": "Kontakt speichern (.vcf)",
+    "scanToSave": "Zum Speichern auf dem Handy scannen"
   }
 }

@@ -1,0 +1,54 @@
+<div class="certifications-outer-wrapper">
+  <section id="certifications">
+    <div class="content-wrapper">
+      <div data-aos="fade-right" class="headline">
+        <div class="line"></div>
+        <h1>{{ 'certifications.headline' | translate }}</h1>
+      </div>
+      <div data-aos="fade-right" class="description">{{ 'certifications.description' | translate }}</div>
+
+      <div class="item-container">
+        @for (cert of certificates; track cert.image) {
+          <div class="cert-item">
+            <div class="image-wrapper">
+              <img [src]="'./assets/img/' + cert.image + '.png'" [alt]="cert.title" />
+            </div>
+            @if (cert.badges?.length) {
+              <div class="trust-badges">
+                @for (badge of cert.badges; track badge.image) {
+                  <img [src]="'./assets/img/' + badge.image + '.png'" [alt]="badge.alt" />
+                }
+              </div>
+            }
+            <div class="cert-overlay">
+              <div class="buttons">
+                <a [href]="cert.pdf" target="_blank" class="btn view-cert">
+                  {{ 'certifications.viewButton' | translate }}
+                </a>
+                <button type="button" class="btn read-cert" (click)="openReadModal(cert)">
+                  {{ 'certifications.readButton' | translate }}
+                </button>
+              </div>
+              <div class="info">
+                <h2>{{ cert.title }}</h2>
+                <p>{{ cert.issuer }}</p>
+                <span class="date">{{ cert.date }}</span>
+                @if (cert.certNumber) {
+                  <span class="cert-number">{{ 'certifications.certNumber' | translate }}: {{ cert.certNumber }}</span>
+                }
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+
+@if (activeCert()) {
+  <app-cert-read-modal
+    [certificate]="activeCert()!"
+    [sections]="activeSections()"
+    (closeModal)="closeReadModal()">
+  </app-cert-read-modal>
+}

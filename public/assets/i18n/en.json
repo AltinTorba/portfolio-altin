@@ -3,11 +3,14 @@
     "aboutMe": "About me",
     "skills": "Skills",
     "portfolio": "Portfolio",
-    "contact": "Contact"
+    "contact": "Contact",
+    "certifications": "Certifications"
   },
   "atf": {
     "intro": "I am",
     "headline": "Developer",
+    "role": "Fullstack Developer",
+    "stack": "[Frontend & Backend]",
     "button": "Let's talk!",
     "vertical": "Scroll down",
     "contactAlt": "Contact via email"
@@ -18,11 +21,13 @@
     "locationText": "Based in Siegen, NRW, I am open to remote positions but cannot relocate.",
     "learningText": "I am passionate about learning new technologies and continuously advancing my skills.",
     "solvingText": "My problem-solving style is hands-on and iterative. I work well independently but actively seek collaboration on tougher challenges, blending careful planning with actionable solutions.",
-    "profilePhotoAlt": "Profile photo of Altin"
+    "profilePhotoAlt": "Profile photo of Altin",
+    "viewCv": "View CV",
+    "downloadCv": "Download CV"
   },
   "skills": {
     "headline": "Skills",
-    "description": "Through hands-on work with diverse projects, I've built strong skills in modern frontend technologies including HTML, CSS, and JavaScript. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
+    "description": "Through hands-on work with diverse projects, I've built strong skills in modern frontend technologies including HTML,CSS, and JavaScript. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
     "subheadline": "Looking for ",
     "highlight": "another skill",
     "followup": "Enthusiastic about learning new technologies and frameworks.",
@@ -38,13 +43,13 @@
         "description": "Interactive Pokémon catalog fetching live data from the PokéAPI. Browse, search, and view detailed stats for hundreds of Pokémon."
       },
       "videoflix": {
-        "description": "REST API backend for a Netflix-style streaming platform. Manages user accounts, videos, and adaptive HLS playback - all via HTTP endpoints."
+        "description": "REST API backend for a Netflix-style streaming platform. Manages user accounts, videos, and adaptive HLS playback- all via HTTP endpoints."
       },
       "quizly": {
         "description": "REST API backend that turns YouTube videos into multiple-choice quizzes. Extracts audio, transcribes it via speech-to-text, and generates structured quiz questions using AI."
       },
       "coderr": {
-        "description": "REST API backend for a freelancer platform. Providers create tiered offers, customers place orders, and completed jobs get reviewed - all via HTTP endpoints."
+        "description": "REST API backend for a freelancer platform. Providers create tiered offers, customers place orders, and completedjobs get reviewed - all via HTTP endpoints."
       },
       "kanmind": {
         "description": "REST API backend for a Kanban-style project management tool built with Django REST Framework, supporting boards, task management, and comments."
@@ -60,9 +65,9 @@
       "reference1": {
         "text": "Altin is reliable, works thoroughly and responsibly. It was a pleasure collaborating with him on our shared project.",
         "title": "Refiye Külhanbey"
-      }, 
+      },
       "reference2": {
-         "text": "Altin works diligently and reliably, consistently completes his tasks successfully, and his code is well-structured, readable, and maintainable.",
+        "text": "Altin works diligently and reliably, consistently completes his tasks successfully, and his code is well-structured, readable, and maintainable.",
         "title": "Philipp Biebert"
       },
       "reference3": {
@@ -72,15 +77,14 @@
     }
   },
   "contact": {
+    "businessCardBtn": "View Business Card",
     "headline": "Contact",
     "problemHeadline": "Got a problem to solve?",
     "introText": "Ready to add value to your team as a frontend developer. Let's discuss how I can contribute.",
     "needDev": "Need a Frontend developer?",
     "contactMe": "Contact me!",
-
     "success": "Your message has been sent successfully. I will get back to you soon.",
     "error": "Something went wrong. Please try again later.",
-    
     "form": {
       "namePlaceholder": "Your name",
       "nameError": "Please enter your first name and last name",
@@ -129,7 +133,7 @@
     },
     "hosting": {
       "head": "Hosting",
-      "text": "This website is hosted at altintorba.de and https://altintorba.duckdns.org on a privately operated server. When the website is accessed, the web server (nginx) automatically records access data (including IP address, date and time of access, page requested, browser type) in a log file. This data is used exclusively for technical security and error analysis and is not shared with third parties. A mirror version of this website is additionally available via GitHub Pages at https://altintorba.github.io/portfolio-altin/. Accessing this version may involve processing of access data by GitHub (GitHub, Inc., USA) as part of standard server operation. For details, see GitHub's Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+      "text": "This website is hosted at altintorba.de and https://altintorba.duckdns.org on a privately operated server. When the website is accessed, the web server (nginx) automatically records access data (including IP address, date and time of access, page requested, browser type) in a log file. This data is used exclusively for technical security and error analysis and is not shared with third parties. Amirror version of this website is additionally available via GitHub Pages at https://altintorba.github.io/portfolio-altin/. Accessing this version may involve processing of access data by GitHub (GitHub, Inc., USA) as part of standard server operation. For details, see GitHub's Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
     },
     "contactForm": {
       "head": "Contact Form",
@@ -154,5 +158,159 @@
       "head": "External GitHub Link Icon",
       "text": "By clicking the GitHub icon, you will leave this site and be redirected to github.com. GitHub Inc. is responsible for any processing there."
     }
+  },
+  "certifications": {
+    "headline": "Certifications",
+    "description": "Officially accredited certifications confirming my qualification as a Front-End and Back-End developer, plus a state-funded Python training programme.",
+    "viewButton": "View Certificate",
+    "certNumber": "Certificate No.",
+    "readButton": "Read Certificate",
+    "certificates": {
+      "backend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba successfully completed our continuing education program in Backend Development on August 19, 2026."
+            ]
+          },
+          {
+            "heading": "About the Developer Akademie:",
+            "paragraphs": [
+              "The Developer Akademie was founded by former managers and tech employees of successful digital companies. Its goal is to offer a flexible, intensive online training program that helps career changers become software developers. The training is highly practice-oriented and takes place in direct exchange with experienced developers, with continuous feedback on projects and reviews of code and architecture against best practices at its core.",
+              "Several hundred employers in Germany, Austria and Switzerland have already hired Developer Akademie graduates. Our graduates work in IT roles at, among others, large corporations (e.g. Siemens, Allianz, Eurowings, KPMG) as well as start-ups (e.g. RobCo, sellerpoint) and web agencies (e.g. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba was intensively trained by us in the following backend topics:",
+            "bullets": [
+              "Setting up a scalable business architecture (Venv, signals, OS packages, main memory caching, Redis, task queue)",
+              "Professional deployment (Docker, CDN, Google Cloud, Heroku)",
+              "Python, Django as a framework (incl. Django REST Framework)",
+              "Operating systems and general fundamentals (Linux, terminal usage, WSL, Linux programs, package managers, honeypot)",
+              "Working with various types of databases (SQLite, PostgreSQL, Redis, Supabase)",
+              "Building REST APIs",
+              "HTTP & HTTPS (with SSL)"
+            ]
+          },
+          {
+            "heading": "In total, backends for more than 4 complex projects were built over the past months, including:",
+            "bullets": [
+              "A Kanban project management tool with a statistics dashboard (Python & Django incl. REST Framework)",
+              "A B2B freelancer marketplace for developers (Python, Django incl. REST Framework)",
+              "A high-performance video platform in the style of YouTube or Netflix (Django & Python)",
+              "An AI-powered application that automatically generates interactive quizzes from videos (Python, Django incl. REST Framework, JWT authentication, LLMs)"
+            ]
+          },
+          {
+            "heading": "Qualities of our graduates:",
+            "paragraphs": [
+              "The completed training program is demanding, time-intensive and highly practice-oriented. Successful graduates therefore demonstrate an above-average level of discipline, determination and teamwork. Thanks to months of hands-on experience, they quickly settle into value-creating roles within their teams."
+            ]
+          },
+          {
+            "paragraphs": [
+              "The Developer Akademie team congratulates Altin Torba on his achievements and successful completion, and wishes him all the best for his future career."
+            ]
+          }
+        ]
+      },
+      "frontend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba successfully completed our continuing education program in Front-End Web Development on September 2, 2026."
+            ]
+          },
+          {
+            "heading": "About the Developer Akademie:",
+            "paragraphs": [
+              "The Developer Akademie was founded by former managers and tech employees of successful digital companies. Its goal is to offer a flexible, intensive online training program that helps career changers become software developers. The training is highly practice-oriented and takes place in direct exchange with experienced developers, with continuous feedback on projects and reviews of code and architecture against best practices at its core.",
+              "Several hundred employers in Germany, Austria and Switzerland have already hired Developer Akademie graduates. Our graduates work in IT roles at, among others, large corporations (e.g. Siemens, Allianz, Eurowings, KPMG) as well as start-ups (e.g. RobCo, sellerpoint) and web agencies (e.g. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba was able to acquire extensive knowledge in the following areas:",
+            "bullets": [
+              "Web front-end development with Angular and TypeScript",
+              "Implementing UI/UX designs (Figma)",
+              "Collaborating with other developers in a team (joint projects)",
+              "Web programming with HTML, CSS (SCSS) and JavaScript",
+              "Using design frameworks (Bootstrap, Material Design)",
+              "Interacting with databases (Google Firebase and Supabase)",
+              "Version control with Git (GitHub)",
+              "Agile project management (SCRUM, Kanban)",
+              "Using AI tools for debugging and development"
+            ]
+          },
+          {
+            "heading": "An expanded basic understanding was acquired in the following areas:",
+            "bullets": [
+              "IT security, sessions, HTTP requests",
+              "How APIs work and how to use them",
+              "Authentication procedures"
+            ]
+          },
+          {
+            "heading": "In total, more than 12 projects were completed over the past months, including:",
+            "bullets": [
+              "A chat platform in the style of Slack (Angular, TypeScript, Firebase)",
+              "A project management app for coordinating multiple users, including login (mainly JavaScript, REST)",
+              "Web applications for displaying and processing data retrieved via APIs (mainly JS, REST, JSON)",
+              "Object-based programming of applications and games (mainly JS)",
+              "Interactive landing pages & web apps (mainly HTML, CSS, JS)"
+            ]
+          },
+          {
+            "heading": "Qualities of our graduates:",
+            "paragraphs": [
+              "The completed training program is demanding, time-intensive and highly practice-oriented. Successful graduates therefore demonstrate an above-average level of discipline, determination and teamwork. Thanks to months of hands-on experience, they quickly settle into value-creating roles within their teams."
+            ]
+          },
+          {
+            "paragraphs": [
+              "The Developer Akademie team congratulates Altin Torba on his achievements and successful completion, and wishes him all the best for his future career."
+            ]
+          }
+        ]
+      },
+      "python": {
+        "sections": [
+          {
+            "heading": "ICT for Kosovo's Growth",
+            "paragraphs": [
+              "EU Support for the Competitiveness of Kosovo's ICT Sector"
+            ]
+          },
+          {
+            "heading": "Certifies that Altin Torba",
+            "paragraphs": [
+              "Successfully completed the 300 hrs ICT & Digital Skills Training on Python Programming.",
+              "July 2023"
+            ]
+          },
+          {
+            "heading": "Signatories",
+            "bullets": [
+              "Grigoris Kontzoglou — on behalf of the project",
+              "Agim Kukaj — Ministry of Economy"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Implemented by: WEglobal"
+            ]
+          }
+        ]
+      }
+    },
+    "originalTranscript": "View the original transcript (PDF)"
+  },
+  "businessCard": {
+    "roleFn": "fullstack_developer()",
+    "country": "Germany",
+    "saveContact": "Save Contact (.vcf)",
+    "scanToSave": "Scan to save to your phone"
   }
 }

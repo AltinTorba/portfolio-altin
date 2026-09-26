@@ -1,0 +1,37 @@
+<div class="card-modal-backdrop" (click)="onBackdropClick($event)">
+  <div class="business-card" role="dialog" aria-modal="true">
+    <button class="close-btn" type="button" (click)="closeCard.emit()" aria-label="Close">&times;</button>
+
+    <span class="dev-tag">&lt;dev/&gt;</span>
+
+    <h2 class="card-name">Altin Torba</h2>
+    <p class="card-role">{{ 'businessCard.roleFn' | translate }}</p>
+    <p class="card-stack">// Python &middot; Django &middot; Angular</p>
+
+    <div class="card-divider"></div>
+
+    <ul class="card-contacts">
+      <li>
+        <span class="dot"></span>
+        <a href="tel:+491578403278">+49 157 840 32 788</a>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <a href="mailto:altin@altintorba.de">altin@altintorba.de</a>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>Siegen, {{ 'businessCard.country' | translate }}</span>
+      </li>
+    </ul>
+
+    <button type="button" class="regular-btn save-vcard-btn" (click)="downloadVCard()">
+      {{ 'businessCard.saveContact' | translate }}
+    </button>
+
+    <div class="qr-block">
+      <img [src]="qrCodeUrl()" width="120" height="120" alt="QR code – Altin Torba contact" />
+      <span>{{ 'businessCard.scanToSave' | translate }}</span>
+    </div>
+  </div>
+</div>

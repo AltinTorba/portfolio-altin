@@ -1,0 +1,143 @@
+@use './../../styles.scss' as *;
+
+.read-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0;
+    align-items: flex-end;
+  }
+}
+
+.read-modal-card {
+  background-color: $darkblue;
+  color: $w;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 48px 40px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: $breakpoint-mobile) {
+    max-height: 90vh;
+    border-radius: 20px 20px 0 0;
+    padding: 40px 20px 24px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: $w;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    filter: none;
+
+    &:hover {
+      background-color: $purple;
+      transform: none;
+    }
+  }
+
+  .read-modal-header {
+    margin-bottom: 24px;
+    padding-right: 40px;
+
+    h2 {
+      color: $purple;
+      font-size: 26px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 20px;
+      }
+    }
+
+    .meta {
+      color: $grey;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+  }
+
+  .read-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .read-section {
+      h3 {
+        font-size: 17px;
+        color: $lightblue;
+        margin-bottom: 10px;
+        font-weight: 700;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 15px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 150%;
+        color: $w;
+        opacity: 0.9;
+        margin-bottom: 8px;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 14px;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        li {
+          font-size: 14px;
+          line-height: 140%;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  .read-modal-footer {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    .original-link {
+      font-size: 13px;
+      color: $grey;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 125ms ease;
+
+      &:hover {
+        color: $lightblue;
+      }
+    }
+  }
+}

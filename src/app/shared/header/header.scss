@@ -35,8 +35,10 @@ header {
       flex-direction: column;
       justify-content: center;
       gap: 5px;
-      width: 32px;
-      height: 32px;
+      // 36px content + 4px padding on each side = 44px total touch target,
+      // matching the recommended minimum tap-target size for mobile.
+      width: 36px;
+      height: 36px;
       cursor: pointer;
       padding: 4px;
       transition: all 125ms ease;

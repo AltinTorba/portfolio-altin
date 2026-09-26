@@ -1,0 +1,297 @@
+@use './../../styles.scss' as *;
+
+// Matches devices that cannot hover at all (touchscreens), regardless of
+// viewport width — a wide touchscreen laptop/tablet in landscape is still
+// "narrow" in the sense that ":hover" will never reliably fire on it, so
+// the same always-visible treatment used below $breakpoint-tablet must
+// also apply there.
+$touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointer: coarse)';
+
+.certifications-outer-wrapper {
+  background-color: #141d30;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+section#certifications {
+  scroll-margin-top: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 100px 100px 120px;
+
+  @media (max-width: $breakpoint-desktop) {
+    padding: 100px 50px 100px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 90px 25px 60px;
+  }
+
+  .content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .headline {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    margin-top: 0;
+
+    h1 {
+      font-size: 90px;
+
+      @media (max-width: $breakpoint-1440p) {
+        font-size: 72px;
+      }
+      @media (max-width: $breakpoint-desktop) {
+        font-size: 56px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 36px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 29px;
+      }
+    }
+
+    .line {
+      position: absolute;
+      width: 1000px;
+      left: -1032px;
+      background-color: $purple;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      @media (max-width: $breakpoint-desktop) {
+        left: -1020px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        left: -1008px;
+      }
+    }
+  }
+
+  .description {
+    margin-top: 48px;
+    max-width: 473px;
+    font-size: 20px;
+
+    @media (max-width: $breakpoint-desktop) {
+      font-size: 16px;
+    }
+  }
+
+  .item-container {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+    .cert-item {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border-radius: 15px;
+      border: 1px solid $g;
+      background-color: $w;
+
+      // Below tablet width — or on any device that cannot hover, whatever
+      // its width — the card switches from "image with absolute overlay
+      // on hover" to a plain stacked card: image on top, info always
+      // visible underneath.
+      @media #{$touch-or-narrow} {
+        aspect-ratio: auto;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .image-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: $w;
+
+        @media #{$touch-or-narrow} {
+          height: auto;
+          aspect-ratio: 3 / 2;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: transform 125ms ease;
+        }
+      }
+
+      .trust-badges {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        gap: 6px;
+        z-index: 2;
+        pointer-events: none;
+
+        img {
+          height: 42px;
+          width: auto;
+          filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+
+          @media (max-width: $breakpoint-mobile) {
+            height: 32px;
+          }
+        }
+      }
+
+      .cert-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        transition: opacity 125ms ease;
+
+        // On touch devices there is no reliable ":hover", so the overlay
+        // (title, issuer, date, buttons) must stay visible at all times
+        // instead of waiting for a hover that may never come. It rejoins
+        // the normal document flow, right below the image, instead of
+        // floating on top of it. This also covers wide touchscreens that
+        // are above $breakpoint-tablet in raw width.
+        @media #{$touch-or-narrow} {
+          opacity: 1;
+          position: static;
+          background-color: transparent;
+        }
+
+        .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 12px;
+          padding: 20px;
+
+          @media #{$touch-or-narrow} {
+            padding: 16px 12px 0;
+          }
+
+          .btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: all 125ms ease-in-out;
+            font-family: inherit;
+            border: 1px solid transparent;
+            cursor: pointer;
+
+            @media #{$touch-or-narrow} {
+              font-size: 14px;
+              padding: 10px 16px;
+            }
+          }
+
+          .view-cert {
+            background-color: $purple;
+            &:hover {
+              background-color: $g;
+            }
+          }
+
+          .read-cert {
+            background-color: transparent;
+            border-color: $purple;
+
+            &:hover {
+              background-color: $purple;
+            }
+
+            // Once .cert-overlay stops being a dark semi-transparent layer
+            // over the photo (see above) and becomes a plain block sitting
+            // on .cert-item's white background instead, the white text
+            // from .btn above is invisible here. Swap to purple text
+            // against the white card background instead.
+            @media #{$touch-or-narrow} {
+              color: $purple;
+
+              &:hover {
+                color: $w;
+              }
+            }
+          }
+        }
+
+        .info {
+          background-color: white;
+          border-radius: 20px 20px 0 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 18px 16px;
+          gap: 6px;
+
+          @media #{$touch-or-narrow} {
+            border-radius: 0 0 15px 15px;
+          }
+
+          h2 {
+            color: $purple;
+            font-size: 20px;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 16px;
+            }
+          }
+
+          p {
+            font-size: 16px;
+            color: black;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 14px;
+            }
+          }
+
+          .date {
+            font-size: 14px;
+            color: $g;
+          }
+
+          .cert-number {
+            font-size: 12px;
+            color: $grey;
+          }
+        }
+      }
+
+      &:hover {
+        .image-wrapper img {
+          transform: scale(1.05);
+        }
+        .cert-overlay {
+          opacity: 1;
+        }
+      }
+
+      @media #{$touch-or-narrow} {
+        &:hover .image-wrapper img {
+          transform: none;
+        }
+      }
+    }
+  }
+}

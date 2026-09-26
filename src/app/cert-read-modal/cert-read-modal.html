@@ -1,0 +1,38 @@
+<div class="read-modal-backdrop" (click)="onBackdropClick($event)">
+  <div class="read-modal-card" role="dialog" aria-modal="true">
+    <button class="close-btn" type="button" (click)="closeModal.emit()" aria-label="Close">&times;</button>
+
+    <div class="read-modal-header">
+      <h2>{{ certificate.title }}</h2>
+      <p class="meta">{{ certificate.issuer }} · {{ certificate.date }}</p>
+    </div>
+
+    <div class="read-modal-body">
+      @for (section of sections; track $index) {
+        <div class="read-section">
+          @if (section.heading) {
+            <h3>{{ section.heading }}</h3>
+          }
+          @for (p of section.paragraphs; track $index) {
+            <p>{{ p }}</p>
+          }
+          @if (section.bullets?.length) {
+            <ul>
+              @for (b of section.bullets; track $index) {
+                <li>{{ b }}</li>
+              }
+            </ul>
+          }
+        </div>
+      }
+    </div>
+
+    @if (certificate.transcriptPdf) {
+      <div class="read-modal-footer">
+        <a [href]="certificate.transcriptPdf" target="_blank" class="original-link">
+          {{ 'certifications.originalTranscript' | translate }}
+        </a>
+      </div>
+    }
+  </div>
+</div>

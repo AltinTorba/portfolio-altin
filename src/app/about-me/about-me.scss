@@ -134,6 +134,47 @@ section#about-me {
         }
       }
 
+      .cv-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+
+        a {
+          text-decoration: none;
+        }
+
+        // .regular-btn is sized for the single hero CTA (23px font, big
+        // padding, scale+translate on hover). Two of those side by side
+        // overflow and visually "jump" at narrow widths, so these smaller
+        // secondary actions get their own compact sizing and a subtler hover.
+        .regular-btn {
+          padding: 12px 22px;
+          font-size: 16px;
+
+          &:hover {
+            transform: none;
+          }
+        }
+
+        .outline {
+          background-color: transparent;
+          border: 1px solid $purple;
+          color: $purple;
+
+          &:hover {
+            background-color: $purple;
+            color: $w;
+          }
+
+          @media (max-width: $breakpoint-mobile) {
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+
       @media (max-width: 1150px) and (min-width: 1025px) {
         span {
           font-size: 17px;

@@ -19,6 +19,10 @@
           {{ 'contact.needDev' | translate }}
           <span>{{ 'contact.contactMe' | translate }}</span>
         </p>
+
+        <button type="button" class="regular-btn outline business-card-btn" (click)="showBusinessCard = true">
+          {{ 'contact.businessCardBtn' | translate }}
+        </button>
       </div>
       <div class="form-container">
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
@@ -127,3 +131,7 @@
     </a>
   </section>
 </div>
+
+@if (showBusinessCard) {
+  <app-business-card (closeCard)="showBusinessCard = false"></app-business-card>
+}

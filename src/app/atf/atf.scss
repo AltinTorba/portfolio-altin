@@ -169,6 +169,31 @@ section#above-the-fold {
       font-size: 23px;
     }
   }
+
+  .atf-subtitle {
+    font-size: 20px;
+    color: $grey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 6px;
+
+    @media (max-width: $breakpoint-1440p) {
+      font-size: 17px;
+    }
+
+    @media (max-width: $breakpoint-desktop) {
+      font-size: 15px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 13px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px;
+    }
+  }
 }
 
 .socials {

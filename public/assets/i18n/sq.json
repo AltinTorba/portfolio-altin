@@ -3,11 +3,14 @@
     "aboutMe": "Rreth meje",
     "skills": "Aftësitë",
     "portfolio": "Portofoli",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "certifications": "Certifikatat"
   },
   "atf": {
     "intro": "Unë jam",
     "headline": "Zhvillues",
+    "role": "Zhvillues Fullstack",
+    "stack": "[Frontend & Backend]",
     "button": "Le të flasim!",
     "vertical": "Lëviz poshtë",
     "contactAlt": "Kontakto me email"
@@ -18,7 +21,9 @@
     "locationText": "Jetoj në Siegen, NRW, dhe jam i hapur për pozicione remote, por s'mund të zhvendosem.",
     "learningText": "Jam i pasionuar pas mësimit të teknologjive të reja dhe zhvillimit të vazhdueshëm të aftësive të mia.",
     "solvingText": "Stili im i zgjidhjes së problemeve është praktik dhe hap pas hapi. Punoj mirë në mënyrë të pavarur, por kërkoj aktivisht bashkëpunim në sfida më komplekse, duke kombinuar planifikim të kujdesshëm me zgjidhje të zbatueshme.",
-    "profilePhotoAlt": "Foto profili e Altinit"
+    "profilePhotoAlt": "Foto profili e Altinit",
+    "viewCv": "Shiko CV-në",
+    "downloadCv": "Shkarko CV-në"
   },
   "skills": {
     "headline": "Aftësitë",
@@ -41,7 +46,7 @@
         "description": "Backend REST API për një platformë streaming në stilin Netflix. Menaxhon llogaritë e përdoruesve, videot dhe luajtjen adaptive HLS - gjithçka përmes HTTP endpoints."
       },
       "quizly": {
-        "description": "Backend REST API që shndërron video YouTube në kuiz me zgjedhje të shumëfishta. Ekstrakton audion, e transkripton përmes speech-to-text, dhe gjeneron pyetje kuizi të strukturuara duke përdorur AI."
+        "description": "Backend REST API që shndërron video YouTube në kuiz me zgjedhje të shumëfishta. Ekstrakton audion, e transkriptonpërmes speech-to-text, dhe gjeneron pyetje kuizi të strukturuara duke përdorur AI."
       },
       "coderr": {
         "description": "Backend REST API për një platformë freelancerësh. Ofruesit krijojnë oferta me nivele, klientët bëjnë porosi, dhe punët e përfunduara vlerësohen - gjithçka përmes HTTP endpoints."
@@ -72,6 +77,7 @@
     }
   },
   "contact": {
+    "businessCardBtn": "Shiko Kartvizitën",
     "headline": "Kontakt",
     "problemHeadline": "Ke një problem për të zgjidhur?",
     "introText": "Gati për të shtuar vlerë në ekipin tënd si zhvillues frontend. Le të diskutojmë se si mund të kontribuoj.",
@@ -79,7 +85,6 @@
     "contactMe": "Më kontakto!",
     "success": "Mesazhi yt u dërgua me sukses. Do të të kontaktoj së shpejti.",
     "error": "Diçka shkoi keq. Provo përsëri më vonë.",
-
     "form": {
       "namePlaceholder": "Emri yt",
       "nameError": "Të lutem shkruaj emrin dhe mbiemrin tënd",
@@ -128,7 +133,7 @@
     },
     "hosting": {
       "head": "Hosting",
-      "text": "Ky website hostohet te altintorba.de dhe https://altintorba.duckdns.org në një server privat, të operuar vetjakisht. Kur website-i qaset, serveri web (nginx) ruan automatikisht të dhëna qasjeje (përfshirë adresën IP, datën dhe orën e qasjes, faqen e kërkuar, tipin e browser-it) në një log-file. Këto të dhëna përdoren ekskluzivisht për siguri teknike dhe analizë gabimesh dhe s'ndahen me palë të treta. Shtesë, ekziston një version pasqyrues i këtij website-i përmes GitHub Pages te https://altintorba.github.io/portfolio-altin/. Qasja në këtë version mund të përfshijë përpunim të dhënash qasjeje nga GitHub (GitHub, Inc., USA) si pjesë e operimit standard të serverit. Për detaje, shiko Deklaratën e Privatësisë të GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
+      "text": "Ky website hostohet te altintorba.de dhe https://altintorba.duckdns.org në një server privat, të operuar vetjakisht. Kur website-i qaset, serveri web (nginx) ruan automatikisht të dhëna qasjeje (përfshirë adresën IP, datën dhe orën e qasjes, faqen e kërkuar, tipin e browser-it) në një log-file. Këto të dhëna përdoren ekskluzivisht për siguri teknike dhe analizë gabimesh dhe s'ndahen me palë të treta. Shtesë, ekziston një version pasqyrues i këtij website-i përmes GitHub Pages te https://altintorba.github.io/portfolio-altin/. Qasjanë këtë version mund të përfshijë përpunim të dhënash qasjeje nga GitHub (GitHub, Inc., USA) si pjesë e operimit standard të serverit. Për detaje, shiko Deklaratën e Privatësisë të GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement."
     },
     "contactForm": {
       "head": "Formulari i Kontaktit",
@@ -151,7 +156,161 @@
     },
     "github": {
       "head": "Ikona e Jashtme e Lidhjes GitHub",
-      "text": "Duke klikuar ikonën GitHub, do të largohesh nga ky sajt dhe do të ridrejtohesh te github.com. GitHub Inc. është përgjegjës për çdo përpunim atje."
+      "text": "Duke klikuar ikonën GitHub, do të largohesh nga ky sajt dhe do të ridrejtohesh te github.com. GitHub Inc. është përgjegjëspër çdo përpunim atje."
     }
+  },
+  "certifications": {
+    "headline": "Certifikatat",
+    "description": "Certifikata të akredituara zyrtarisht që konfirmojnë kualifikimin tim si zhvillues Front-End dhe Back-End & një program trajnimi intensiv Python.",
+    "viewButton": "Shiko Certifikatën",
+    "certNumber": "Nr. Certifikate",
+    "readButton": "Lexo Certifikatën",
+    "certificates": {
+      "backend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba e përfundoi me sukses trajnimin tonë në fushën e Backend Development më 19 gusht 2026."
+            ]
+          },
+          {
+            "heading": "Rreth Developer Akademie:",
+            "paragraphs": [
+              "Developer Akademie u themelua nga ish-menaxherë dhe punonjës teknikë të kompanive dixhitale të suksesshme. Qëllimi është t'u mundësojë personave që ndërrojnë karrierë një trajnim online fleksibël dhe intensiv për t'u bërë zhvillues software-i. Trajnimi është shumë i orientuar drejt praktikës dhe zhvillohet në shkëmbim të drejtpërdrejtë me zhvillues me përvojë, ku në qendër është feedback-u i vazhdueshëm për projektet dhe verifikimi i kodit & arkitekturës sipas praktikave më të mira.",
+              "Disa qindra punëdhënës në Gjermani, Austri dhe Zvicër kanë punësuar tashmë të diplomuar të Developer Akademie. Të diplomuarit tanë punojnë në role IT, ndër të tjera, në korporata (p.sh. Siemens, Allianz, Eurowings, KPMG), si dhe në start-up-e (p.sh. RobCo, sellerpoint) dhe agjenci web (p.sh. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba u trajnua intensivisht nga ne në përmbajtjet e mëposhtme të backend-it:",
+            "bullets": [
+              "Ngritja e një arkitekture biznesi të shkallëzueshme (Venv, signals, OS packages, main memory caching, Redis, task queue)",
+              "Deployment profesional (Docker, CDN, Google Cloud, Heroku)",
+              "Python, Django si framework (përfshirë Django REST Framework)",
+              "Sisteme operative dhe bazat e përgjithshme (Linux, përdorimi i terminalit, WSL, programe Linux, package manager, honeypot)",
+              "Puna me lloje të ndryshme bazash të dhënash (SQLite, PostgreSQL, Redis, Supabase)",
+              "Krijimi i REST API-ve",
+              "HTTP & HTTPS (me SSL)"
+            ]
+          },
+          {
+            "heading": "Gjithsej, në muajt e fundit u realizuan backend-e për më shumë se 4 projekte komplekse, ndër to:",
+            "bullets": [
+              "Një mjet menaxhimi projektesh në stilin Kanban me dashboard statistikash (Python & Django, përfshirë REST Framework)",
+              "Një treg B2B për freelancerë zhvillues (Python, Django, përfshirë REST Framework)",
+              "Një platformë video me performancë të lartë, në stilin YouTube apo Netflix (Django & Python)",
+              "Një aplikacion i mbështetur në AI për krijimin automatik të kuizeve interaktive nga videot (Python, Django, përfshirë REST Framework, autentifikim JWT, LLM-e)"
+            ]
+          },
+          {
+            "heading": "Cilësitë e të diplomuarve:",
+            "paragraphs": [
+              "Trajnimi i përfunduar është kërkues, kërkon kohë dhe është i orientuar fort drejt praktikës. Së këtejmi, të diplomuarit e suksesshëm shfaqin një nivel mbi mesataren në disipline, vendosmëri dhe aftësi për punën në ekip. Falë përvojës praktike prej muajsh, ata përshtaten shpejt në role me vlerë brenda ekipeve të tyre."
+            ]
+          },
+          {
+            "paragraphs": [
+              "Ekipi i Developer Akademie gëzohet së bashku me Altin Torbën për rezultatet e arritura dhe përfundimin e suksesshëm, dhe i uron atij gjithë të mirat për karrierën e mëtejshme."
+            ]
+          }
+        ]
+      },
+      "frontend": {
+        "sections": [
+          {
+            "heading": "Transcript of Records",
+            "paragraphs": [
+              "Altin Torba e përfundoi me sukses trajnimin tonë në fushën e Front-End Web Development më 2 shtator 2026."
+            ]
+          },
+          {
+            "heading": "Rreth Developer Akademie:",
+            "paragraphs": [
+              "Developer Akademie u themelua nga ish-menaxherë dhe punonjës teknikë të kompanive dixhitale të suksesshme. Qëllimi është t'u mundësojë personave që ndërrojnë karrierë një trajnim online fleksibël dhe intensiv për t'u bërë zhvillues software-i. Trajnimi është shumë i orientuar drejt praktikës dhe zhvillohet në shkëmbim të drejtpërdrejtë me zhvillues me përvojë, ku në qendër është feedback-u i vazhdueshëm për projektet dhe verifikimi i kodit & arkitekturës sipas praktikave më të mira.",
+              "Disa qindra punëdhënës në Gjermani, Austri dhe Zvicër kanë punësuar tashmë të diplomuar të Developer Akademie. Të diplomuarit tanë punojnë në role IT, ndër të tjera, në korporata (p.sh. Siemens, Allianz, Eurowings, KPMG), si dhe në start-up-e (p.sh. RobCo, sellerpoint) dhe agjenci web (p.sh. Syncpilot, Birkle IT)."
+            ]
+          },
+          {
+            "heading": "Altin Torba arriti të fitojë njohuri të gjera në fushat e mëposhtme:",
+            "bullets": [
+              "Zhvillim front-end web me Angular dhe TypeScript",
+              "Zbatimi i dizajneve UI/UX (Figma)",
+              "Bashkëpunimi me zhvillues të tjerë në ekip (projekte të përbashkëta)",
+              "Programim web me HTML, CSS (SCSS) dhe JavaScript",
+              "Përdorimi i design frameworks (Bootstrap, Material Design)",
+              "Ndërveprimi me baza të dhënash (Google Firebase dhe Supabase)",
+              "Kontrolli i versioneve me Git (GitHub)",
+              "Menaxhim projektesh agile (SCRUM, Kanban)",
+              "Përdorimi i mjeteve AI për debugging dhe zhvillim"
+            ]
+          },
+          {
+            "heading": "U fitua një kuptim bazë i zgjeruar në fushat e mëposhtme:",
+            "bullets": [
+              "Siguria IT, sesionet, kërkesat HTTP",
+              "Mënyra e funksionimit dhe përdorimi i API-ve",
+              "Procedurat e autentifikimit"
+            ]
+          },
+          {
+            "heading": "Gjithsej, në muajt e fundit u realizuan mbi 12 projekte, ndër to:",
+            "bullets": [
+              "Një platformë chat-i në stilin Slack (Angular, TypeScript, Firebase)",
+              "Një aplikacion menaxhimi projektesh për koordinimin e disa përdoruesve, përfshirë login-in (kryesisht JavaScript, REST)",
+              "Aplikacione web për shfaqjen dhe përpunimin e të dhënave të marra përmes API-ve (kryesisht JS, REST, JSON)",
+              "Programim i bazuar në objekte i aplikacioneve dhe lojërave (kryesisht JS)",
+              "Landing pages interaktive & web-app (kryesisht HTML, CSS, JS)"
+            ]
+          },
+          {
+            "heading": "Cilësitë e të diplomuarve:",
+            "paragraphs": [
+              "Trajnimi i përfunduar është kërkues, kërkon kohë dhe është i orientuar fort drejt praktikës. Së këtejmi, të diplomuarit e suksesshëm shfaqin një nivel mbi mesataren në disipline, vendosmëri dhe aftësi për punën në ekip. Falë përvojës praktike prej muajsh, ata përshtaten shpejt në role me vlerë brenda ekipeve të tyre."
+            ]
+          },
+          {
+            "paragraphs": [
+              "Ekipi i Developer Akademie gëzohet së bashku me Altin Torbën për rezultatet e arritura dhe përfundimin e suksesshëm, dhe i uron atij gjithë të mirat për karrierën e mëtejshme."
+            ]
+          }
+        ]
+      },
+      "python": {
+        "sections": [
+          {
+            "heading": "ICT for Kosovo's Growth",
+            "paragraphs": [
+              "Mbështetje e BE-së për Konkurrueshmërinë e Sektorit TIK të Kosovës"
+            ]
+          },
+          {
+            "heading": "Certifikon që Altin Torba",
+            "paragraphs": [
+              "përfundoi me sukses trajnimin prej 300 orësh \"ICT & Digital Skills Training on Python Programming\".",
+              "Korrik 2023"
+            ]
+          },
+          {
+            "heading": "Nënshkrues",
+            "bullets": [
+              "Grigoris Kontzoglou — në emër të projektit",
+              "Agim Kukaj — Ministria e Ekonomisë"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Zbatuar nga: WEglobal"
+            ]
+          }
+        ]
+      }
+    },
+    "originalTranscript": "Shiko transkriptin origjinal (PDF)"
+  },
+  "businessCard": {
+    "roleFn": "zhvillues_fullstack()",
+    "country": "Gjermani",
+    "saveContact": "Ruaj Kontaktin (.vcf)",
+    "scanToSave": "Skano për ta ruajtur në telefon"
   }
 }

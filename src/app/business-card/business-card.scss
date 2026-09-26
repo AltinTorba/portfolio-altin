@@ -1,0 +1,166 @@
+@use './../../styles.scss' as *;
+
+.card-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0;
+    align-items: flex-end;
+  }
+}
+
+.business-card {
+  background-color: $darkblue;
+  color: $w;
+  border-radius: 20px;
+  max-width: 460px;
+  width: 100%;
+  position: relative;
+  padding: 40px 36px 36px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: $breakpoint-mobile) {
+    border-radius: 20px 20px 0 0;
+    padding: 32px 24px 24px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: $w;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 125ms ease-in-out;
+
+    &:hover {
+      background-color: $purple;
+    }
+  }
+
+  .dev-tag {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #34d399;
+    background-color: rgba(52, 211, 153, 0.12);
+    border-radius: 8px;
+    padding: 6px 14px;
+    margin-bottom: 24px;
+  }
+
+  .card-name {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 6px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 26px;
+    }
+  }
+
+  .card-role,
+  .card-stack {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: $grey;
+    margin: 0;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
+  }
+
+  .card-stack {
+    opacity: 0.7;
+    margin-top: 4px;
+  }
+
+  .card-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin: 28px 0 20px;
+  }
+
+  .card-contacts {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 15px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #34d399;
+        flex-shrink: 0;
+      }
+
+      a,
+      span {
+        color: $w;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $lightblue;
+      }
+    }
+  }
+
+  .save-vcard-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .qr-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    img {
+      border-radius: 10px;
+      background-color: $w;
+      padding: 8px;
+    }
+
+    span {
+      font-size: 13px;
+      color: $grey;
+      text-align: center;
+    }
+  }
+}
