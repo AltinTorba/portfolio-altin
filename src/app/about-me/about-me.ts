@@ -15,8 +15,6 @@ export class AboutMe implements AfterViewInit, OnDestroy {
   private onPhotoLoad = () => this.updatePhotoBottom();
   private photoImg?: HTMLImageElement;
 
-  private readonly cvLangs = ['en', 'de', 'sq'];
-
   ngAfterViewInit(): void {
     this.updatePhotoBottom();
 
@@ -52,16 +50,6 @@ export class AboutMe implements AfterViewInit, OnDestroy {
   @HostListener('window:resize')
   onResize(): void {
     this.updatePhotoBottom();
-  }
-
-  /**
-   * Rrugën e CV-së (PDF) sipas gjuhës aktive të faqes. Bie automatikisht
-   * mbrapa te anglishtja nëse gjuha aktive nuk ka ende një CV të përkthyer.
-   */
-  cvHref(): string {
-    const current = (this.translate.currentLang || this.translate.defaultLang || 'en').toLowerCase();
-    const lang = this.cvLangs.includes(current) ? current : 'en';
-    return `./assets/cv/CV_Altin_Torba_${lang.toUpperCase()}.pdf`;
   }
 
   private updatePhotoBottom(): void {

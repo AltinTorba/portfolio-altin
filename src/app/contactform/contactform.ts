@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { BusinessCard } from '../business-card/business-card';
 
@@ -13,6 +13,18 @@ import { BusinessCard } from '../business-card/business-card';
   styleUrl: './contactform.scss'
 })
 export class Contactform {
+  private translate = inject(TranslateService);
+  private readonly cvLangs = ['en', 'de', 'sq'];
+
+  /**
+   * Rrugën e CV-së (PDF) sipas gjuhës aktive të faqes. Bie automatikisht
+   * mbrapa te anglishtja nëse gjuha aktive nuk ka ende një CV të përkthyer.
+   */
+  cvHref(): string {
+    const current = (this.translate.currentLang || this.translate.defaultLang || 'en').toLowerCase();
+    const lang = this.cvLangs.includes(current) ? current : 'en';
+    return `./assets/cv/CV_Altin_Torba_${lang.toUpperCase()}.pdf`;
+  }
 
   contactData = {
     name: '',
@@ -29,6 +41,11 @@ export class Contactform {
   };
 
   showBusinessCard = false;
+  showCvDownload = false;
+
+  toggleCvDownload(): void {
+    this.showCvDownload = !this.showCvDownload;
+  }
 
   /**
    * Marks a form field as touched, triggering validation display on blur.

@@ -49,6 +49,24 @@ $touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointe
         aspect-ratio: 1 / 1;
         border-radius: 15px 15px 0 0;
         overflow: hidden;
+        // Gives the image breathing room instead of touching the card's
+        // edges — the source screenshot itself is tightly composed (no
+        // margin baked in). Percentage padding is always resolved
+        // against the containing block's WIDTH (a CSS quirk, true even
+        // for top/bottom), so this scales consistently whether the card
+        // is 390px wide (phone) or 600px (iPad/tablet touch).
+        padding: 22%;
+        box-sizing: border-box;
+        // Centers the (now intrinsically-sized) image within the padded
+        // box, instead of forcing it to width/height: 100% — that path
+        // has a well-known CSS quirk where a child's height: 100% does
+        // not reliably respect the parent's own padding when the
+        // parent's height comes from aspect-ratio rather than a plain
+        // declared height, causing the image to overflow past the
+        // padding instead of being inset by it.
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       img {
@@ -61,8 +79,15 @@ $touch-or-narrow: '(max-width: #{$breakpoint-tablet}), (hover: none) and (pointe
         // reveal the cropped-out parts later), so show it uncropped
         // instead of tightly filling the square and cutting off edges.
         // The card's own dark gradient background shows through the
-        // letterboxed space, matching the look on tap.
+        // letterboxed space, matching the look on tap. max-width/height
+        // (instead of width/height: 100%) lets the browser size the
+        // image from its own intrinsic aspect ratio within the flex
+        // box above, which is what actually keeps it inside the padding.
         @media #{$touch-or-narrow} {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%;
           object-fit: contain;
         }
       }
