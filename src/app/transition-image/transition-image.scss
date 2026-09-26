@@ -4,7 +4,8 @@
   height: 100%;
   background-repeat: no-repeat;
   background-image: url('../../../public/assets/img/curved.png');
-  background-size: cover;
+  background-size: 100% auto;
+  background-position: center top;
   top: calc(var(--photo-bottom, 800px) - (12vw + 40px));
 
   @media (max-width: 1919px) {
