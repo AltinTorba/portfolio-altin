@@ -33,6 +33,23 @@ export class Certifications {
   activeCert = signal<Certificate | null>(null);
   activeSections = signal<CertSection[]>([]);
 
+  private readonly cvLangs = ['en', 'de', 'sq'];
+  showCvDownload = false;
+
+  toggleCvDownload(): void {
+    this.showCvDownload = !this.showCvDownload;
+  }
+
+  /**
+   * Rrugën e CV-së (PDF) sipas gjuhës aktive të faqes. Bie automatikisht
+   * mbrapa te anglishtja nëse gjuha aktive nuk ka ende një CV të përkthyer.
+   */
+  cvHref(): string {
+    const current = (this.translate.currentLang || this.translate.defaultLang || 'en').toLowerCase();
+    const lang = this.cvLangs.includes(current) ? current : 'en';
+    return `./assets/cv/CV_Altin_Torba_${lang.toUpperCase()}.pdf`;
+  }
+
   constructor() {
     this.translate.onLangChange.subscribe(() => {
       if (this.activeCert()) {

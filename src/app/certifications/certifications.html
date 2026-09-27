@@ -7,6 +7,29 @@
       </div>
       <div data-aos="fade-right" class="description">{{ 'certifications.description' | translate }}</div>
 
+      <div data-aos="fade-right" class="cv-box">
+        <div class="cv-header">
+          <a class="cv-view" [attr.href]="cvHref()" target="_blank" rel="noopener">
+            {{ 'about.viewCv' | translate }}
+          </a>
+          <button
+            type="button"
+            class="cv-toggle"
+            [class.open]="showCvDownload"
+            (click)="toggleCvDownload()"
+            [attr.aria-expanded]="showCvDownload"
+            aria-label="Toggle download link"
+          >
+            &#9662;
+          </button>
+          @if (showCvDownload) {
+            <a class="cv-download" [attr.href]="cvHref()" target="_blank" rel="noopener" download>
+              {{ 'about.downloadCv' | translate }}
+            </a>
+          }
+        </div>
+      </div>
+
       <div class="item-container">
         @for (cert of certificates; track cert.image) {
           <div class="cert-item">
