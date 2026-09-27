@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { positionEdgeLine } from '../shared/edge-line';
 
 interface Project {
   image: string;
@@ -17,7 +18,27 @@ interface Project {
   templateUrl: './portfolio.html',
   styleUrls: ['./portfolio.scss'],
 })
-export class Portfolio {
+export class Portfolio implements AfterViewInit {
+  ngAfterViewInit(): void {
+    this.updateHeadlineLine();
+    setTimeout(() => this.updateHeadlineLine(), 800);
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.updateHeadlineLine();
+  }
+
+  private updateHeadlineLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-portfolio .headline .line'),
+      anchor: document.querySelector('app-portfolio .headline h1'),
+      ancestor: document.querySelector('app-portfolio .headline'),
+      direction: 'left',
+      gap: 32,
+    });
+  }
+
   projects: Project[] = [
     {
       image: 'join',

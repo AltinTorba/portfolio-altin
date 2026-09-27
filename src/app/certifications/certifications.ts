@@ -1,6 +1,7 @@
-import { Component, signal, inject } from '@angular/core';
+import { Component, signal, inject, AfterViewInit, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CertReadModal } from '../cert-read-modal/cert-read-modal';
+import { positionEdgeLine } from '../shared/edge-line';
 
 interface CertSection {
   heading?: string;
@@ -27,7 +28,7 @@ interface Certificate {
   templateUrl: './certifications.html',
   styleUrls: ['./certifications.scss'],
 })
-export class Certifications {
+export class Certifications implements AfterViewInit {
   private translate = inject(TranslateService);
 
   activeCert = signal<Certificate | null>(null);
@@ -50,11 +51,32 @@ export class Certifications {
     return `./assets/cv/CV_Altin_Torba_${lang.toUpperCase()}.pdf`;
   }
 
+  ngAfterViewInit(): void {
+    this.updateHeadlineLine();
+    setTimeout(() => this.updateHeadlineLine(), 800);
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.updateHeadlineLine();
+  }
+
+  private updateHeadlineLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-certifications .headline .line'),
+      anchor: document.querySelector('app-certifications .headline h1'),
+      ancestor: document.querySelector('app-certifications .headline'),
+      direction: 'left',
+      gap: 32,
+    });
+  }
+
   constructor() {
     this.translate.onLangChange.subscribe(() => {
       if (this.activeCert()) {
         this.updateActiveSections();
       }
+      this.updateHeadlineLine();
     });
   }
 

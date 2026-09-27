@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, HostListener, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { BusinessCard } from '../business-card/business-card';
+import { positionEdgeLine } from '../shared/edge-line';
 
 @Component({
   selector: 'app-contactform',
@@ -12,7 +13,45 @@ import { BusinessCard } from '../business-card/business-card';
   templateUrl: './contactform.html',
   styleUrl: './contactform.scss'
 })
-export class Contactform {
+export class Contactform implements AfterViewInit {
+  private translate = inject(TranslateService);
+
+  ngAfterViewInit(): void {
+    this.updateHeadlineLines();
+    this.translate.onLangChange.subscribe(() => this.updateHeadlineLines());
+    setTimeout(() => this.updateHeadlineLines(), 800);
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.updateHeadlineLines();
+  }
+
+  private updateHeadlineLines(): void {
+    this.updateMainHeadlineLine();
+    this.updateProblemHeadlineLine();
+  }
+
+  private updateMainHeadlineLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-contactform .headline > .line'),
+      anchor: document.querySelector('app-contactform .headline h1'),
+      ancestor: document.querySelector('app-contactform .headline'),
+      direction: 'right',
+      gap: 24,
+    });
+  }
+
+  private updateProblemHeadlineLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-contactform .text-headline .line'),
+      anchor: document.querySelector('app-contactform .text-headline h2'),
+      ancestor: document.querySelector('app-contactform .text-headline'),
+      direction: 'left',
+      gap: 24,
+    });
+  }
+
   contactData = {
     name: '',
     email: '',
