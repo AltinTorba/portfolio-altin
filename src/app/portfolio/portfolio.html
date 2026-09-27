@@ -45,16 +45,22 @@
             <div class="ref-name-container">
               <div class="line"></div>
               <p class="ref-name">
-                {{ references[currentReferenceIndex].titleKey | translate }}
+                <a [href]="references[currentReferenceIndex].github" target="_blank" rel="noopener noreferrer">{{ references[currentReferenceIndex].titleKey | translate }}</a>
               </p>
             </div>
           </div>
 
-          <img
-            class="ref-photo"
-            [src]="'./assets/img/references/' + references[currentReferenceIndex].photo + '.webp'"
-            [alt]="references[currentReferenceIndex].name"
-          />
+            <a class="ref-photo-link"
+            [href]="references[currentReferenceIndex].github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="ref-photo"
+              [src]="'./assets/img/references/' + references[currentReferenceIndex].photo + '.webp'"
+              [alt]="references[currentReferenceIndex].name"
+            />
+          </a>
           <div class="ref-line"></div>
         </div>
 

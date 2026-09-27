@@ -107,18 +107,21 @@ export class Portfolio implements AfterViewInit {
       name: 'Philipp Biebert',
       titleKey: 'portfolio.references.reference2.title',
       photo: 'philipp-biebert',
+      github: 'https://github.com/PBiebert',
     },
     {
       textKey: 'portfolio.references.reference3.text',
       name: 'Frank Meckel',
       titleKey: 'portfolio.references.reference3.title',
       photo: 'frank-meckel',
+      github: 'https://github.com/Frank-Meck',
     },
     {
       textKey: 'portfolio.references.reference1.text',
       name: 'Refiye Külhanbey',
       titleKey: 'portfolio.references.reference1.title',
       photo: 'refiye-kulhanbey',
+      github: 'https://github.com/RefiyeK/',
     },
   ];
 

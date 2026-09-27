@@ -108,6 +108,11 @@ section#portfolio {
       }
     }
 
+    .ref-photo-link {
+      display: flex;
+      flex: none;
+    }
+
     .ref-photo {
       width: 272px;
       height: 272px;
@@ -208,6 +213,17 @@ section#portfolio {
 
         .ref-name {
           white-space: nowrap;
+
+          a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: $g;
+
+            &:hover {
+              color: $g;
+            }
+          }
         }
       }
     }
