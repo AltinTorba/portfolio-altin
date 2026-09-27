@@ -1,7 +1,7 @@
-import { Component, signal, inject, AfterViewInit, HostListener } from '@angular/core';
+import { Component, signal, inject, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CertReadModal } from '../cert-read-modal/cert-read-modal';
-import { positionEdgeLine } from '../shared/edge-line';
+import { positionEdgeLine, observeAosReveal } from '../shared/edge-line';
 
 interface CertSection {
   heading?: string;
@@ -28,7 +28,7 @@ interface Certificate {
   templateUrl: './certifications.html',
   styleUrls: ['./certifications.scss'],
 })
-export class Certifications implements AfterViewInit {
+export class Certifications implements AfterViewInit, OnDestroy {
   private translate = inject(TranslateService);
 
   activeCert = signal<Certificate | null>(null);
@@ -51,9 +51,19 @@ export class Certifications implements AfterViewInit {
     return `./assets/cv/CV_Altin_Torba_${lang.toUpperCase()}.pdf`;
   }
 
+  private unsubscribeAos?: () => void;
+
   ngAfterViewInit(): void {
     this.updateHeadlineLine();
     setTimeout(() => this.updateHeadlineLine(), 800);
+    this.unsubscribeAos = observeAosReveal(
+      document.querySelector('app-certifications .headline'),
+      () => this.updateHeadlineLine()
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribeAos?.();
   }
 
   @HostListener('window:resize')
@@ -61,13 +71,19 @@ export class Certifications implements AfterViewInit {
     this.updateHeadlineLine();
   }
 
+  /**
+   * Nën 480px, h1 është shumë afër skajit të majtë (~25px) - gap:32 s'lë
+   * fare hapësirë për vijën të duket (shih Figma: te "Certifications"/
+   * "Portfolio" mobile, vija është një vizë e shkurtër ngjitur me skajin,
+   * jo dicë që del krejt jashtë ekranit).
+   */
   private updateHeadlineLine(): void {
     positionEdgeLine({
       line: document.querySelector('app-certifications .headline .line'),
       anchor: document.querySelector('app-certifications .headline h1'),
       ancestor: document.querySelector('app-certifications .headline'),
       direction: 'left',
-      gap: 32,
+      gap: window.innerWidth <= 480 ? 8 : 32,
     });
   }
 

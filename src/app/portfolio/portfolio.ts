@@ -1,6 +1,6 @@
-import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { positionEdgeLine } from '../shared/edge-line';
+import { positionEdgeLine, observeAosReveal } from '../shared/edge-line';
 
 interface Project {
   image: string;
@@ -18,10 +18,20 @@ interface Project {
   templateUrl: './portfolio.html',
   styleUrls: ['./portfolio.scss'],
 })
-export class Portfolio implements AfterViewInit {
+export class Portfolio implements AfterViewInit, OnDestroy {
+  private unsubscribeAos?: () => void;
+
   ngAfterViewInit(): void {
     this.updateHeadlineLine();
     setTimeout(() => this.updateHeadlineLine(), 800);
+    this.unsubscribeAos = observeAosReveal(
+      document.querySelector('app-portfolio .headline'),
+      () => this.updateHeadlineLine()
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribeAos?.();
   }
 
   @HostListener('window:resize')
@@ -29,13 +39,19 @@ export class Portfolio implements AfterViewInit {
     this.updateHeadlineLine();
   }
 
+  /**
+   * Nën 480px, h1 është shumë afër skajit të majtë (~25px) - gap:32 s'lë
+   * fare hapësirë për vijën të duket (shih Figma: te "Portfolio" mobile,
+   * vija është një vizë e shkurtër ngjitur me skajin, jo dicë që del
+   * krejt jashtë ekranit).
+   */
   private updateHeadlineLine(): void {
     positionEdgeLine({
       line: document.querySelector('app-portfolio .headline .line'),
       anchor: document.querySelector('app-portfolio .headline h1'),
       ancestor: document.querySelector('app-portfolio .headline'),
       direction: 'left',
-      gap: 32,
+      gap: window.innerWidth <= 480 ? 8 : 32,
     });
     this.updateRefLine();
   }

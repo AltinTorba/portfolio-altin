@@ -111,6 +111,10 @@ section#portfolio {
     .ref-photo-link {
       display: flex;
       flex: none;
+
+      @media (max-width: $breakpoint-mobile) {
+        order: -1;
+      }
     }
 
     .ref-photo {
@@ -135,7 +139,6 @@ section#portfolio {
       @media (max-width: $breakpoint-mobile) {
         width: 160px;
         height: 160px;
-        order: -1;
       }
     }
 
@@ -172,7 +175,12 @@ section#portfolio {
       }
 
       @media (max-width: $breakpoint-mobile) {
-        padding: 15px;
+        padding: 16px;
+        gap: 24px;
+        width: calc(100% + 10px);
+        margin-left: -5px;
+        margin-right: -5px;
+        box-sizing: border-box;
       }
 
       img {
@@ -223,6 +231,19 @@ section#portfolio {
             &:hover {
               color: $g;
             }
+          }
+        }
+
+        // Sipas Figma (mobile): vija shkurt e siper emrit, jo krah tij.
+        @media (max-width: $breakpoint-mobile) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+
+          .line {
+            flex: none;
+            width: 48px;
+            height: 2px;
           }
         }
       }

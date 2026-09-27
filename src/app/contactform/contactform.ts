@@ -1,10 +1,10 @@
-import { Component, AfterViewInit, HostListener, inject } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, HostListener, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 import { BusinessCard } from '../business-card/business-card';
-import { positionEdgeLine } from '../shared/edge-line';
+import { positionEdgeLine, observeAosReveal } from '../shared/edge-line';
 
 @Component({
   selector: 'app-contactform',
@@ -13,13 +13,30 @@ import { positionEdgeLine } from '../shared/edge-line';
   templateUrl: './contactform.html',
   styleUrl: './contactform.scss'
 })
-export class Contactform implements AfterViewInit {
+export class Contactform implements AfterViewInit, OnDestroy {
   private translate = inject(TranslateService);
+  private unsubscribeAosHeadline?: () => void;
+  private unsubscribeAosText?: () => void;
 
   ngAfterViewInit(): void {
     this.updateHeadlineLines();
     this.translate.onLangChange.subscribe(() => this.updateHeadlineLines());
     setTimeout(() => this.updateHeadlineLines(), 800);
+    // Dy prinda te ndryshem me `data-aos` (.headline dhe .text) - te dy
+    // mund te zhvendosin vijen e vet PAS llogaritjes fillestare.
+    this.unsubscribeAosHeadline = observeAosReveal(
+      document.querySelector('app-contactform .headline'),
+      () => this.updateHeadlineLines()
+    );
+    this.unsubscribeAosText = observeAosReveal(
+      document.querySelector('app-contactform .text'),
+      () => this.updateHeadlineLines()
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribeAosHeadline?.();
+    this.unsubscribeAosText?.();
   }
 
   @HostListener('window:resize')
@@ -42,13 +59,19 @@ export class Contactform implements AfterViewInit {
     });
   }
 
+  /**
+   * "Got a problem to solve?" - njesoj si titujt h1 (Certifications/
+   * Portfolio): vize e shkurter ngjitur majtas tekstit, qendruar vertikalisht
+   * ne mes te h2-s. Nen 480px h2 eshte shume afer skajit te majte - gap:24
+   * s'le fare hapesire per vijen te duket, prandaj gap me i vogel ne mobile.
+   */
   private updateProblemHeadlineLine(): void {
     positionEdgeLine({
       line: document.querySelector('app-contactform .text-headline .line'),
       anchor: document.querySelector('app-contactform .text-headline h2'),
       ancestor: document.querySelector('app-contactform .text-headline'),
       direction: 'left',
-      gap: 24,
+      gap: window.innerWidth <= 480 ? 8 : 24,
     });
   }
 
