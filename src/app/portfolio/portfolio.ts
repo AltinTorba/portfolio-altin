@@ -37,6 +37,17 @@ export class Portfolio implements AfterViewInit {
       direction: 'left',
       gap: 32,
     });
+    this.updateRefLine();
+  }
+
+  private updateRefLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-portfolio .ref-line'),
+      anchor: document.querySelector('app-portfolio .ref-photo'),
+      ancestor: document.querySelector('app-portfolio .ref-row'),
+      direction: 'right',
+      gap: 0,
+    });
   }
 
   projects: Project[] = [
@@ -92,19 +103,22 @@ export class Portfolio implements AfterViewInit {
 
   references = [
     {
-      textKey: 'portfolio.references.reference1.text',
-      name: 'Dominic Schmid',
-      titleKey: 'portfolio.references.reference1.title',
-    },
-    {
       textKey: 'portfolio.references.reference2.text',
-      name: 'Anna Müller',
+      name: 'Philipp Biebert',
       titleKey: 'portfolio.references.reference2.title',
+      photo: 'philipp-biebert',
     },
     {
       textKey: 'portfolio.references.reference3.text',
-      name: 'Max Becker',
+      name: 'Frank Meckel',
       titleKey: 'portfolio.references.reference3.title',
+      photo: 'frank-meckel',
+    },
+    {
+      textKey: 'portfolio.references.reference1.text',
+      name: 'Refiye Külhanbey',
+      titleKey: 'portfolio.references.reference1.title',
+      photo: 'refiye-kulhanbey',
     },
   ];
 

@@ -54,6 +54,7 @@ function positionLeftwardLine(
   line.style.width = `${width}px`;
   line.style.left = `${leftValue}px`;
   line.style.right = '';
+  centerLineOnAnchor(line, anchorRect, ancestorRect);
 }
 
 function positionRightwardLine(
@@ -70,4 +71,23 @@ function positionRightwardLine(
   line.style.width = `${width}px`;
   line.style.right = `${rightValue}px`;
   line.style.left = '';
+  centerLineOnAnchor(line, anchorRect, ancestorRect);
+}
+
+/**
+ * Qendron vijen vertikalisht ne qendren e ankorit (p.sh. nje foto), ne vend
+ * te "static position" te flexbox-it, e cila funksionon vetem kur linja
+ * dhe ankori ndajne te njejtin "row" me align-items:center - jo me ne
+ * layout "column" (p.sh. mobile, kur elementet stivosen vertikalisht).
+ */
+function centerLineOnAnchor(
+  line: HTMLElement,
+  anchorRect: DOMRect,
+  ancestorRect: DOMRect
+): void {
+  const lineHeight = line.getBoundingClientRect().height;
+  const anchorCenterY = anchorRect.top + anchorRect.height / 2;
+  const topValue = anchorCenterY - ancestorRect.top - lineHeight / 2;
+  line.style.top = `${topValue}px`;
+  line.style.bottom = '';
 }

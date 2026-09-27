@@ -34,19 +34,28 @@
       </div>
 
       <div class="references">
-        <div class="ref-frame">
-          <img src="./assets/img/speechmark.png" alt="Speech mark icon" />
+        <div class="ref-row">
+          <div class="ref-frame">
+            <img src="./assets/img/speechmark.png" alt="Speech mark icon" />
 
-          <p>
-            {{ references[currentReferenceIndex].textKey | translate }}
-          </p>
-
-          <div class="ref-name-container">
-            <div class="line"></div>
-            <p class="ref-name">
-              {{ references[currentReferenceIndex].titleKey | translate }}
+            <p>
+              {{ references[currentReferenceIndex].textKey | translate }}
             </p>
+
+            <div class="ref-name-container">
+              <div class="line"></div>
+              <p class="ref-name">
+                {{ references[currentReferenceIndex].titleKey | translate }}
+              </p>
+            </div>
           </div>
+
+          <img
+            class="ref-photo"
+            [src]="'./assets/img/references/' + references[currentReferenceIndex].photo + '.webp'"
+            [alt]="references[currentReferenceIndex].name"
+          />
+          <div class="ref-line"></div>
         </div>
 
         <div class="ref-navigation">
