@@ -44,7 +44,7 @@ section#skills {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 60px 100px 15px;
+  padding: 120px 100px 15px;
   margin: 0 auto;
   max-width: $breakpoint-1440p;
 
@@ -56,14 +56,16 @@ section#skills {
   }
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 90px 15px 15px;
+    padding: 106px 15px 15px;
   }
 
   .skill-right-container {
     order: 2;
     width: 35%;
     margin-left: 5%;
-    margin-top: 140px;
+    // Hequr margin-top:140px shtese - tani h1 fillon menjehere pas
+    // padding-top te seksionit, njesoj si Portfolio/Certifications.
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     gap: 32px;

@@ -4,7 +4,7 @@
 
     <div class="read-modal-header">
       <h2>{{ certificate.title }}</h2>
-      <p class="meta">{{ certificate.issuer }} · {{ certificate.date }}</p>
+      <p class="meta">{{ certificate.issuer }} · {{ ('certifications.certificates.' + certificate.key + '.date') | translate }}</p>
     </div>
 
     <div class="read-modal-body">

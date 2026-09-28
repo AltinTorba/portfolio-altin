@@ -73,7 +73,10 @@ header {
         background-color: $w;
       }
 
-      @media (max-width: $breakpoint-desktop) {
+      // 1095px (jo $breakpoint-desktop/1024px): nen kete gjeresi,
+      // "Uber mich" (DE) mbeshillet ne 2 rreshta dhe mbivendoset
+      // me logon - burger-menu duhet te shfaqet me heret.
+      @media (max-width: 1095px) {
         display: flex;
       }
     }
@@ -82,7 +85,7 @@ header {
       display: flex;
       gap: 64px;
 
-      @media (max-width: $breakpoint-desktop) {
+      @media (max-width: 1095px) {
         display: none !important;
       }
     }
@@ -103,7 +106,7 @@ header {
   transform: translateX(100%);
   transition: transform 125ms ease-in-out;
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: 1095px) {
     display: flex;
   }
 

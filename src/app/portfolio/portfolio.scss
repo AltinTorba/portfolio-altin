@@ -79,14 +79,60 @@ section#portfolio {
     }
   }
   .references {
-    padding-top: 100px;
+    padding-top: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
 
+    @media (max-width: $breakpoint-desktop) {
+      padding-top: 240px;
+    }
     @media (max-width: $breakpoint-mobile) {
-      padding-top: 64px;
+      padding-top: 212px;
+    }
+
+    .testimony-headline {
+      // Njesoj si .headline (h1 "Portfolio") - left-aligned ne krejt gjeresine
+      // e content-wrapper-it, jo e centruar si .references qe e rrethon.
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      position: relative;
+
+      h2 {
+        font-size: 90px;
+
+        @media (max-width: $breakpoint-1440p) {
+          font-size: 72px;
+        }
+        @media (max-width: $breakpoint-desktop) {
+          font-size: 56px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 36px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 29px;
+        }
+      }
+
+      .line {
+        position: absolute;
+        width: 1000px;
+        left: -1032px;
+        background-color: $purple;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+
+        @media (max-width: $breakpoint-desktop) {
+          left: -1020px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          left: -1008px;
+        }
+      }
     }
 
     .ref-row {
@@ -97,14 +143,25 @@ section#portfolio {
       width: 100%;
       max-width: 1171.5px;
       justify-content: center;
+      // Hapesire shtese mbi ref-row (mbi ate qe jep tashme gap:32px i
+      // .references) - midis fjales "Testimony" dhe ref-frame,
+      // e reduktuar ne ekrane me te ngushta qe mos te dale hapesire e
+      // tepert boshe.
+      margin-top: 50px;
 
       @media (max-width: $breakpoint-desktop) {
         gap: 16px;
+        margin-top: 45px;
       }
 
-      @media (max-width: $breakpoint-mobile) {
+      // 620px (jo $breakpoint-mobile/480px): nen kete gjeresi, ref-frame
+      // ngushtohet shume nga fotoja krah tij (teksti behet i palexueshem) -
+      // prandaj fotoja kalon siper frame-it me heret se breakpoint-i i
+      // pergjithshem mobile.
+      @media (max-width: 620px) {
         flex-direction: column;
         gap: 24px;
+        margin-top: 40px;
       }
     }
 
@@ -112,7 +169,7 @@ section#portfolio {
       display: flex;
       flex: none;
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: 620px) {
         order: -1;
       }
     }
@@ -136,7 +193,7 @@ section#portfolio {
         height: 140px;
       }
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: 620px) {
         width: 160px;
         height: 160px;
       }
@@ -276,7 +333,7 @@ section#portfolio {
 }
 
 .shadow-green {
-  bottom: 500px;
+  bottom: 900px;
   left: -600px;
 
   @media (max-width: $breakpoint-desktop) {

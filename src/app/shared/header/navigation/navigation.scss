@@ -41,12 +41,6 @@
     &.active::after {
       opacity: 1;
     }
-
-    &.hide-contact {
-      @media (min-width: 1030px) {
-        display: none;
-      }
-    }
   }
 }
 
@@ -82,6 +76,12 @@
         background-color: $g;
       }
     }
+  }
+}
+
+:host(.desktop-nav) {
+  .hide-contact {
+    display: none;
   }
 }
 

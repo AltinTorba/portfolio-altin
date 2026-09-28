@@ -17,8 +17,8 @@
   },
   "about": {
     "headline": "About me",
-    "introductionText": "My programming journey started in childhood and was deepened through an intensive Front-End bootcamp at the Developer Akademie. The dynamic tech world constantly inspires me, and I look forward to contributing to meaningful projects.",
-    "locationText": "Based in Siegen, NRW, I am open to remote positions but cannot relocate.",
+    "introductionText": "My programming journey started in childhood and was deepened through an intensive Fullstack (Front- & Backend) development program at the Developer Akademie. The dynamic tech world constantly inspires me, and I look forward to contributing to meaningful projects.",
+    "locationText": "Based in Siegen, NRW, and open to opportunities in Siegen, NRW or fully remote.",
     "learningText": "I am passionate about learning new technologies and continuously advancing my skills.",
     "solvingText": "My problem-solving style is hands-on and iterative. I work well independently but actively seek collaboration on tougher challenges, blending careful planning with actionable solutions.",
     "profilePhotoAlt": "Profile photo of Altin",
@@ -27,7 +27,7 @@
   },
   "skills": {
     "headline": "Skills",
-    "description": "Through hands-on work with diverse projects, I've built strong skills in modern frontend technologies including HTML,CSS, and JavaScript. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
+    "description": "Through hands-on work with diverse projects, I've built strong skills in modern Front- & Backend technologies. I'm always eager to learn and adapt to new tools and frameworks. For me, continuous growth is essential to stay current in the fast-evolving field of web development.",
     "subheadline": "Looking for ",
     "highlight": "another skill",
     "followup": "Enthusiastic about learning new technologies and frameworks.",
@@ -35,6 +35,7 @@
   },
   "portfolio": {
     "description": "Explore a selection of my work — interact with the projects to see my skills in action.",
+    "testimonyHeadline": "Testimony",
     "projects": {
       "elpollo": {
         "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy chicken."
@@ -167,6 +168,7 @@
     "readButton": "Read Certificate",
     "certificates": {
       "backend": {
+        "date": "August 2026",
         "sections": [
           {
             "heading": "Transcript of Records",
@@ -216,6 +218,7 @@
         ]
       },
       "frontend": {
+        "date": "September 2026",
         "sections": [
           {
             "heading": "Transcript of Records",
@@ -276,6 +279,7 @@
         ]
       },
       "python": {
+        "date": "July 2023",
         "sections": [
           {
             "heading": "ICT for Kosovo's Growth",

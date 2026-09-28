@@ -1,5 +1,5 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
@@ -15,9 +15,11 @@ const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader =
   
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withInMemoryScrolling({
-      scrollPositionRestoration: 'enabled',
-    })),
+    // Scroll-in e bejme VETE ne app.ts (me offset per header-in fiks per
+    // cdo seksion) - lame Router-in e Angular te beje scroll vete njekohesisht
+    // (withInMemoryScrolling) krijonte nje race condition: here fitonte njeri,
+    // here tjetri, dhe faqja "kthehej" ne ATF (top) ne vend te seksionit te klikuar.
+    provideRouter(routes),
     provideHttpClient(),
     importProvidersFrom([TranslateModule.forRoot({
       defaultLanguage: 'en',

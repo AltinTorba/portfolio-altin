@@ -17,8 +17,8 @@
   },
   "about": {
     "headline": "Rreth meje",
-    "introductionText": "Udhëtimi im në programim filloi që në fëmijëri dhe u thellua përmes një bootcamp-i intensiv Front-End në Developer Akademie. Bota dinamike e teknologjisë më frymëzon vazhdimisht, dhe pres me padurim të kontribuoj në projekte kuptimplota.",
-    "locationText": "Jetoj në Siegen, NRW, dhe jam i hapur për pozicione remote, por s'mund të zhvendosem.",
+    "introductionText": "Udhëtimi im në programim filloi që në fëmijëri dhe u thellua përmes një kualifikimi intensiv Fullstack (Front- & Backend) tek Developer Akademie. Bota dinamike e teknologjisë më frymëzon vazhdimisht, dhe pres me padurim të kontribuoj në projekte kuptimplota.",
+    "locationText": "Jetoj në Siegen, NRW, dhe jam i hapur për pozicione në Siegen, NRW ose plotësisht remote.",
     "learningText": "Jam i pasionuar pas mësimit të teknologjive të reja dhe zhvillimit të vazhdueshëm të aftësive të mia.",
     "solvingText": "Stili im i zgjidhjes së problemeve është praktik dhe hap pas hapi. Punoj mirë në mënyrë të pavarur, por kërkoj aktivisht bashkëpunim në sfida më komplekse, duke kombinuar planifikim të kujdesshëm me zgjidhje të zbatueshme.",
     "profilePhotoAlt": "Foto profili e Altinit",
@@ -27,7 +27,7 @@
   },
   "skills": {
     "headline": "Aftësitë",
-    "description": "Përmes punës praktike me projekte të ndryshme, kam ndërtuar aftësi të forta në teknologjitë moderne frontend, duke përfshirë HTML, CSS dhe JavaScript. Jam gjithmonë i gatshëm të mësoj dhe të përshtatem me mjete dhe framework-e të reja. Për mua, rritja e vazhdueshme është thelbësore për të qëndruar i përditësuar në fushën me zhvillim të shpejtë të web-development-it.",
+    "description": "Përmes punës praktike me projekte të ndryshme, kam ndërtuar aftësi të forta në teknologjitë moderne Front- & Backend. Jam gjithmonë i gatshëm të mësoj dhe të përshtatem me mjete dhe framework-e të reja. Për mua, rritja e vazhdueshme është thelbësore për të qëndruar i përditësuar në fushën me zhvillim të shpejtë të web-development-it.",
     "subheadline": "Duke kërkuar ",
     "highlight": "një aftësi tjetër",
     "followup": "I entuziazmuar për të mësuar teknologji dhe framework-e të reja.",
@@ -35,6 +35,7 @@
   },
   "portfolio": {
     "description": "Eksploro një seleksion të punës sime — ndërvepro me projektet për të parë aftësitë e mia në veprim.",
+    "testimonyHeadline": "Dëshmi",
     "projects": {
       "elpollo": {
         "description": "Lojë jump, run dhe throw e bazuar në qasje të orientuar nga objekti. Ndihmoje Pepe-n të gjejë monedha dhe salcë tabasco për të luftuar pulën e çmendur."
@@ -167,6 +168,7 @@
     "readButton": "Lexo Certifikatën",
     "certificates": {
       "backend": {
+        "date": "Gusht 2026",
         "sections": [
           {
             "heading": "Transcript of Records",
@@ -216,6 +218,7 @@
         ]
       },
       "frontend": {
+        "date": "Shtator 2026",
         "sections": [
           {
             "heading": "Transcript of Records",
@@ -276,6 +279,7 @@
         ]
       },
       "python": {
+        "date": "Korrik 2023",
         "sections": [
           {
             "heading": "ICT for Kosovo's Growth",

@@ -20,6 +20,7 @@ interface Project {
 })
 export class Portfolio implements AfterViewInit, OnDestroy {
   private unsubscribeAos?: () => void;
+  private unsubscribeTestimonyAos?: () => void;
 
   ngAfterViewInit(): void {
     this.updateHeadlineLine();
@@ -28,10 +29,18 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       document.querySelector('app-portfolio .headline'),
       () => this.updateHeadlineLine()
     );
+    // "Testimony" eshte shume me poshte ne faqe - hyn ne ekran shume me vone
+    // se h1 "Portfolio", prandaj i duhet observer i vet qe vija te
+    // rillogaritet sakte kur AI vete hyn ne pamje (jo vetem kur hyn h1-i).
+    this.unsubscribeTestimonyAos = observeAosReveal(
+      document.querySelector('app-portfolio .testimony-headline'),
+      () => this.updateTestimonyLine()
+    );
   }
 
   ngOnDestroy(): void {
     this.unsubscribeAos?.();
+    this.unsubscribeTestimonyAos?.();
   }
 
   @HostListener('window:resize')
@@ -54,6 +63,18 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       gap: window.innerWidth <= 480 ? 8 : 32,
     });
     this.updateRefLine();
+    this.updateTestimonyLine();
+  }
+
+  private updateTestimonyLine(): void {
+    positionEdgeLine({
+      line: document.querySelector('app-portfolio .testimony-headline .line'),
+      anchor: document.querySelector('app-portfolio .testimony-headline h2'),
+      ancestor: document.querySelector('app-portfolio .testimony-headline'),
+      direction: 'left',
+      // 24px - njesoj si hapesira midis "Skills" dhe vijes se saj (djathtas).
+      gap: window.innerWidth <= 480 ? 8 : 24,
+    });
   }
 
   private updateRefLine(): void {

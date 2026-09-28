@@ -8,9 +8,9 @@ interface CertSection {
 }
 
 interface CertificateModalData {
+  key: string;
   title: string;
   issuer: string;
-  date: string;
   transcriptPdf?: string;
 }
 

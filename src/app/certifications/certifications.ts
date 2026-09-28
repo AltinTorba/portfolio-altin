@@ -14,7 +14,6 @@ interface Certificate {
   image: string;
   title: string;
   issuer: string;
-  date: string;
   pdf: string;
   certNumber?: string;
   badges?: { image: string; alt: string }[];
@@ -121,7 +120,6 @@ export class Certifications implements AfterViewInit, OnDestroy {
       image: 'cert-backend',
       title: 'Back-End Development',
       issuer: 'Developer Akademie',
-      date: 'August 2026',
       pdf: './assets/certs/altintorba-certificate-backend.pdf',
       certNumber: '15310966885224',
       badges: [{ image: 'badge-tuv-azav', alt: 'TÜV Saarland – AZAV accredited' }],
@@ -132,7 +130,6 @@ export class Certifications implements AfterViewInit, OnDestroy {
       image: 'cert-frontend',
       title: 'Front-End Web Development',
       issuer: 'Developer Akademie',
-      date: 'September 2026',
       pdf: './assets/certs/altintorba-certificate-frontend.pdf',
       certNumber: '98766085125481',
       badges: [{ image: 'badge-tuv-azav', alt: 'TÜV Saarland – AZAV accredited' }],
@@ -143,7 +140,6 @@ export class Certifications implements AfterViewInit, OnDestroy {
       image: 'cert-python',
       title: 'ICT & Digital Skills Training on Python Programming',
       issuer: 'Republic of Kosovo, Ministry of Economy (EU-funded)',
-      date: 'July 2023',
       pdf: './assets/certs/altintorba-certificate-python.pdf',
       badges: [
         { image: 'badge-eu', alt: 'Funded by the European Union' },

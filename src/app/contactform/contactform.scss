@@ -14,15 +14,15 @@ section#contact {
   position: relative;
 
   @media (max-width: $breakpoint-desktop) {
-    padding: 128px 50px 100px;
+    padding: 120px 50px 100px;
   }
 
   @media (max-width: $breakpoint-tablet) {
-    padding: 128px 30px 100px;
+    padding: 120px 30px 100px;
   }
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 98px 15px 60px;
+    padding: 106px 15px 60px;
   }
 
   .headline {
@@ -53,7 +53,9 @@ section#contact {
 
     h1 {
       font-size: 90px;
-      margin-top: 35px;
+      // Hequr margin-top:35px shtese - tani h1 fillon menjehere pas
+      // padding-top te seksionit, njesoj si Portfolio/Certifications.
+      margin-top: 0;
 
       @media (max-width: $breakpoint-1440p) {
         font-size: 72px;

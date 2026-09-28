@@ -20,14 +20,14 @@ section#certifications {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  padding: 100px 100px 120px;
+  padding: 120px 100px 120px;
 
   @media (max-width: $breakpoint-desktop) {
-    padding: 100px 50px 100px;
+    padding: 120px 50px 100px;
   }
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 90px 25px 60px;
+    padding: 106px 25px 60px;
   }
 
   .content-wrapper {

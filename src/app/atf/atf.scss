@@ -207,6 +207,11 @@ section#above-the-fold {
     display: $f;
     gap: 42px;
     padding-left: 142px;
+
+    @media (max-width: 360px) {
+      gap: 37px;
+      padding-left: 137px;
+    }
   }
 
   .line {
